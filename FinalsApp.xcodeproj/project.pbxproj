@@ -25,6 +25,18 @@
 		B3451AF218D7D8AD00D032F8 /* PageOneViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = B3451AF018D7D8AD00D032F8 /* PageOneViewController.xib */; };
 		B3451AF618D7D8C700D032F8 /* PageTwoViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B3451AF418D7D8C700D032F8 /* PageTwoViewController.m */; };
 		B3451AF718D7D8C700D032F8 /* PageTwoViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = B3451AF518D7D8C700D032F8 /* PageTwoViewController.xib */; };
+		B36A897018D8E35F00CF1BD9 /* MyScheduleViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B36A896E18D8E35F00CF1BD9 /* MyScheduleViewController.m */; };
+		B36A897118D8E35F00CF1BD9 /* MyScheduleViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = B36A896F18D8E35F00CF1BD9 /* MyScheduleViewController.xib */; };
+		B36A897518D8E39600CF1BD9 /* EventsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B36A897318D8E39600CF1BD9 /* EventsViewController.m */; };
+		B36A897618D8E39600CF1BD9 /* EventsViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = B36A897418D8E39600CF1BD9 /* EventsViewController.xib */; };
+		B36A897A18D8E3CF00CF1BD9 /* GymAndDiningViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B36A897818D8E3CE00CF1BD9 /* GymAndDiningViewController.m */; };
+		B36A897B18D8E3CF00CF1BD9 /* GymAndDiningViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = B36A897918D8E3CE00CF1BD9 /* GymAndDiningViewController.xib */; };
+		B36A897F18D8E40100CF1BD9 /* LibraryHoursViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B36A897D18D8E40100CF1BD9 /* LibraryHoursViewController.m */; };
+		B36A898018D8E40100CF1BD9 /* LibraryHoursViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = B36A897E18D8E40100CF1BD9 /* LibraryHoursViewController.xib */; };
+		B36A898418D8E40F00CF1BD9 /* BusScheduleViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B36A898218D8E40F00CF1BD9 /* BusScheduleViewController.m */; };
+		B36A898518D8E40F00CF1BD9 /* BusScheduleViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = B36A898318D8E40F00CF1BD9 /* BusScheduleViewController.xib */; };
+		B36A898918D8E42200CF1BD9 /* CouponsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B36A898718D8E42200CF1BD9 /* CouponsViewController.m */; };
+		B36A898A18D8E42200CF1BD9 /* CouponsViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = B36A898818D8E42200CF1BD9 /* CouponsViewController.xib */; };
 		B3D253CA18D8BA8E0049D016 /* Architecture.jpg in Resources */ = {isa = PBXBuildFile; fileRef = B3D253B418D8BA8E0049D016 /* Architecture.jpg */; };
 		B3D253CB18D8BA8E0049D016 /* Art.jpg in Resources */ = {isa = PBXBuildFile; fileRef = B3D253B518D8BA8E0049D016 /* Art.jpg */; };
 		B3D253CC18D8BA8E0049D016 /* Blank Coupon iphone 4.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = B3D253B618D8BA8E0049D016 /* Blank Coupon iphone 4.jpeg */; };
@@ -85,6 +97,24 @@
 		B3451AF318D7D8C700D032F8 /* PageTwoViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PageTwoViewController.h; sourceTree = "<group>"; };
 		B3451AF418D7D8C700D032F8 /* PageTwoViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PageTwoViewController.m; sourceTree = "<group>"; };
 		B3451AF518D7D8C700D032F8 /* PageTwoViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = PageTwoViewController.xib; sourceTree = "<group>"; };
+		B36A896D18D8E35F00CF1BD9 /* MyScheduleViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MyScheduleViewController.h; sourceTree = "<group>"; };
+		B36A896E18D8E35F00CF1BD9 /* MyScheduleViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MyScheduleViewController.m; sourceTree = "<group>"; };
+		B36A896F18D8E35F00CF1BD9 /* MyScheduleViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MyScheduleViewController.xib; sourceTree = "<group>"; };
+		B36A897218D8E39600CF1BD9 /* EventsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EventsViewController.h; sourceTree = "<group>"; };
+		B36A897318D8E39600CF1BD9 /* EventsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EventsViewController.m; sourceTree = "<group>"; };
+		B36A897418D8E39600CF1BD9 /* EventsViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = EventsViewController.xib; sourceTree = "<group>"; };
+		B36A897718D8E3CE00CF1BD9 /* GymAndDiningViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GymAndDiningViewController.h; sourceTree = "<group>"; };
+		B36A897818D8E3CE00CF1BD9 /* GymAndDiningViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GymAndDiningViewController.m; sourceTree = "<group>"; };
+		B36A897918D8E3CE00CF1BD9 /* GymAndDiningViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = GymAndDiningViewController.xib; sourceTree = "<group>"; };
+		B36A897C18D8E40100CF1BD9 /* LibraryHoursViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LibraryHoursViewController.h; sourceTree = "<group>"; };
+		B36A897D18D8E40100CF1BD9 /* LibraryHoursViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LibraryHoursViewController.m; sourceTree = "<group>"; };
+		B36A897E18D8E40100CF1BD9 /* LibraryHoursViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = LibraryHoursViewController.xib; sourceTree = "<group>"; };
+		B36A898118D8E40F00CF1BD9 /* BusScheduleViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BusScheduleViewController.h; sourceTree = "<group>"; };
+		B36A898218D8E40F00CF1BD9 /* BusScheduleViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BusScheduleViewController.m; sourceTree = "<group>"; };
+		B36A898318D8E40F00CF1BD9 /* BusScheduleViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = BusScheduleViewController.xib; sourceTree = "<group>"; };
+		B36A898618D8E42200CF1BD9 /* CouponsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CouponsViewController.h; sourceTree = "<group>"; };
+		B36A898718D8E42200CF1BD9 /* CouponsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CouponsViewController.m; sourceTree = "<group>"; };
+		B36A898818D8E42200CF1BD9 /* CouponsViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CouponsViewController.xib; sourceTree = "<group>"; };
 		B3D253B418D8BA8E0049D016 /* Architecture.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = Architecture.jpg; sourceTree = "<group>"; };
 		B3D253B518D8BA8E0049D016 /* Art.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = Art.jpg; sourceTree = "<group>"; };
 		B3D253B618D8BA8E0049D016 /* Blank Coupon iphone 4.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "Blank Coupon iphone 4.jpeg"; sourceTree = "<group>"; };
@@ -177,6 +207,24 @@
 				B3451AF318D7D8C700D032F8 /* PageTwoViewController.h */,
 				B3451AF418D7D8C700D032F8 /* PageTwoViewController.m */,
 				B3451AF518D7D8C700D032F8 /* PageTwoViewController.xib */,
+				B36A896D18D8E35F00CF1BD9 /* MyScheduleViewController.h */,
+				B36A896E18D8E35F00CF1BD9 /* MyScheduleViewController.m */,
+				B36A896F18D8E35F00CF1BD9 /* MyScheduleViewController.xib */,
+				B36A897218D8E39600CF1BD9 /* EventsViewController.h */,
+				B36A897318D8E39600CF1BD9 /* EventsViewController.m */,
+				B36A897418D8E39600CF1BD9 /* EventsViewController.xib */,
+				B36A897718D8E3CE00CF1BD9 /* GymAndDiningViewController.h */,
+				B36A897818D8E3CE00CF1BD9 /* GymAndDiningViewController.m */,
+				B36A897918D8E3CE00CF1BD9 /* GymAndDiningViewController.xib */,
+				B36A897C18D8E40100CF1BD9 /* LibraryHoursViewController.h */,
+				B36A897D18D8E40100CF1BD9 /* LibraryHoursViewController.m */,
+				B36A897E18D8E40100CF1BD9 /* LibraryHoursViewController.xib */,
+				B36A898118D8E40F00CF1BD9 /* BusScheduleViewController.h */,
+				B36A898218D8E40F00CF1BD9 /* BusScheduleViewController.m */,
+				B36A898318D8E40F00CF1BD9 /* BusScheduleViewController.xib */,
+				B36A898618D8E42200CF1BD9 /* CouponsViewController.h */,
+				B36A898718D8E42200CF1BD9 /* CouponsViewController.m */,
+				B36A898818D8E42200CF1BD9 /* CouponsViewController.xib */,
 				B3D253B318D8BA8E0049D016 /* icons */,
 				B3451ACC18D7D59D00D032F8 /* Images.xcassets */,
 				B3451AC118D7D59D00D032F8 /* Supporting Files */,
@@ -320,8 +368,12 @@
 				B3D253CB18D8BA8E0049D016 /* Art.jpg in Resources */,
 				B3D253D518D8BA8E0049D016 /* Hornbake.jpg in Resources */,
 				B3D253D618D8BA8E0049D016 /* icon-120.png in Resources */,
+				B36A897B18D8E3CF00CF1BD9 /* GymAndDiningViewController.xib in Resources */,
+				B36A898518D8E40F00CF1BD9 /* BusScheduleViewController.xib in Resources */,
 				B3D253CC18D8BA8E0049D016 /* Blank Coupon iphone 4.jpeg in Resources */,
 				B3451AF218D7D8AD00D032F8 /* PageOneViewController.xib in Resources */,
+				B36A897618D8E39600CF1BD9 /* EventsViewController.xib in Resources */,
+				B36A898A18D8E42200CF1BD9 /* CouponsViewController.xib in Resources */,
 				B3D253CF18D8BA8E0049D016 /* Chemistry.jpg in Resources */,
 				B3D253DA18D8BA8E0049D016 /* party.png in Resources */,
 				B3D253D118D8BA8E0049D016 /* CSPAC.jpg in Resources */,
@@ -331,6 +383,7 @@
 				B3D253D918D8BA8E0049D016 /* McKeldin.jpg in Resources */,
 				B3D253D418D8BA8E0049D016 /* gym.png in Resources */,
 				B3451ACD18D7D59D00D032F8 /* Images.xcassets in Resources */,
+				B36A898018D8E40100CF1BD9 /* LibraryHoursViewController.xib in Resources */,
 				B3D253CD18D8BA8E0049D016 /* bus.png in Resources */,
 				B3D253DF18D8BA8E0049D016 /* splash4.png in Resources */,
 				B3D253D718D8BA8E0049D016 /* icon.png in Resources */,
@@ -344,6 +397,7 @@
 				B3D253D218D8BA8E0049D016 /* Engineering.jpg in Resources */,
 				B3D253CE18D8BA8E0049D016 /* cal.png in Resources */,
 				B3451AED18D7D6F000D032F8 /* RootViewController.xib in Resources */,
+				B36A897118D8E35F00CF1BD9 /* MyScheduleViewController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -362,11 +416,17 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B36A898418D8E40F00CF1BD9 /* BusScheduleViewController.m in Sources */,
 				B3451AF118D7D8AD00D032F8 /* PageOneViewController.m in Sources */,
 				B3451AF618D7D8C700D032F8 /* PageTwoViewController.m in Sources */,
 				B3451ACB18D7D59D00D032F8 /* AppDelegate.m in Sources */,
+				B36A897518D8E39600CF1BD9 /* EventsViewController.m in Sources */,
+				B36A897F18D8E40100CF1BD9 /* LibraryHoursViewController.m in Sources */,
+				B36A898918D8E42200CF1BD9 /* CouponsViewController.m in Sources */,
+				B36A897018D8E35F00CF1BD9 /* MyScheduleViewController.m in Sources */,
 				B3451AC718D7D59D00D032F8 /* main.m in Sources */,
 				B3451AEC18D7D6F000D032F8 /* RootViewController.m in Sources */,
+				B36A897A18D8E3CF00CF1BD9 /* GymAndDiningViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

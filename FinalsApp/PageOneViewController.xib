@@ -27,6 +27,9 @@
                     <state key="normal" title="Button" image="cal.png">
                         <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                     </state>
+                    <connections>
+                        <action selector="scheduleButton:" destination="-1" eventType="touchUpInside" id="hZV-8L-8wn"/>
+                    </connections>
                 </button>
                 <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="u46-oH-eW9">
                     <rect key="frame" x="158" y="197" width="130" height="130"/>
@@ -34,6 +37,9 @@
                     <state key="normal" title="Button" image="library.png">
                         <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                     </state>
+                    <connections>
+                        <action selector="libraryButton:" destination="-1" eventType="touchUpInside" id="R7H-ES-dLw"/>
+                    </connections>
                 </button>
                 <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Z85-4H-Tbk">
                     <rect key="frame" x="25" y="197" width="130" height="130"/>
@@ -41,6 +47,9 @@
                     <state key="normal" title="Button" image="gym.png">
                         <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                     </state>
+                    <connections>
+                        <action selector="gymDiningButton:" destination="-1" eventType="touchUpInside" id="MhC-wn-UUF"/>
+                    </connections>
                 </button>
                 <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="V2V-CH-sjk">
                     <rect key="frame" x="158" y="67" width="130" height="130"/>
@@ -48,6 +57,9 @@
                     <state key="normal" title="Button" image="party.png">
                         <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                     </state>
+                    <connections>
+                        <action selector="eventButton:" destination="-1" eventType="touchUpInside" id="6IK-kM-dVq"/>
+                    </connections>
                 </button>
                 <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Fv7-YN-ffr">
                     <rect key="frame" x="25" y="327" width="130" height="130"/>
@@ -55,6 +67,9 @@
                     <state key="normal" title="Button" image="bus.png">
                         <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                     </state>
+                    <connections>
+                        <action selector="busButton:" destination="-1" eventType="touchUpInside" id="N20-lY-PNN"/>
+                    </connections>
                 </button>
                 <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ZP5-BR-6g0">
                     <rect key="frame" x="158" y="327" width="130" height="130"/>
@@ -62,6 +77,9 @@
                     <state key="normal" title="Button" image="food.png">
                         <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                     </state>
+                    <connections>
+                        <action selector="couponButton:" destination="-1" eventType="touchUpInside" id="Cqu-Ka-5X8"/>
+                    </connections>
                 </button>
                 <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="My Schedule" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="YWP-zL-7tU">
                     <rect key="frame" x="38" y="176" width="104" height="21"/>

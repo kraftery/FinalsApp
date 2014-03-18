@@ -30,7 +30,6 @@
 {
     [super viewDidLoad];
     
-    [self setTitle:@"Finals App"];
     index = 0;
     pageOne = [[PageOneViewController alloc] init];
     pageTwo = [[PageTwoViewController alloc] init];

@@ -1,18 +1,18 @@
 //
-//  PageTwoViewController.m
+//  LibraryHoursViewController.m
 //  FinalsApp
 //
-//  Created by Kieran Raftery on 3/17/14.
+//  Created by Kieran Raftery on 3/18/14.
 //  Copyright (c) 2014 Kieran Raftery. All rights reserved.
 //
 
-#import "PageTwoViewController.h"
+#import "LibraryHoursViewController.h"
 
-@interface PageTwoViewController ()
+@interface LibraryHoursViewController ()
 
 @end
 
-@implementation PageTwoViewController
+@implementation LibraryHoursViewController
 
 - (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil
 {

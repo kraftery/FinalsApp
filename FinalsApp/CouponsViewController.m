@@ -1,18 +1,18 @@
 //
-//  PageTwoViewController.m
+//  CouponsViewController.m
 //  FinalsApp
 //
-//  Created by Kieran Raftery on 3/17/14.
+//  Created by Kieran Raftery on 3/18/14.
 //  Copyright (c) 2014 Kieran Raftery. All rights reserved.
 //
 
-#import "PageTwoViewController.h"
+#import "CouponsViewController.h"
 
-@interface PageTwoViewController ()
+@interface CouponsViewController ()
 
 @end
 
-@implementation PageTwoViewController
+@implementation CouponsViewController
 
 - (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil
 {

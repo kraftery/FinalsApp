@@ -1,18 +1,18 @@
 //
-//  PageTwoViewController.m
+//  BusScheduleViewController.m
 //  FinalsApp
 //
-//  Created by Kieran Raftery on 3/17/14.
+//  Created by Kieran Raftery on 3/18/14.
 //  Copyright (c) 2014 Kieran Raftery. All rights reserved.
 //
 
-#import "PageTwoViewController.h"
+#import "BusScheduleViewController.h"
 
-@interface PageTwoViewController ()
+@interface BusScheduleViewController ()
 
 @end
 
-@implementation PageTwoViewController
+@implementation BusScheduleViewController
 
 - (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil
 {

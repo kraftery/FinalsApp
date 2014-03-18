@@ -10,4 +10,11 @@
 
 @interface PageOneViewController : UIViewController
 
+- (IBAction)scheduleButton:(id)sender;
+- (IBAction)eventButton:(id)sender;
+- (IBAction)gymDiningButton:(id)sender;
+- (IBAction)libraryButton:(id)sender;
+- (IBAction)busButton:(id)sender;
+- (IBAction)couponButton:(id)sender;
+
 @end

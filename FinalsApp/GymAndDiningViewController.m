@@ -1,18 +1,18 @@
 //
-//  PageTwoViewController.m
+//  GymAndDiningViewController.m
 //  FinalsApp
 //
-//  Created by Kieran Raftery on 3/17/14.
+//  Created by Kieran Raftery on 3/18/14.
 //  Copyright (c) 2014 Kieran Raftery. All rights reserved.
 //
 
-#import "PageTwoViewController.h"
+#import "GymAndDiningViewController.h"
 
-@interface PageTwoViewController ()
+@interface GymAndDiningViewController ()
 
 @end
 
-@implementation PageTwoViewController
+@implementation GymAndDiningViewController
 
 - (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil
 {
