@@ -78,11 +78,11 @@
 - (UIViewController *)pageViewController:(UIPageViewController *)pageViewController viewControllerAfterViewController:(UIViewController *)viewController
 {
     if (index == 0) {
-        index++;
+        index = 1;
         return pageTwo;
     }
     else {
-        index--;
+        index = 0;
         return nil;
     }
 }
