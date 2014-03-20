@@ -27,6 +27,10 @@
 {
     [super viewDidLoad];
     // Do any additional setup after loading the view from its nib.
+    self.title = @"My Schedule";
+    
+    add = [[UIBarButtonItem alloc] initWithTitle:@"Add" style:UIBarButtonItemStyleBordered target:self action:@selector(addButtonClick)];
+    self.navigationItem.rightBarButtonItem = add;
 }
 
 - (void)didReceiveMemoryWarning
@@ -35,4 +39,17 @@
     // Dispose of any resources that can be recreated.
 }
 
+-(void) addButtonClick{
+    UIAlertView *alert = [[UIAlertView alloc] initWithTitle:@"Add A Class"
+                                                    message:@"Enter a class to get its exam time"
+                                                   delegate:self
+                                          cancelButtonTitle:@"Cancel"
+                                          otherButtonTitles:@"Save", nil];
+    alert.alertViewStyle = UIAlertViewStyleLoginAndPasswordInput;
+    [[alert textFieldAtIndex:1] setSecureTextEntry:NO];
+    [[alert textFieldAtIndex:0] setPlaceholder:@"Class Name"];
+    [[alert textFieldAtIndex:1] setPlaceholder:@"Section Number"];
+    [alert show];
+}
+           
 @end
