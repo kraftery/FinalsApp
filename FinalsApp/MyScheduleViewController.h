@@ -8,6 +8,10 @@
 
 #import <UIKit/UIKit.h>
 
-@interface MyScheduleViewController : UIViewController
+@interface MyScheduleViewController : UIViewController{
+UIBarButtonItem *add;
+}
+
+-(void) addButtonClick;
 
 @end
