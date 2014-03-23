@@ -8,6 +8,9 @@
 
 #import <UIKit/UIKit.h>
 
-@interface BusScheduleViewController : UIViewController
+@interface BusScheduleViewController : UIViewController<UITableViewDelegate, UITableViewDataSource>{
+    IBOutlet UITableView *myTableView;
+    NSArray *buses;
+}
 
 @end

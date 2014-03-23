@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		84A93C3C18DEB8E600E214A9 /* BusViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 84A93C3A18DEB8E600E214A9 /* BusViewController.m */; };
+		84A93C3D18DEB8E600E214A9 /* BusViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 84A93C3B18DEB8E600E214A9 /* BusViewController.xib */; };
 		B3451ABB18D7D59D00D032F8 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B3451ABA18D7D59D00D032F8 /* Foundation.framework */; };
 		B3451ABD18D7D59D00D032F8 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B3451ABC18D7D59D00D032F8 /* CoreGraphics.framework */; };
 		B3451ABF18D7D59D00D032F8 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B3451ABE18D7D59D00D032F8 /* UIKit.framework */; };
@@ -72,6 +74,9 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		84A93C3918DEB8E600E214A9 /* BusViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BusViewController.h; sourceTree = "<group>"; };
+		84A93C3A18DEB8E600E214A9 /* BusViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BusViewController.m; sourceTree = "<group>"; };
+		84A93C3B18DEB8E600E214A9 /* BusViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = BusViewController.xib; sourceTree = "<group>"; };
 		B3451AB718D7D59D00D032F8 /* FinalsApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FinalsApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B3451ABA18D7D59D00D032F8 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		B3451ABC18D7D59D00D032F8 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -222,6 +227,9 @@
 				B36A898118D8E40F00CF1BD9 /* BusScheduleViewController.h */,
 				B36A898218D8E40F00CF1BD9 /* BusScheduleViewController.m */,
 				B36A898318D8E40F00CF1BD9 /* BusScheduleViewController.xib */,
+				84A93C3918DEB8E600E214A9 /* BusViewController.h */,
+				84A93C3A18DEB8E600E214A9 /* BusViewController.m */,
+				84A93C3B18DEB8E600E214A9 /* BusViewController.xib */,
 				B36A898618D8E42200CF1BD9 /* CouponsViewController.h */,
 				B36A898718D8E42200CF1BD9 /* CouponsViewController.m */,
 				B36A898818D8E42200CF1BD9 /* CouponsViewController.xib */,
@@ -378,6 +386,7 @@
 				B3D253DA18D8BA8E0049D016 /* party.png in Resources */,
 				B3D253D118D8BA8E0049D016 /* CSPAC.jpg in Resources */,
 				B3451AF718D7D8C700D032F8 /* PageTwoViewController.xib in Resources */,
+				84A93C3D18DEB8E600E214A9 /* BusViewController.xib in Resources */,
 				B3D253DE18D8BA8E0049D016 /* splash4-1.png in Resources */,
 				B3451AC518D7D59D00D032F8 /* InfoPlist.strings in Resources */,
 				B3D253D918D8BA8E0049D016 /* McKeldin.jpg in Resources */,
@@ -423,6 +432,7 @@
 				B36A897518D8E39600CF1BD9 /* EventsViewController.m in Sources */,
 				B36A897F18D8E40100CF1BD9 /* LibraryHoursViewController.m in Sources */,
 				B36A898918D8E42200CF1BD9 /* CouponsViewController.m in Sources */,
+				84A93C3C18DEB8E600E214A9 /* BusViewController.m in Sources */,
 				B36A897018D8E35F00CF1BD9 /* MyScheduleViewController.m in Sources */,
 				B3451AC718D7D59D00D032F8 /* main.m in Sources */,
 				B3451AEC18D7D6F000D032F8 /* RootViewController.m in Sources */,
