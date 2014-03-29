@@ -11,6 +11,8 @@
 		2768329818E723D400D3EE08 /* GPAViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2768329518E723D400D3EE08 /* GPAViewController.m */; };
 		2768329918E723D400D3EE08 /* GPAViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2768329618E723D400D3EE08 /* GPAViewController.xib */; };
 		2768329A18E723D400D3EE08 /* GPAViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2768329618E723D400D3EE08 /* GPAViewController.xib */; };
+		8444C1CD18E7684600CDDE30 /* SelectedLibraryViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8444C1CB18E7684600CDDE30 /* SelectedLibraryViewController.m */; };
+		8444C1CE18E7684600CDDE30 /* SelectedLibraryViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8444C1CC18E7684600CDDE30 /* SelectedLibraryViewController.xib */; };
 		84A93C3C18DEB8E600E214A9 /* BusViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 84A93C3A18DEB8E600E214A9 /* BusViewController.m */; };
 		84A93C3D18DEB8E600E214A9 /* BusViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 84A93C3B18DEB8E600E214A9 /* BusViewController.xib */; };
 		B3451ABB18D7D59D00D032F8 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B3451ABA18D7D59D00D032F8 /* Foundation.framework */; };
@@ -81,6 +83,9 @@
 		2768329418E723D400D3EE08 /* GPAViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GPAViewController.h; sourceTree = "<group>"; };
 		2768329518E723D400D3EE08 /* GPAViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GPAViewController.m; sourceTree = "<group>"; };
 		2768329618E723D400D3EE08 /* GPAViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = GPAViewController.xib; sourceTree = "<group>"; };
+		8444C1CA18E7684600CDDE30 /* SelectedLibraryViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SelectedLibraryViewController.h; sourceTree = "<group>"; };
+		8444C1CB18E7684600CDDE30 /* SelectedLibraryViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SelectedLibraryViewController.m; sourceTree = "<group>"; };
+		8444C1CC18E7684600CDDE30 /* SelectedLibraryViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SelectedLibraryViewController.xib; sourceTree = "<group>"; };
 		84A93C3918DEB8E600E214A9 /* BusViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BusViewController.h; sourceTree = "<group>"; };
 		84A93C3A18DEB8E600E214A9 /* BusViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BusViewController.m; sourceTree = "<group>"; };
 		84A93C3B18DEB8E600E214A9 /* BusViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = BusViewController.xib; sourceTree = "<group>"; };
@@ -234,6 +239,9 @@
 				B36A897C18D8E40100CF1BD9 /* LibraryHoursViewController.h */,
 				B36A897D18D8E40100CF1BD9 /* LibraryHoursViewController.m */,
 				B36A897E18D8E40100CF1BD9 /* LibraryHoursViewController.xib */,
+				8444C1CA18E7684600CDDE30 /* SelectedLibraryViewController.h */,
+				8444C1CB18E7684600CDDE30 /* SelectedLibraryViewController.m */,
+				8444C1CC18E7684600CDDE30 /* SelectedLibraryViewController.xib */,
 				B36A898118D8E40F00CF1BD9 /* BusScheduleViewController.h */,
 				B36A898218D8E40F00CF1BD9 /* BusScheduleViewController.m */,
 				B36A898318D8E40F00CF1BD9 /* BusScheduleViewController.xib */,
@@ -408,6 +416,7 @@
 				B3D253D718D8BA8E0049D016 /* icon.png in Resources */,
 				B3D253D018D8BA8E0049D016 /* coupon_header.png in Resources */,
 				B3D253CA18D8BA8E0049D016 /* Architecture.jpg in Resources */,
+				8444C1CE18E7684600CDDE30 /* SelectedLibraryViewController.xib in Resources */,
 				2768329918E723D400D3EE08 /* GPAViewController.xib in Resources */,
 				B3D253D818D8BA8E0049D016 /* library.png in Resources */,
 				B3D253DC18D8BA8E0049D016 /* splash1.png in Resources */,
@@ -442,6 +451,7 @@
 				B3451AF618D7D8C700D032F8 /* PageTwoViewController.m in Sources */,
 				B3451ACB18D7D59D00D032F8 /* AppDelegate.m in Sources */,
 				2768329718E723D400D3EE08 /* GPAViewController.m in Sources */,
+				8444C1CD18E7684600CDDE30 /* SelectedLibraryViewController.m in Sources */,
 				B36A897518D8E39600CF1BD9 /* EventsViewController.m in Sources */,
 				B36A897F18D8E40100CF1BD9 /* LibraryHoursViewController.m in Sources */,
 				B36A898918D8E42200CF1BD9 /* CouponsViewController.m in Sources */,
