@@ -30,6 +30,7 @@
     IBOutlet UITextField *cred7;
     IBOutlet UITextField *cred8;
     IBOutlet UITextField *cred9;
+    NSDictionary *hashMap;
     double grossGPA;
     double creds;
     double finalGPA;
