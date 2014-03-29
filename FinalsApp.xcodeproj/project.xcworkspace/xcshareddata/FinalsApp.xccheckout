@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDESourceControlProjectFavoriteDictionaryKey</key>
+	<false/>
+	<key>IDESourceControlProjectIdentifier</key>
+	<string>CF13E034-228B-4F43-98A7-EBFC075C6417</string>
+	<key>IDESourceControlProjectName</key>
+	<string>FinalsApp</string>
+	<key>IDESourceControlProjectOriginsDictionary</key>
+	<dict>
+		<key>E85A13F6-01DE-45E7-AF44-A4A6435A0FE4</key>
+		<string>https://github.com/kraftery/FinalsApp</string>
+	</dict>
+	<key>IDESourceControlProjectPath</key>
+	<string>FinalsApp.xcodeproj/project.xcworkspace</string>
+	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
+	<dict>
+		<key>E85A13F6-01DE-45E7-AF44-A4A6435A0FE4</key>
+		<string>../..</string>
+	</dict>
+	<key>IDESourceControlProjectURL</key>
+	<string>https://github.com/kraftery/FinalsApp</string>
+	<key>IDESourceControlProjectVersion</key>
+	<integer>110</integer>
+	<key>IDESourceControlProjectWCCIdentifier</key>
+	<string>E85A13F6-01DE-45E7-AF44-A4A6435A0FE4</string>
+	<key>IDESourceControlProjectWCConfigurations</key>
+	<array>
+		<dict>
+			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
+			<string>public.vcs.git</string>
+			<key>IDESourceControlWCCIdentifierKey</key>
+			<string>E85A13F6-01DE-45E7-AF44-A4A6435A0FE4</string>
+			<key>IDESourceControlWCCName</key>
+			<string>FinalsApp</string>
+		</dict>
+	</array>
+</dict>
+</plist>
