@@ -7,16 +7,9 @@
 //
 
 #import <UIKit/UIKit.h>
-#import "PageOneViewController.h"
-#import "PageTwoViewController.h"
 
-@interface RootViewController : UIViewController <UIPageViewControllerDelegate, UIPageViewControllerDataSource> {
-    
-    NSUInteger index;
-}
+@interface RootViewController : UIViewController
 
-@property (strong, nonatomic) UIPageViewController *pageViewController;
-@property (strong, nonatomic) PageOneViewController *pageOne;
-@property (strong, nonatomic) PageTwoViewController *pageTwo;
-
+@property (weak, nonatomic) IBOutlet UIScrollView *scrollView;
+@property (strong, nonatomic) IBOutlet UIView *myView;
 @end

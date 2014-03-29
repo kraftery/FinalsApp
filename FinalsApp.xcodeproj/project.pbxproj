@@ -27,10 +27,6 @@
 		B3451AE018D7D59D00D032F8 /* FinalsAppTests.m in Sources */ = {isa = PBXBuildFile; fileRef = B3451ADF18D7D59D00D032F8 /* FinalsAppTests.m */; };
 		B3451AEC18D7D6F000D032F8 /* RootViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B3451AEA18D7D6F000D032F8 /* RootViewController.m */; };
 		B3451AED18D7D6F000D032F8 /* RootViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = B3451AEB18D7D6F000D032F8 /* RootViewController.xib */; };
-		B3451AF118D7D8AD00D032F8 /* PageOneViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B3451AEF18D7D8AD00D032F8 /* PageOneViewController.m */; };
-		B3451AF218D7D8AD00D032F8 /* PageOneViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = B3451AF018D7D8AD00D032F8 /* PageOneViewController.xib */; };
-		B3451AF618D7D8C700D032F8 /* PageTwoViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B3451AF418D7D8C700D032F8 /* PageTwoViewController.m */; };
-		B3451AF718D7D8C700D032F8 /* PageTwoViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = B3451AF518D7D8C700D032F8 /* PageTwoViewController.xib */; };
 		B36A897018D8E35F00CF1BD9 /* MyScheduleViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B36A896E18D8E35F00CF1BD9 /* MyScheduleViewController.m */; };
 		B36A897118D8E35F00CF1BD9 /* MyScheduleViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = B36A896F18D8E35F00CF1BD9 /* MyScheduleViewController.xib */; };
 		B36A897518D8E39600CF1BD9 /* EventsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B36A897318D8E39600CF1BD9 /* EventsViewController.m */; };
@@ -65,6 +61,8 @@
 		B3D253DD18D8BA8E0049D016 /* splash3.png in Resources */ = {isa = PBXBuildFile; fileRef = B3D253C718D8BA8E0049D016 /* splash3.png */; };
 		B3D253DE18D8BA8E0049D016 /* splash4-1.png in Resources */ = {isa = PBXBuildFile; fileRef = B3D253C818D8BA8E0049D016 /* splash4-1.png */; };
 		B3D253DF18D8BA8E0049D016 /* splash4.png in Resources */ = {isa = PBXBuildFile; fileRef = B3D253C918D8BA8E0049D016 /* splash4.png */; };
+		B3F1080218E76304002B9479 /* SelectedLibraryViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B3F1080018E76304002B9479 /* SelectedLibraryViewController.m */; };
+		B3F1080318E76304002B9479 /* SelectedLibraryViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = B3F1080118E76304002B9479 /* SelectedLibraryViewController.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -103,12 +101,6 @@
 		B3451AE918D7D6F000D032F8 /* RootViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RootViewController.h; sourceTree = "<group>"; };
 		B3451AEA18D7D6F000D032F8 /* RootViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RootViewController.m; sourceTree = "<group>"; };
 		B3451AEB18D7D6F000D032F8 /* RootViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = RootViewController.xib; sourceTree = "<group>"; };
-		B3451AEE18D7D8AD00D032F8 /* PageOneViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PageOneViewController.h; sourceTree = "<group>"; };
-		B3451AEF18D7D8AD00D032F8 /* PageOneViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PageOneViewController.m; sourceTree = "<group>"; };
-		B3451AF018D7D8AD00D032F8 /* PageOneViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = PageOneViewController.xib; sourceTree = "<group>"; };
-		B3451AF318D7D8C700D032F8 /* PageTwoViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PageTwoViewController.h; sourceTree = "<group>"; };
-		B3451AF418D7D8C700D032F8 /* PageTwoViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PageTwoViewController.m; sourceTree = "<group>"; };
-		B3451AF518D7D8C700D032F8 /* PageTwoViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = PageTwoViewController.xib; sourceTree = "<group>"; };
 		B36A896D18D8E35F00CF1BD9 /* MyScheduleViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MyScheduleViewController.h; sourceTree = "<group>"; };
 		B36A896E18D8E35F00CF1BD9 /* MyScheduleViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MyScheduleViewController.m; sourceTree = "<group>"; };
 		B36A896F18D8E35F00CF1BD9 /* MyScheduleViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MyScheduleViewController.xib; sourceTree = "<group>"; };
@@ -149,6 +141,9 @@
 		B3D253C718D8BA8E0049D016 /* splash3.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = splash3.png; sourceTree = "<group>"; };
 		B3D253C818D8BA8E0049D016 /* splash4-1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "splash4-1.png"; sourceTree = "<group>"; };
 		B3D253C918D8BA8E0049D016 /* splash4.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = splash4.png; sourceTree = "<group>"; };
+		B3F107FF18E76304002B9479 /* SelectedLibraryViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SelectedLibraryViewController.h; sourceTree = "<group>"; };
+		B3F1080018E76304002B9479 /* SelectedLibraryViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SelectedLibraryViewController.m; sourceTree = "<group>"; };
+		B3F1080118E76304002B9479 /* SelectedLibraryViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SelectedLibraryViewController.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -213,12 +208,6 @@
 				B3451AE918D7D6F000D032F8 /* RootViewController.h */,
 				B3451AEA18D7D6F000D032F8 /* RootViewController.m */,
 				B3451AEB18D7D6F000D032F8 /* RootViewController.xib */,
-				B3451AEE18D7D8AD00D032F8 /* PageOneViewController.h */,
-				B3451AEF18D7D8AD00D032F8 /* PageOneViewController.m */,
-				B3451AF018D7D8AD00D032F8 /* PageOneViewController.xib */,
-				B3451AF318D7D8C700D032F8 /* PageTwoViewController.h */,
-				B3451AF418D7D8C700D032F8 /* PageTwoViewController.m */,
-				B3451AF518D7D8C700D032F8 /* PageTwoViewController.xib */,
 				B36A896D18D8E35F00CF1BD9 /* MyScheduleViewController.h */,
 				B36A896E18D8E35F00CF1BD9 /* MyScheduleViewController.m */,
 				B36A896F18D8E35F00CF1BD9 /* MyScheduleViewController.xib */,
@@ -243,6 +232,9 @@
 				B36A898618D8E42200CF1BD9 /* CouponsViewController.h */,
 				B36A898718D8E42200CF1BD9 /* CouponsViewController.m */,
 				B36A898818D8E42200CF1BD9 /* CouponsViewController.xib */,
+				B3F107FF18E76304002B9479 /* SelectedLibraryViewController.h */,
+				B3F1080018E76304002B9479 /* SelectedLibraryViewController.m */,
+				B3F1080118E76304002B9479 /* SelectedLibraryViewController.xib */,
 				B3D253B318D8BA8E0049D016 /* icons */,
 				B3451ACC18D7D59D00D032F8 /* Images.xcassets */,
 				B3451AC118D7D59D00D032F8 /* Supporting Files */,
@@ -389,13 +381,11 @@
 				B36A897B18D8E3CF00CF1BD9 /* GymAndDiningViewController.xib in Resources */,
 				B36A898518D8E40F00CF1BD9 /* BusScheduleViewController.xib in Resources */,
 				B3D253CC18D8BA8E0049D016 /* Blank Coupon iphone 4.jpeg in Resources */,
-				B3451AF218D7D8AD00D032F8 /* PageOneViewController.xib in Resources */,
 				B36A897618D8E39600CF1BD9 /* EventsViewController.xib in Resources */,
 				B36A898A18D8E42200CF1BD9 /* CouponsViewController.xib in Resources */,
 				B3D253CF18D8BA8E0049D016 /* Chemistry.jpg in Resources */,
 				B3D253DA18D8BA8E0049D016 /* party.png in Resources */,
 				B3D253D118D8BA8E0049D016 /* CSPAC.jpg in Resources */,
-				B3451AF718D7D8C700D032F8 /* PageTwoViewController.xib in Resources */,
 				84A93C3D18DEB8E600E214A9 /* BusViewController.xib in Resources */,
 				B3D253DE18D8BA8E0049D016 /* splash4-1.png in Resources */,
 				B3451AC518D7D59D00D032F8 /* InfoPlist.strings in Resources */,
@@ -408,6 +398,7 @@
 				B3D253D718D8BA8E0049D016 /* icon.png in Resources */,
 				B3D253D018D8BA8E0049D016 /* coupon_header.png in Resources */,
 				B3D253CA18D8BA8E0049D016 /* Architecture.jpg in Resources */,
+				B3F1080318E76304002B9479 /* SelectedLibraryViewController.xib in Resources */,
 				2768329918E723D400D3EE08 /* GPAViewController.xib in Resources */,
 				B3D253D818D8BA8E0049D016 /* library.png in Resources */,
 				B3D253DC18D8BA8E0049D016 /* splash1.png in Resources */,
@@ -438,10 +429,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				B36A898418D8E40F00CF1BD9 /* BusScheduleViewController.m in Sources */,
-				B3451AF118D7D8AD00D032F8 /* PageOneViewController.m in Sources */,
-				B3451AF618D7D8C700D032F8 /* PageTwoViewController.m in Sources */,
 				B3451ACB18D7D59D00D032F8 /* AppDelegate.m in Sources */,
 				2768329718E723D400D3EE08 /* GPAViewController.m in Sources */,
+				B3F1080218E76304002B9479 /* SelectedLibraryViewController.m in Sources */,
 				B36A897518D8E39600CF1BD9 /* EventsViewController.m in Sources */,
 				B36A897F18D8E40100CF1BD9 /* LibraryHoursViewController.m in Sources */,
 				B36A898918D8E42200CF1BD9 /* CouponsViewController.m in Sources */,
