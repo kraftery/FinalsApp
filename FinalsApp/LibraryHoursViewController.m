@@ -72,39 +72,45 @@
         //NSArray *arch, *art, *chem, *cspac, *engr, *horn, *mck;
     switch (indexPath.row) {
         case 0:
-            
+            libraryScreen.title = @"Architecture";
             libraryScreen.labelText = @"Architecture";
-            libraryScreen.imageName = @"blah.png";
+            libraryScreen.imageName = @"Architecture.jpg";
             libraryScreen.textViewText = [[NSString alloc] initWithString:[library_hours objectAtIndex:0]];
             break;
         case 1:
+            libraryScreen.title = @"Art";
             libraryScreen.labelText = @"Art";
-            libraryScreen.imageName = @"blah.png";
+            libraryScreen.imageName = @"Art.jpg";
             libraryScreen.textViewText = [[NSString alloc] initWithString:[library_hours objectAtIndex:1]];
             break;
         case 2:
+            libraryScreen.title = @"Chemistry";
             libraryScreen.labelText = @"Chemistry";
-            libraryScreen.imageName = @"blah.png";
+            libraryScreen.imageName = @"Chemistry.jpg";
             libraryScreen.textViewText = [[NSString alloc] initWithString:[library_hours objectAtIndex:2]];
             break;
         case 3:
+            libraryScreen.title = @"CSPAC";
             libraryScreen.labelText = @"CSPAC";
-            libraryScreen.imageName = @"blah.png";
+            libraryScreen.imageName = @"CSPAC.jpg";
             libraryScreen.textViewText = [[NSString alloc] initWithString:[library_hours objectAtIndex:3]];
             break;
         case 4:
+            libraryScreen.title = @"Engineering";
             libraryScreen.labelText = @"Engineering";
-            libraryScreen.imageName = @"blah.png";
+            libraryScreen.imageName = @"Engineering.jpg";
             libraryScreen.textViewText = [[NSString alloc] initWithString:[library_hours objectAtIndex:4]];
             break;
         case 5:
+            libraryScreen.title = @"Hornbake";
             libraryScreen.labelText = @"Hornbake";
-            libraryScreen.imageName = @"blah.png";
+            libraryScreen.imageName = @"Hornbake.jpg";
             libraryScreen.textViewText = [[NSString alloc] initWithString:[library_hours objectAtIndex:5]];
             break;
         case 6:
+            libraryScreen.title = @"McKeldin";
             libraryScreen.labelText = @"McKeldin";
-            libraryScreen.imageName = @"blah.png";
+            libraryScreen.imageName = @"McKeldin.jpg";
             libraryScreen.textViewText = [[NSString alloc] initWithString:[library_hours objectAtIndex:6]];
             break;
             default:
