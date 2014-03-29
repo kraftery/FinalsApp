@@ -1,0 +1,168 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="4514" systemVersion="13A598" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="3747"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="GPAViewController">
+            <connections>
+                <outlet property="calcButton" destination="TdK-Nw-vTW" id="EoA-e9-14P"/>
+                <outlet property="cred1" destination="73Y-f1-jnc" id="Nj7-so-u37"/>
+                <outlet property="cred2" destination="Zpm-DN-6o1" id="cJO-KW-M9t"/>
+                <outlet property="cred3" destination="AeC-rZ-NUS" id="iKB-t8-eAe"/>
+                <outlet property="cred4" destination="o6X-gJ-7Jk" id="J6E-OB-g3h"/>
+                <outlet property="cred5" destination="mef-8f-Cyn" id="JMu-aV-ush"/>
+                <outlet property="cred6" destination="fFg-LW-F8r" id="0XC-x9-9wi"/>
+                <outlet property="cred7" destination="ks4-6T-Xv8" id="9Df-cf-O8g"/>
+                <outlet property="cred8" destination="eXP-Co-lqX" id="9vm-YU-1FP"/>
+                <outlet property="cred9" destination="TP0-lI-2eV" id="ya7-3f-wd1"/>
+                <outlet property="gpaLabel" destination="zt7-t0-gFf" id="ync-JK-dt5"/>
+                <outlet property="grade1" destination="tC0-2N-H6D" id="wz9-O8-sjx"/>
+                <outlet property="grade2" destination="f91-pu-ev5" id="lyt-Rn-Uff"/>
+                <outlet property="grade3" destination="It8-Ll-7ak" id="VRg-dR-Dmy"/>
+                <outlet property="grade4" destination="Aue-S6-fd5" id="xcF-ih-6zH"/>
+                <outlet property="grade5" destination="oim-Mh-lY6" id="wQW-9Z-y8c"/>
+                <outlet property="grade6" destination="Vtl-1p-vZ9" id="CWx-0d-CVq"/>
+                <outlet property="grade7" destination="sxR-I4-QUe" id="lSs-lw-mGe"/>
+                <outlet property="grade8" destination="EMS-Ic-rYX" id="hOm-CL-9K2"/>
+                <outlet property="grade9" destination="ftW-fW-bm8" id="qi1-m6-mKn"/>
+                <outlet property="view" destination="1" id="3"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="1">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="480"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="0.00" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="zt7-t0-gFf">
+                    <rect key="frame" x="20" y="20" width="280" height="45"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                    <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="58"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Credits ( i.e. &quot;3&quot; )" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="73Y-f1-jnc">
+                    <rect key="frame" x="168" y="73" width="132" height="30"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                    <textInputTraits key="textInputTraits" keyboardType="numberPad"/>
+                </textField>
+                <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Grade ( i.e. &quot;4.0&quot; )" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="f91-pu-ev5">
+                    <rect key="frame" x="20" y="111" width="140" height="30"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                    <textInputTraits key="textInputTraits" keyboardType="decimalPad"/>
+                </textField>
+                <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Grade ( i.e. &quot;4.0&quot; )" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="tC0-2N-H6D">
+                    <rect key="frame" x="20" y="73" width="140" height="30"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                    <textInputTraits key="textInputTraits" keyboardType="decimalPad"/>
+                </textField>
+                <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Credits ( i.e. &quot;3&quot; )" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Zpm-DN-6o1">
+                    <rect key="frame" x="168" y="111" width="132" height="30"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                    <textInputTraits key="textInputTraits" keyboardType="numberPad"/>
+                </textField>
+                <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Grade ( i.e. &quot;4.0&quot; )" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="It8-Ll-7ak">
+                    <rect key="frame" x="20" y="149" width="140" height="30"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                    <textInputTraits key="textInputTraits" keyboardType="decimalPad"/>
+                </textField>
+                <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Credits ( i.e. &quot;3&quot; )" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="AeC-rZ-NUS">
+                    <rect key="frame" x="168" y="149" width="132" height="30"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                    <textInputTraits key="textInputTraits" keyboardType="numberPad"/>
+                </textField>
+                <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Grade ( i.e. &quot;4.0&quot; )" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Aue-S6-fd5">
+                    <rect key="frame" x="20" y="187" width="140" height="30"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                    <textInputTraits key="textInputTraits" keyboardType="decimalPad"/>
+                </textField>
+                <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Credits ( i.e. &quot;3&quot; )" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="o6X-gJ-7Jk">
+                    <rect key="frame" x="168" y="187" width="132" height="30"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                    <textInputTraits key="textInputTraits" keyboardType="numberPad"/>
+                </textField>
+                <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Grade ( i.e. &quot;4.0&quot; )" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="oim-Mh-lY6">
+                    <rect key="frame" x="20" y="225" width="140" height="30"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                    <textInputTraits key="textInputTraits" keyboardType="decimalPad"/>
+                </textField>
+                <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Credits ( i.e. &quot;3&quot; )" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="mef-8f-Cyn">
+                    <rect key="frame" x="168" y="225" width="132" height="30"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                    <textInputTraits key="textInputTraits" keyboardType="numberPad"/>
+                </textField>
+                <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Grade ( i.e. &quot;4.0&quot; )" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Vtl-1p-vZ9">
+                    <rect key="frame" x="20" y="263" width="140" height="30"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                    <textInputTraits key="textInputTraits" keyboardType="decimalPad"/>
+                </textField>
+                <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Credits ( i.e. &quot;3&quot; )" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="fFg-LW-F8r">
+                    <rect key="frame" x="168" y="263" width="132" height="30"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                    <textInputTraits key="textInputTraits" keyboardType="numberPad"/>
+                </textField>
+                <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Grade ( i.e. &quot;4.0&quot; )" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="sxR-I4-QUe">
+                    <rect key="frame" x="20" y="301" width="140" height="30"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                    <textInputTraits key="textInputTraits" keyboardType="decimalPad"/>
+                </textField>
+                <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Credits ( i.e. &quot;3&quot; )" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="ks4-6T-Xv8">
+                    <rect key="frame" x="168" y="301" width="132" height="30"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                    <textInputTraits key="textInputTraits" keyboardType="numberPad"/>
+                </textField>
+                <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Grade ( i.e. &quot;4.0&quot; )" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="EMS-Ic-rYX">
+                    <rect key="frame" x="20" y="339" width="140" height="30"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                    <textInputTraits key="textInputTraits" keyboardType="decimalPad"/>
+                </textField>
+                <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Credits ( i.e. &quot;3&quot; )" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="eXP-Co-lqX">
+                    <rect key="frame" x="168" y="339" width="132" height="30"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                    <textInputTraits key="textInputTraits" keyboardType="numberPad"/>
+                </textField>
+                <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Grade ( i.e. &quot;4.0&quot; )" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="ftW-fW-bm8">
+                    <rect key="frame" x="20" y="377" width="140" height="30"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                    <textInputTraits key="textInputTraits" keyboardType="decimalPad"/>
+                </textField>
+                <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Credits ( i.e. &quot;3&quot; )" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="TP0-lI-2eV">
+                    <rect key="frame" x="168" y="377" width="132" height="30"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                    <textInputTraits key="textInputTraits" keyboardType="numberPad"/>
+                </textField>
+                <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="TdK-Nw-vTW">
+                    <rect key="frame" x="20" y="415" width="280" height="45"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="34"/>
+                    <state key="normal" title="Calculate!">
+                        <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                    </state>
+                    <connections>
+                        <action selector="calculate:" destination="-1" eventType="touchUpInside" id="Hr3-Sh-qkk"/>
+                    </connections>
+                </button>
+            </subviews>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+            <simulatedStatusBarMetrics key="simulatedStatusBarMetrics"/>
+            <simulatedScreenMetrics key="simulatedDestinationMetrics"/>
+        </view>
+    </objects>
+</document>
