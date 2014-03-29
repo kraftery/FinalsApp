@@ -8,10 +8,10 @@
 
 #import <UIKit/UIKit.h>
 
-@interface LibraryHoursViewController : UIViewController<UITableViewDelegate, UITableViewDataSource>{
+@interface LibraryHoursViewController : UIViewController<UITableViewDelegate, UITableViewDataSource, NSURLConnectionDelegate>{
     IBOutlet UITableView *myTableView;
-    NSArray *library;
-    
+    NSArray *library, *output;
+    NSMutableData *responseData;
+    NSMutableArray *library_hours;
 }
-
 @end
