@@ -72,7 +72,7 @@
         }
     }
     
-    current_cell.backgroundColor = [UIColor clearColor];
+    current_cell.backgroundColor = [UIColor yellowColor];
     current_cell.textLabel.text = [buses objectAtIndex:indexPath.row];
     
     return current_cell;
