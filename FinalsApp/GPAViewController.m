@@ -27,9 +27,7 @@
 {
     [super viewDidLoad];
     // Do any additional setup after loading the view from its nib.
-    finalGPA = 0.00;
-    creds = 0.00;
-    grossGPA = 0.00;
+
     UITapGestureRecognizer *gestureRecognizer = [[UITapGestureRecognizer alloc] initWithTarget:self action:@selector(hideKeyboard)];
     [self.view addGestureRecognizer:gestureRecognizer];
 }
@@ -63,6 +61,11 @@
 }
 
 - (IBAction)calculate:(id)sender {
+    
+    finalGPA = 0.00;
+    creds = 0.00;
+    grossGPA = 0.00;
+    
     if (grade1.text != nil && cred1.text != nil) {
         
         double c1 = cred1.text.doubleValue;
@@ -127,10 +130,25 @@
         
     }
     
-    finalGPA = grossGPA/creds;
+    if (creds > 0) {
+        finalGPA = grossGPA/creds;
+    }
+    
     NSNumber *gpa = [NSNumber numberWithDouble:finalGPA];
-    NSString *display = [gpa stringValue];
+    
+    NSNumberFormatter *formatter = [[NSNumberFormatter alloc] init];
+    
+    [formatter setNumberStyle:NSNumberFormatterDecimalStyle];
+    
+    [formatter setMaximumFractionDigits:2];
+    [formatter setMinimumFractionDigits:2];
+    
+    [formatter setRoundingMode: NSNumberFormatterRoundUp];
+    
+    NSString *display = [formatter stringFromNumber:gpa];
+    
     gpaLabel.text = display;
+
     
 }
 @end
