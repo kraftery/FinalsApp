@@ -13,7 +13,7 @@
 @end
 
 @implementation CouponsViewController
-
+@synthesize imageView;
 
 - (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil
 {
