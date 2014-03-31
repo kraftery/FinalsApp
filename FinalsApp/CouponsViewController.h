@@ -8,6 +8,8 @@
 
 #import <UIKit/UIKit.h>
 
-@interface CouponsViewController : UIViewController
+@interface CouponsViewController : UIViewController{
+    UIImageView *imageView;
+}
 
 @end
