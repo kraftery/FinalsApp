@@ -30,6 +30,21 @@
 
     UITapGestureRecognizer *gestureRecognizer = [[UITapGestureRecognizer alloc] initWithTarget:self action:@selector(hideKeyboard)];
     [self.view addGestureRecognizer:gestureRecognizer];
+    
+    hashMap = @{@"A+": [NSNumber numberWithDouble:4.0],
+                @"A": [NSNumber numberWithDouble:4.0],
+                @"A-": [NSNumber numberWithDouble:3.7],
+                @"B+": [NSNumber numberWithDouble:3.3],
+                @"B": [NSNumber numberWithDouble:3.0],
+                @"B-": [NSNumber numberWithDouble:2.7],
+                @"C+": [NSNumber numberWithDouble:2.3],
+                @"C": [NSNumber numberWithDouble:2.0],
+                @"C-": [NSNumber numberWithDouble:1.7],
+                @"D+": [NSNumber numberWithDouble:1.3],
+                @"D": [NSNumber numberWithDouble:1.0],
+                @"D-": [NSNumber numberWithDouble:0.7],
+                @"F": [NSNumber numberWithDouble:0.0],
+                };
 }
 
 - (void) hideKeyboard {
@@ -70,63 +85,72 @@
         
         double c1 = cred1.text.doubleValue;
         creds = creds + c1;
-        grossGPA = grossGPA + (grade1.text.doubleValue)*c1;
+        NSDecimalNumber *grade = hashMap[grade1.text.capitalizedString];
+        grossGPA = grossGPA + (grade.doubleValue)*c1;
         
     }
     if (grade2.text != nil && cred2.text != nil) {
         
         double c2 = cred2.text.doubleValue;
         creds = creds + c2;
-        grossGPA = grossGPA + (grade2.text.doubleValue)*c2;
+        NSDecimalNumber *grade = hashMap[grade2.text.capitalizedString];
+        grossGPA = grossGPA + (grade.doubleValue)*c2;
         
     }
     if (grade3.text != nil && cred3.text != nil) {
         
         double c3 = cred3.text.doubleValue;
         creds = creds + c3;
-        grossGPA = grossGPA + (grade3.text.doubleValue)*c3;
+        NSDecimalNumber *grade = hashMap[grade3.text.capitalizedString];
+        grossGPA = grossGPA + (grade.doubleValue)*c3;
         
     }
     if (grade4.text != nil && cred4.text != nil) {
         
         double c4 = cred4.text.doubleValue;
         creds = creds + c4;
-        grossGPA = grossGPA + (grade4.text.doubleValue)*c4;
+        NSDecimalNumber *grade = hashMap[grade4.text.capitalizedString];
+        grossGPA = grossGPA + (grade.doubleValue)*c4;
         
     }
     if (grade5.text != nil && cred5.text != nil) {
         
         double c5 = cred5.text.doubleValue;
         creds = creds + c5;
-        grossGPA = grossGPA + (grade5.text.doubleValue)*c5;
+        NSDecimalNumber *grade = hashMap[grade5.text.capitalizedString];
+        grossGPA = grossGPA + (grade.doubleValue)*c5;
         
     }
     if (grade6.text != nil && cred6.text != nil) {
         
         double c6 = cred6.text.doubleValue;
         creds = creds + c6;
-        grossGPA = grossGPA + (grade6.text.doubleValue)*c6;
+        NSDecimalNumber *grade = hashMap[grade6.text.capitalizedString];
+        grossGPA = grossGPA + (grade.doubleValue)*c6;
         
     }
     if (grade7.text != nil && cred7.text != nil) {
         
         double c7 = cred7.text.doubleValue;
         creds = creds + c7;
-        grossGPA = grossGPA + (grade7.text.doubleValue)*c7;
+        NSDecimalNumber *grade = hashMap[grade7.text.capitalizedString];
+        grossGPA = grossGPA + (grade.doubleValue)*c7;
         
     }
     if (grade8.text != nil && cred8.text != nil) {
         
         double c8 = cred8.text.doubleValue;
         creds = creds + c8;
-        grossGPA = grossGPA + (grade8.text.doubleValue)*c8;
+        NSDecimalNumber *grade = hashMap[grade8.text.capitalizedString];
+        grossGPA = grossGPA + (grade.doubleValue)*c8;
         
     }
-    if (grade8.text != nil & cred9.text != nil) {
+    if (grade9.text != nil & cred9.text != nil) {
         
         double c9 = cred9.text.doubleValue;
         creds = creds + c9;
-        grossGPA = grossGPA + (grade8.text.doubleValue)*c9;
+        NSDecimalNumber *grade = hashMap[grade9.text.capitalizedString];
+        grossGPA = grossGPA + (grade.doubleValue)*c9;
         
     }
     
