@@ -13,6 +13,7 @@
 @end
 
 @implementation EventsViewController
+@synthesize label, labelText, textView, textViewText;
 
 - (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil
 {

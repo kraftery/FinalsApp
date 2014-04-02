@@ -8,7 +8,7 @@
 
 #import "PageOneViewController.h"
 #import "MyScheduleViewController.h"
-#import "EventsViewController.h"
+#import "EventActualViewController.h"
 #import "GymAndDiningViewController.h"
 #import "LibraryHoursViewController.h"
 #import "BusScheduleViewController.h"
@@ -50,7 +50,7 @@
 
 - (IBAction)eventButton:(id)sender {
     
-    EventsViewController *viewController = [[EventsViewController alloc] init];
+    EventActualViewController *viewController = [[EventActualViewController alloc] init];
     [[self navigationController] pushViewController:viewController animated:YES];
 }
 
