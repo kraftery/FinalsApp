@@ -8,8 +8,11 @@
 
 #import <UIKit/UIKit.h>
 
-@interface MyScheduleViewController : UIViewController{
-UIBarButtonItem *add;
+@interface MyScheduleViewController : UIViewController<NSURLConnectionDelegate>{
+    UIBarButtonItem *add;
+    NSMutableData *responseData, *finalData;
+    NSMutableArray *myExams;
+    IBOutlet UITableView *myTableView;
 }
 
 -(void) addButtonClick;

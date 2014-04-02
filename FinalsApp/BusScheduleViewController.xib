@@ -6,7 +6,7 @@
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="BusScheduleViewController">
             <connections>
-                <outlet property="myTableView" destination="Ddz-am-8k6" id="tST-L8-Hsu"/>
+                <outlet property="myTableView" destination="Ddz-am-8k6" id="JfI-Hc-KSc"/>
                 <outlet property="view" destination="1" id="3"/>
             </connections>
         </placeholder>
@@ -27,7 +27,7 @@
                     </connections>
                 </tableView>
             </subviews>
-            <color key="backgroundColor" red="1" green="0.7949089478708482" blue="0.08193257899967743" alpha="1" colorSpace="calibratedRGB"/>
+            <color key="backgroundColor" red="1" green="0.83544395390000004" blue="0.04381480804" alpha="1" colorSpace="calibratedRGB"/>
             <simulatedStatusBarMetrics key="simulatedStatusBarMetrics"/>
             <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina4"/>
         </view>
