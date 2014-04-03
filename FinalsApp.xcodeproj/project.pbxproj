@@ -15,6 +15,8 @@
 		8444C1CE18E7684600CDDE30 /* SelectedLibraryViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8444C1CC18E7684600CDDE30 /* SelectedLibraryViewController.xib */; };
 		847997C918EBC7B9008903C4 /* EventActualViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 847997C718EBC7B8008903C4 /* EventActualViewController.m */; };
 		847997CA18EBC7B9008903C4 /* EventActualViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 847997C818EBC7B8008903C4 /* EventActualViewController.xib */; };
+		847997CE18EDB361008903C4 /* CouponListViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 847997CC18EDB361008903C4 /* CouponListViewController.m */; };
+		847997CF18EDB361008903C4 /* CouponListViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 847997CD18EDB361008903C4 /* CouponListViewController.xib */; };
 		84A93C3C18DEB8E600E214A9 /* BusViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 84A93C3A18DEB8E600E214A9 /* BusViewController.m */; };
 		84A93C3D18DEB8E600E214A9 /* BusViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 84A93C3B18DEB8E600E214A9 /* BusViewController.xib */; };
 		B3451ABB18D7D59D00D032F8 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B3451ABA18D7D59D00D032F8 /* Foundation.framework */; };
@@ -91,6 +93,9 @@
 		847997C618EBC7B8008903C4 /* EventActualViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EventActualViewController.h; sourceTree = "<group>"; };
 		847997C718EBC7B8008903C4 /* EventActualViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EventActualViewController.m; sourceTree = "<group>"; };
 		847997C818EBC7B8008903C4 /* EventActualViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = EventActualViewController.xib; sourceTree = "<group>"; };
+		847997CB18EDB361008903C4 /* CouponListViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CouponListViewController.h; sourceTree = "<group>"; };
+		847997CC18EDB361008903C4 /* CouponListViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CouponListViewController.m; sourceTree = "<group>"; };
+		847997CD18EDB361008903C4 /* CouponListViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CouponListViewController.xib; sourceTree = "<group>"; };
 		84A93C3918DEB8E600E214A9 /* BusViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BusViewController.h; sourceTree = "<group>"; };
 		84A93C3A18DEB8E600E214A9 /* BusViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BusViewController.m; sourceTree = "<group>"; };
 		84A93C3B18DEB8E600E214A9 /* BusViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = BusViewController.xib; sourceTree = "<group>"; };
@@ -259,6 +264,9 @@
 				B36A898618D8E42200CF1BD9 /* CouponsViewController.h */,
 				B36A898718D8E42200CF1BD9 /* CouponsViewController.m */,
 				B36A898818D8E42200CF1BD9 /* CouponsViewController.xib */,
+				847997CB18EDB361008903C4 /* CouponListViewController.h */,
+				847997CC18EDB361008903C4 /* CouponListViewController.m */,
+				847997CD18EDB361008903C4 /* CouponListViewController.xib */,
 				B3D253B318D8BA8E0049D016 /* icons */,
 				B3451ACC18D7D59D00D032F8 /* Images.xcassets */,
 				B3451AC118D7D59D00D032F8 /* Supporting Files */,
@@ -427,6 +435,7 @@
 				B3D253CA18D8BA8E0049D016 /* Architecture.jpg in Resources */,
 				8444C1CE18E7684600CDDE30 /* SelectedLibraryViewController.xib in Resources */,
 				2768329918E723D400D3EE08 /* GPAViewController.xib in Resources */,
+				847997CF18EDB361008903C4 /* CouponListViewController.xib in Resources */,
 				B3D253D818D8BA8E0049D016 /* library.png in Resources */,
 				B3D253DC18D8BA8E0049D016 /* splash1.png in Resources */,
 				B3D253D318D8BA8E0049D016 /* food.png in Resources */,
@@ -459,6 +468,7 @@
 				847997C918EBC7B9008903C4 /* EventActualViewController.m in Sources */,
 				B3451AF118D7D8AD00D032F8 /* PageOneViewController.m in Sources */,
 				B3451AF618D7D8C700D032F8 /* PageTwoViewController.m in Sources */,
+				847997CE18EDB361008903C4 /* CouponListViewController.m in Sources */,
 				B3451ACB18D7D59D00D032F8 /* AppDelegate.m in Sources */,
 				2768329718E723D400D3EE08 /* GPAViewController.m in Sources */,
 				8444C1CD18E7684600CDDE30 /* SelectedLibraryViewController.m in Sources */,
