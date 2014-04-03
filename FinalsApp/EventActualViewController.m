@@ -30,6 +30,8 @@
     // Do any additional setup after loading the view from its nib.
     self.title = @"Events";
     days = [[NSArray alloc] initWithObjects:@"Sunday, December 15", @"Monday, December 16", @"Tuesday, December 17", @"Wednesday, December 18", @"Thursday, December 19", @"Friday, December 20", nil];
+    //myTableView.tableFooterView = [[UIView alloc] initWithFrame:CGRectZero];//makes the tableview only display
+    myTableView.backgroundColor = [UIColor clearColor];
 }
 
 -(NSInteger) tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section{
