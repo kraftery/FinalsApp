@@ -7,16 +7,18 @@
 //
 
 #import <UIKit/UIKit.h>
-#import "PageOneViewController.h"
-#import "PageTwoViewController.h"
 
-@interface RootViewController : UIViewController <UIPageViewControllerDelegate, UIPageViewControllerDataSource> {
-    
-    NSUInteger index;
-}
 
-@property (strong, nonatomic) UIPageViewController *pageViewController;
-@property (strong, nonatomic) PageOneViewController *pageOne;
-@property (strong, nonatomic) PageTwoViewController *pageTwo;
+@interface RootViewController : UIViewController
+
+@property (weak, nonatomic) IBOutlet UIScrollView *scrollView;
+@property (strong, nonatomic) IBOutlet UIView *myView;
+
+- (IBAction)scheduleButton:(id)sender;
+- (IBAction)eventsButton:(id)sender;
+- (IBAction)hoursButton:(id)sender;
+- (IBAction)librariesButton:(id)sender;
+- (IBAction)busScheduleButton:(id)sender;
+- (IBAction)couponsButton:(id)sender;
 
 @end
