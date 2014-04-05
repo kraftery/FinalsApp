@@ -12,4 +12,12 @@
 
 @property (weak, nonatomic) IBOutlet UIScrollView *scrollView;
 @property (strong, nonatomic) IBOutlet UIView *myView;
+
+- (IBAction)scheduleButton:(id)sender;
+- (IBAction)eventsButton:(id)sender;
+- (IBAction)hoursButton:(id)sender;
+- (IBAction)librariesButton:(id)sender;
+- (IBAction)busScheduleButton:(id)sender;
+- (IBAction)couponsButton:(id)sender;
+
 @end
