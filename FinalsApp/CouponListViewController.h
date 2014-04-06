@@ -8,6 +8,11 @@
 
 #import <UIKit/UIKit.h>
 
-@interface CouponListViewController : UIViewController
+@interface CouponListViewController : UIViewController<UITableViewDelegate, UITableViewDataSource>{
+    NSArray *restaurants;
+    IBOutlet UIImageView *couponHeader;
+}
+
+@property (strong, nonatomic) IBOutlet UITableView *myTableView;
 
 @end

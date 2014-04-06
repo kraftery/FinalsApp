@@ -13,6 +13,7 @@
 #import "LibraryHoursViewController.h"
 #import "BusScheduleViewController.h"
 #import "CouponsViewController.h"
+#import "CouponListViewController.h"
 
 @interface PageOneViewController ()
 
@@ -74,7 +75,7 @@
 
 - (IBAction)couponButton:(id)sender {
     
-    CouponsViewController *viewController = [[CouponsViewController alloc] init];
+    CouponListViewController *viewController = [[CouponListViewController alloc] init];
     [[self navigationController] pushViewController:viewController animated:YES];
 }
 @end
