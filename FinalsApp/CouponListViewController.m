@@ -33,6 +33,7 @@
     restaurants = [[NSArray alloc] initWithObjects:@"First",@"Second",
                    nil];
     myTableView.backgroundColor = [UIColor clearColor];
+    //I'm just trying something
     
 }
 
