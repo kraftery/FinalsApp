@@ -7,15 +7,19 @@
 //
 
 #import "RootViewController.h"
-#import "PageOneViewController.h"
-#import "PageTwoViewController.h"
+#import "MyScheduleViewController.h"
+#import "EventsViewController.h"
+#import "GymAndDiningViewController.h"
+#import "LibraryHoursViewController.h"
+#import "BusScheduleViewController.h"
+#import "CouponsViewController.h"
+
 
 @interface RootViewController ()
 @end
 
 @implementation RootViewController
 
-@synthesize pageOne, pageTwo;
 
 - (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil
 {
@@ -30,30 +34,10 @@
 {
     [super viewDidLoad];
     
-    index = 0;
-    pageOne = [[PageOneViewController alloc] init];
-    pageTwo = [[PageTwoViewController alloc] init];
-
-    // Configure the page view controller and add it as a child view controller.
-    self.pageViewController = [[UIPageViewController alloc] initWithTransitionStyle:UIPageViewControllerTransitionStyleScroll navigationOrientation:UIPageViewControllerNavigationOrientationHorizontal options:nil];
-    self.pageViewController.delegate = self;
+    self.scrollView.contentSize = self.myView.bounds.size;
+    [self.scrollView addSubview:self.myView];
+    [self.scrollView flashScrollIndicators];
     
-    NSArray *viewControllers = @[pageOne];
-    [self.pageViewController setViewControllers:viewControllers direction:UIPageViewControllerNavigationDirectionForward animated:NO completion:nil];
-    
-    self.pageViewController.dataSource = self;
-    
-    [self addChildViewController:self.pageViewController];
-    [self.view addSubview:self.pageViewController.view];
-    
-    // Set the page view controller's bounds using an inset rect so that self's view is visible around the edges of the pages.
-    CGRect pageViewRect = self.view.bounds;
-    self.pageViewController.view.frame = pageViewRect;
-    
-    [self.pageViewController didMoveToParentViewController:self];
-    
-    // Add the page view controller's gesture recognizers to the root view controller's view so that the gestures are started more easily.
-    self.view.gestureRecognizers = self.pageViewController.gestureRecognizers;
 }
 
 - (void)didReceiveMemoryWarning
@@ -62,28 +46,41 @@
     // Dispose of any resources that can be recreated.
 }
 
-#pragma mark - Page View Controller Data Source
 
-- (UIViewController *)pageViewController:(UIPageViewController *)pageViewController viewControllerBeforeViewController:(UIViewController *)viewController
-{
-    if (index == 0) {
-        return nil;
-    }
-    else {
-        return pageOne;
-    }
+- (IBAction)scheduleButton:(id)sender {
+    
+    MyScheduleViewController *viewController = [[MyScheduleViewController alloc] init];
+    [[self navigationController] pushViewController:viewController animated:YES];
 }
 
-- (UIViewController *)pageViewController:(UIPageViewController *)pageViewController viewControllerAfterViewController:(UIViewController *)viewController
-{
-    if (index == 0) {
-        index = 1;
-        return pageTwo;
-    }
-    else {
-        index = 0;
-        return nil;
-    }
+- (IBAction)eventsButton:(id)sender {
+    
+    EventsViewController *viewController = [[EventsViewController alloc] init];
+    [[self navigationController] pushViewController:viewController animated:YES];
+}
+
+- (IBAction)hoursButton:(id)sender {
+    
+    GymAndDiningViewController *viewController = [[GymAndDiningViewController alloc] init];
+    [[self navigationController] pushViewController:viewController animated:YES];
+}
+
+- (IBAction)librariesButton:(id)sender {
+    
+    LibraryHoursViewController *viewController = [[LibraryHoursViewController alloc] init];
+    [[self navigationController] pushViewController:viewController animated:YES];
+}
+
+- (IBAction)busScheduleButton:(id)sender {
+    
+    BusScheduleViewController *viewController = [[BusScheduleViewController alloc] init];
+    [[self navigationController] pushViewController:viewController animated:YES];
+}
+
+- (IBAction)couponsButton:(id)sender {
+    
+    CouponsViewController *viewController = [[CouponsViewController alloc] init];
+    [[self navigationController] pushViewController:viewController animated:YES];
 }
 
 @end
