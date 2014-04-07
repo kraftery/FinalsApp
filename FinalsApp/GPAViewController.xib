@@ -1,12 +1,11 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="5053" systemVersion="13C64" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="4510" systemVersion="13C64" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES">
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="3733"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="3742"/>
     </dependencies>
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="GPAViewController">
             <connections>
-                <outlet property="calcButton" destination="TdK-Nw-vTW" id="EoA-e9-14P"/>
                 <outlet property="cred1" destination="73Y-f1-jnc" id="Nj7-so-u37"/>
                 <outlet property="cred2" destination="Zpm-DN-6o1" id="cJO-KW-M9t"/>
                 <outlet property="cred3" destination="AeC-rZ-NUS" id="iKB-t8-eAe"/>

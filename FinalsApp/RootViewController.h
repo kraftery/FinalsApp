@@ -20,5 +20,12 @@
 - (IBAction)librariesButton:(id)sender;
 - (IBAction)busScheduleButton:(id)sender;
 - (IBAction)couponsButton:(id)sender;
+- (IBAction)timeButton:(id)sender;
+- (IBAction)gpaButton:(id)sender;
+- (IBAction)stressReliefButton:(id)sender;
+- (IBAction)testudoButton:(id)sender;
+- (IBAction)quoteButton:(id)sender;
+- (IBAction)aboutButton:(id)sender;
+
 
 @end
