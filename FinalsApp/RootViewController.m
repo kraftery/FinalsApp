@@ -9,10 +9,11 @@
 #import "RootViewController.h"
 #import "MyScheduleViewController.h"
 #import "EventsViewController.h"
-#import "GymAndDiningViewController.h"
 #import "LibraryHoursViewController.h"
 #import "BusScheduleViewController.h"
 #import "CouponsViewController.h"
+#import "GymViewController.h"
+#import "DiningViewController.h"
 
 
 @interface RootViewController ()
@@ -61,8 +62,12 @@
 
 - (IBAction)hoursButton:(id)sender {
     
-    GymAndDiningViewController *viewController = [[GymAndDiningViewController alloc] init];
-    [[self navigationController] pushViewController:viewController animated:YES];
+    GymViewController *gym = [[GymViewController alloc] init];
+    DiningViewController *dining = [[DiningViewController alloc] init];
+    
+    UITabBarController *tabController = [[UITabBarController alloc] init];
+    [tabController setViewControllers:[NSArray arrayWithObjects: gym, dining, nil]];
+    [[self navigationController] pushViewController:tabController animated:YES];
 }
 
 - (IBAction)librariesButton:(id)sender {
