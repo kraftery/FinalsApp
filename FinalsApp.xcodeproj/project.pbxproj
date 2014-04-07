@@ -43,6 +43,18 @@
 		B36A898518D8E40F00CF1BD9 /* BusScheduleViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = B36A898318D8E40F00CF1BD9 /* BusScheduleViewController.xib */; };
 		B36A898918D8E42200CF1BD9 /* CouponsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B36A898718D8E42200CF1BD9 /* CouponsViewController.m */; };
 		B36A898A18D8E42200CF1BD9 /* CouponsViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = B36A898818D8E42200CF1BD9 /* CouponsViewController.xib */; };
+		B36D0AA118F2FDAB005D39BD /* TimeManagementViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B36D0A9F18F2FDAB005D39BD /* TimeManagementViewController.m */; };
+		B36D0AA218F2FDAB005D39BD /* TimeManagementViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = B36D0AA018F2FDAB005D39BD /* TimeManagementViewController.xib */; };
+		B36D0AA618F2FDE3005D39BD /* StressReliefViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B36D0AA418F2FDE3005D39BD /* StressReliefViewController.m */; };
+		B36D0AA718F2FDE3005D39BD /* StressReliefViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = B36D0AA518F2FDE3005D39BD /* StressReliefViewController.xib */; };
+		B36D0AAB18F2FDFA005D39BD /* PicturesOfPAndKViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B36D0AA918F2FDFA005D39BD /* PicturesOfPAndKViewController.m */; };
+		B36D0AAC18F2FDFA005D39BD /* PicturesOfPAndKViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = B36D0AAA18F2FDFA005D39BD /* PicturesOfPAndKViewController.xib */; };
+		B36D0AB018F2FE1A005D39BD /* TestudoOfferingViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B36D0AAE18F2FE1A005D39BD /* TestudoOfferingViewController.m */; };
+		B36D0AB118F2FE1A005D39BD /* TestudoOfferingViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = B36D0AAF18F2FE1A005D39BD /* TestudoOfferingViewController.xib */; };
+		B36D0AB518F2FE30005D39BD /* QuoteViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B36D0AB318F2FE30005D39BD /* QuoteViewController.m */; };
+		B36D0AB618F2FE30005D39BD /* QuoteViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = B36D0AB418F2FE30005D39BD /* QuoteViewController.xib */; };
+		B36D0ABA18F2FE3B005D39BD /* AboutViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B36D0AB818F2FE3B005D39BD /* AboutViewController.m */; };
+		B36D0ABB18F2FE3B005D39BD /* AboutViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = B36D0AB918F2FE3B005D39BD /* AboutViewController.xib */; };
 		B3D253CA18D8BA8E0049D016 /* Architecture.jpg in Resources */ = {isa = PBXBuildFile; fileRef = B3D253B418D8BA8E0049D016 /* Architecture.jpg */; };
 		B3D253CB18D8BA8E0049D016 /* Art.jpg in Resources */ = {isa = PBXBuildFile; fileRef = B3D253B518D8BA8E0049D016 /* Art.jpg */; };
 		B3D253CC18D8BA8E0049D016 /* Blank Coupon iphone 4.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = B3D253B618D8BA8E0049D016 /* Blank Coupon iphone 4.jpeg */; };
@@ -131,6 +143,24 @@
 		B36A898618D8E42200CF1BD9 /* CouponsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CouponsViewController.h; sourceTree = "<group>"; };
 		B36A898718D8E42200CF1BD9 /* CouponsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CouponsViewController.m; sourceTree = "<group>"; };
 		B36A898818D8E42200CF1BD9 /* CouponsViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CouponsViewController.xib; sourceTree = "<group>"; };
+		B36D0A9E18F2FDAB005D39BD /* TimeManagementViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TimeManagementViewController.h; sourceTree = "<group>"; };
+		B36D0A9F18F2FDAB005D39BD /* TimeManagementViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TimeManagementViewController.m; sourceTree = "<group>"; };
+		B36D0AA018F2FDAB005D39BD /* TimeManagementViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = TimeManagementViewController.xib; sourceTree = "<group>"; };
+		B36D0AA318F2FDE3005D39BD /* StressReliefViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = StressReliefViewController.h; sourceTree = "<group>"; };
+		B36D0AA418F2FDE3005D39BD /* StressReliefViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = StressReliefViewController.m; sourceTree = "<group>"; };
+		B36D0AA518F2FDE3005D39BD /* StressReliefViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = StressReliefViewController.xib; sourceTree = "<group>"; };
+		B36D0AA818F2FDFA005D39BD /* PicturesOfPAndKViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PicturesOfPAndKViewController.h; sourceTree = "<group>"; };
+		B36D0AA918F2FDFA005D39BD /* PicturesOfPAndKViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PicturesOfPAndKViewController.m; sourceTree = "<group>"; };
+		B36D0AAA18F2FDFA005D39BD /* PicturesOfPAndKViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = PicturesOfPAndKViewController.xib; sourceTree = "<group>"; };
+		B36D0AAD18F2FE1A005D39BD /* TestudoOfferingViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TestudoOfferingViewController.h; sourceTree = "<group>"; };
+		B36D0AAE18F2FE1A005D39BD /* TestudoOfferingViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TestudoOfferingViewController.m; sourceTree = "<group>"; };
+		B36D0AAF18F2FE1A005D39BD /* TestudoOfferingViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = TestudoOfferingViewController.xib; sourceTree = "<group>"; };
+		B36D0AB218F2FE30005D39BD /* QuoteViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = QuoteViewController.h; sourceTree = "<group>"; };
+		B36D0AB318F2FE30005D39BD /* QuoteViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = QuoteViewController.m; sourceTree = "<group>"; };
+		B36D0AB418F2FE30005D39BD /* QuoteViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = QuoteViewController.xib; sourceTree = "<group>"; };
+		B36D0AB718F2FE3B005D39BD /* AboutViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AboutViewController.h; sourceTree = "<group>"; };
+		B36D0AB818F2FE3B005D39BD /* AboutViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AboutViewController.m; sourceTree = "<group>"; };
+		B36D0AB918F2FE3B005D39BD /* AboutViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = AboutViewController.xib; sourceTree = "<group>"; };
 		B3D253B418D8BA8E0049D016 /* Architecture.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = Architecture.jpg; sourceTree = "<group>"; };
 		B3D253B518D8BA8E0049D016 /* Art.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = Art.jpg; sourceTree = "<group>"; };
 		B3D253B618D8BA8E0049D016 /* Blank Coupon iphone 4.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "Blank Coupon iphone 4.jpeg"; sourceTree = "<group>"; };
@@ -259,6 +289,24 @@
 				847997CB18EDB361008903C4 /* CouponListViewController.h */,
 				847997CC18EDB361008903C4 /* CouponListViewController.m */,
 				847997CD18EDB361008903C4 /* CouponListViewController.xib */,
+				B36D0A9E18F2FDAB005D39BD /* TimeManagementViewController.h */,
+				B36D0A9F18F2FDAB005D39BD /* TimeManagementViewController.m */,
+				B36D0AA018F2FDAB005D39BD /* TimeManagementViewController.xib */,
+				B36D0AA318F2FDE3005D39BD /* StressReliefViewController.h */,
+				B36D0AA418F2FDE3005D39BD /* StressReliefViewController.m */,
+				B36D0AA518F2FDE3005D39BD /* StressReliefViewController.xib */,
+				B36D0AA818F2FDFA005D39BD /* PicturesOfPAndKViewController.h */,
+				B36D0AA918F2FDFA005D39BD /* PicturesOfPAndKViewController.m */,
+				B36D0AAA18F2FDFA005D39BD /* PicturesOfPAndKViewController.xib */,
+				B36D0AAD18F2FE1A005D39BD /* TestudoOfferingViewController.h */,
+				B36D0AAE18F2FE1A005D39BD /* TestudoOfferingViewController.m */,
+				B36D0AAF18F2FE1A005D39BD /* TestudoOfferingViewController.xib */,
+				B36D0AB218F2FE30005D39BD /* QuoteViewController.h */,
+				B36D0AB318F2FE30005D39BD /* QuoteViewController.m */,
+				B36D0AB418F2FE30005D39BD /* QuoteViewController.xib */,
+				B36D0AB718F2FE3B005D39BD /* AboutViewController.h */,
+				B36D0AB818F2FE3B005D39BD /* AboutViewController.m */,
+				B36D0AB918F2FE3B005D39BD /* AboutViewController.xib */,
 				B3D253B318D8BA8E0049D016 /* icons */,
 				B3451ACC18D7D59D00D032F8 /* Images.xcassets */,
 				B3451AC118D7D59D00D032F8 /* Supporting Files */,
@@ -406,15 +454,19 @@
 				B3D253CC18D8BA8E0049D016 /* Blank Coupon iphone 4.jpeg in Resources */,
 				B36A897618D8E39600CF1BD9 /* EventsViewController.xib in Resources */,
 				847997CA18EBC7B9008903C4 /* EventActualViewController.xib in Resources */,
+				B36D0AB618F2FE30005D39BD /* QuoteViewController.xib in Resources */,
 				B36A898A18D8E42200CF1BD9 /* CouponsViewController.xib in Resources */,
 				B3D253CF18D8BA8E0049D016 /* Chemistry.jpg in Resources */,
 				B3D253DA18D8BA8E0049D016 /* party.png in Resources */,
 				B3D253D118D8BA8E0049D016 /* CSPAC.jpg in Resources */,
 				84A93C3D18DEB8E600E214A9 /* BusViewController.xib in Resources */,
+				B36D0ABB18F2FE3B005D39BD /* AboutViewController.xib in Resources */,
 				B3D253DE18D8BA8E0049D016 /* splash4-1.png in Resources */,
 				B3451AC518D7D59D00D032F8 /* InfoPlist.strings in Resources */,
 				B3D253D918D8BA8E0049D016 /* McKeldin.jpg in Resources */,
+				B36D0AA718F2FDE3005D39BD /* StressReliefViewController.xib in Resources */,
 				B3D253D418D8BA8E0049D016 /* gym.png in Resources */,
+				B36D0AAC18F2FDFA005D39BD /* PicturesOfPAndKViewController.xib in Resources */,
 				B3451ACD18D7D59D00D032F8 /* Images.xcassets in Resources */,
 				B36A898018D8E40100CF1BD9 /* LibraryHoursViewController.xib in Resources */,
 				B3D253CD18D8BA8E0049D016 /* bus.png in Resources */,
@@ -427,8 +479,10 @@
 				2768329918E723D400D3EE08 /* GPAViewController.xib in Resources */,
 				847997CF18EDB361008903C4 /* CouponListViewController.xib in Resources */,
 				B3D253D818D8BA8E0049D016 /* library.png in Resources */,
+				B36D0AB118F2FE1A005D39BD /* TestudoOfferingViewController.xib in Resources */,
 				B3D253DC18D8BA8E0049D016 /* splash1.png in Resources */,
 				B3D253D318D8BA8E0049D016 /* food.png in Resources */,
+				B36D0AA218F2FDAB005D39BD /* TimeManagementViewController.xib in Resources */,
 				B3D253DD18D8BA8E0049D016 /* splash3.png in Resources */,
 				B3D253DB18D8BA8E0049D016 /* splash.png in Resources */,
 				B3D253D218D8BA8E0049D016 /* Engineering.jpg in Resources */,
@@ -458,12 +512,18 @@
 				B36A898418D8E40F00CF1BD9 /* BusScheduleViewController.m in Sources */,
 				B3FFB1FD18F2576C0043C3A2 /* DiningViewController.m in Sources */,
 				847997C918EBC7B9008903C4 /* EventActualViewController.m in Sources */,
+				B36D0ABA18F2FE3B005D39BD /* AboutViewController.m in Sources */,
+				B36D0AAB18F2FDFA005D39BD /* PicturesOfPAndKViewController.m in Sources */,
 				847997CE18EDB361008903C4 /* CouponListViewController.m in Sources */,
+				B36D0AB518F2FE30005D39BD /* QuoteViewController.m in Sources */,
+				B36D0AA618F2FDE3005D39BD /* StressReliefViewController.m in Sources */,
+				B36D0AA118F2FDAB005D39BD /* TimeManagementViewController.m in Sources */,
 				B3451ACB18D7D59D00D032F8 /* AppDelegate.m in Sources */,
 				2768329718E723D400D3EE08 /* GPAViewController.m in Sources */,
 				8444C1CD18E7684600CDDE30 /* SelectedLibraryViewController.m in Sources */,
 				B3FFB1F818F2540F0043C3A2 /* GymViewController.m in Sources */,
 				B36A897518D8E39600CF1BD9 /* EventsViewController.m in Sources */,
+				B36D0AB018F2FE1A005D39BD /* TestudoOfferingViewController.m in Sources */,
 				B36A897F18D8E40100CF1BD9 /* LibraryHoursViewController.m in Sources */,
 				B36A898918D8E42200CF1BD9 /* CouponsViewController.m in Sources */,
 				84A93C3C18DEB8E600E214A9 /* BusViewController.m in Sources */,

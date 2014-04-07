@@ -14,6 +14,13 @@
 #import "CouponsViewController.h"
 #import "GymViewController.h"
 #import "DiningViewController.h"
+#import "GPAViewController.h"
+#import "TimeManagementViewController.h"
+#import "StressReliefViewController.h"
+#import "PicturesOfPAndKViewController.h"
+#import "TestudoOfferingViewController.h"
+#import "QuoteViewController.h"
+#import "AboutViewController.h"
 
 
 @interface RootViewController ()
@@ -85,6 +92,46 @@
 - (IBAction)couponsButton:(id)sender {
     
     CouponsViewController *viewController = [[CouponsViewController alloc] init];
+    [[self navigationController] pushViewController:viewController animated:YES];
+}
+
+- (IBAction)timeButton:(id)sender {
+    
+    TimeManagementViewController *viewController = [[TimeManagementViewController alloc] init];
+    [[self navigationController] pushViewController:viewController animated:YES];
+}
+
+- (IBAction)gpaButton:(id)sender {
+    
+    GPAViewController *viewController = [[GPAViewController alloc] init];
+    [[self navigationController] pushViewController:viewController animated:YES];
+}
+
+- (IBAction)stressReliefButton:(id)sender {
+    
+    StressReliefViewController *stress = [[StressReliefViewController alloc] init];
+    PicturesOfPAndKViewController *pics = [[PicturesOfPAndKViewController alloc] init];
+    
+    UITabBarController *tabController = [[UITabBarController alloc] init];
+    [tabController setViewControllers:[NSArray arrayWithObjects: stress, pics, nil]];
+    [[self navigationController] pushViewController:tabController animated:YES];
+}
+
+- (IBAction)testudoButton:(id)sender {
+    
+    TestudoOfferingViewController *viewController = [[TestudoOfferingViewController alloc] init];
+    [[self navigationController] pushViewController:viewController animated:YES];
+}
+
+- (IBAction)quoteButton:(id)sender {
+    
+    QuoteViewController *viewController = [[QuoteViewController alloc] init];
+    [[self navigationController] pushViewController:viewController animated:YES];
+}
+
+- (IBAction)aboutButton:(id)sender {
+    
+    AboutViewController *viewController = [[AboutViewController alloc] init];
     [[self navigationController] pushViewController:viewController animated:YES];
 }
 
