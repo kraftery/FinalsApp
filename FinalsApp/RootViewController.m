@@ -45,7 +45,16 @@
     self.scrollView.contentSize = self.myView.bounds.size;
     [self.scrollView addSubview:self.myView];
     [self.scrollView flashScrollIndicators];
-    
+}
+
+-(void)viewWillAppear:(BOOL)animated
+{
+    [self.navigationController setNavigationBarHidden:YES animated:NO];
+
+}
+-(void)viewDidDisappear:(BOOL)animated
+{
+    [self.navigationController setNavigationBarHidden:NO animated:NO];
 }
 
 - (void)didReceiveMemoryWarning
