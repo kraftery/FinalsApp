@@ -21,6 +21,7 @@
 #import "TestudoOfferingViewController.h"
 #import "QuoteViewController.h"
 #import "AboutViewController.h"
+#import "EventActualViewController.h"
 
 
 @interface RootViewController ()
@@ -72,7 +73,7 @@
 
 - (IBAction)eventsButton:(id)sender {
     
-    EventsViewController *viewController = [[EventsViewController alloc] init];
+    EventActualViewController *viewController = [[EventActualViewController alloc] init];
     [[self navigationController] pushViewController:viewController animated:YES];
 }
 
