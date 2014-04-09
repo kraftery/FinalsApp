@@ -8,7 +8,7 @@
 
 #import <UIKit/UIKit.h>
 
-@interface GPAViewController : UIViewController{
+@interface GPAViewController : UIViewController <UITextFieldDelegate> {
 
     
     IBOutlet UILabel *gpaLabel;
@@ -19,8 +19,6 @@
     IBOutlet UITextField *grade5;
     IBOutlet UITextField *grade6;
     IBOutlet UITextField *grade7;
-    IBOutlet UITextField *grade8;
-    IBOutlet UITextField *grade9;
     IBOutlet UITextField *cred1;
     IBOutlet UITextField *cred2;
     IBOutlet UITextField *cred3;
@@ -28,8 +26,6 @@
     IBOutlet UITextField *cred5;
     IBOutlet UITextField *cred6;
     IBOutlet UITextField *cred7;
-    IBOutlet UITextField *cred8;
-    IBOutlet UITextField *cred9;
     NSDictionary *hashMap;
     double grossGPA;
     double creds;
