@@ -27,7 +27,21 @@
 {
     [super viewDidLoad];
     // Do any additional setup after loading the view from its nib.
-
+    grade1.delegate = self;
+    grade2.delegate = self;
+    grade3.delegate = self;
+    grade4.delegate = self;
+    grade5.delegate = self;
+    grade6.delegate = self;
+    grade7.delegate = self;
+    cred1.delegate = self;
+    cred2.delegate = self;
+    cred3.delegate = self;
+    cred4.delegate = self;
+    cred5.delegate = self;
+    cred6.delegate = self;
+    cred7.delegate = self;
+    
     UITapGestureRecognizer *gestureRecognizer = [[UITapGestureRecognizer alloc] initWithTarget:self action:@selector(hideKeyboard)];
     [self.view addGestureRecognizer:gestureRecognizer];
     
@@ -62,11 +76,12 @@
     [cred6 resignFirstResponder];
     [grade7 resignFirstResponder];
     [cred7 resignFirstResponder];
-    [grade8 resignFirstResponder];
-    [cred8 resignFirstResponder];
-    [grade9 resignFirstResponder];
-    [cred9 resignFirstResponder];
     
+}
+
+- (BOOL) textFieldShouldReturn:(UITextField *)textField {
+    [textField resignFirstResponder];
+    return YES;
 }
 
 - (void)didReceiveMemoryWarning
@@ -75,26 +90,24 @@
     // Dispose of any resources that can be recreated.
 }
 
--(NSInteger) checkInput: (UITextField *) grade second: (UITextField *) credit{
-    NSString *trimmedGrade = [([grade text]) stringByReplacingOccurrencesOfString:@" " withString:@""];
-    [trimmedGrade uppercaseString];
-    NSString *trimmedCredit = [([credit text]) stringByReplacingOccurrencesOfString:@" " withString:@""];
+-(BOOL) checkInputFor: (NSString *) grade and: (NSString *) credits {
     NSError *error = nil;
-    NSRegularExpression *regex1 = [NSRegularExpression regularExpressionWithPattern:@"^(A|B|C|D)(+|-)"                                                                               options:NSRegularExpressionCaseInsensitive                                                                                 error:&error];
-    NSRegularExpression *regex2 = [NSRegularExpression regularExpressionWithPattern:@"^[1-6]"                                                                               options:NSRegularExpressionCaseInsensitive                                                                                 error:&error];
-    NSUInteger numberOfMatches = [regex1 numberOfMatchesInString:trimmedGrade                                                         options:0 range:NSMakeRange(0, [trimmedGrade length])];
-    NSUInteger numberOfMatches2 = [regex2 numberOfMatchesInString:trimmedCredit                                                         options:0 range:NSMakeRange(0, [trimmedCredit length])];
-    if (numberOfMatches != 2 || numberOfMatches == 0) {
+    NSRegularExpression *regex2 = [NSRegularExpression regularExpressionWithPattern:@"\\b(1|2|3|4|5|6|7)\\b"                                                       options:NSRegularExpressionCaseInsensitive                                                                                 error:&error];
+    
+    NSUInteger numberOfMatches2 = [regex2 numberOfMatchesInString:credits                                                         options:0 range:NSMakeRange(0, [credits length])];
+    
+    if (![[hashMap allKeys] containsObject:grade]) {
         UIAlertView *errorView = [[UIAlertView alloc] initWithTitle:@"Error" message:@"That is not a valid grade, Try again." delegate:self cancelButtonTitle:@"Dismiss" otherButtonTitles:nil, nil];
         [errorView show];
-        return 0;
+        return FALSE;
     }
-    if (numberOfMatches2 == 0) {
+    else if (numberOfMatches2 != 1) {
         UIAlertView *errorView = [[UIAlertView alloc] initWithTitle:@"Error" message:@"That is not a valid credit number, Try again." delegate:self cancelButtonTitle:@"Dismiss" otherButtonTitles:nil, nil];
         [errorView show];
-        return 0;
+        return FALSE;
+    } else {
+        return TRUE;
     }
-    return 1;
 }
 
 - (IBAction)calculate:(id)sender {
@@ -103,76 +116,88 @@
     creds = 0.00;
     grossGPA = 0.00;
     
-    if (grade1.text != nil && cred1.text != nil) {
-        if([self checkInput:grade1 second:cred1] == 0){
-        double c1 = cred1.text.doubleValue;
-        creds = creds + c1;
-        NSDecimalNumber *grade = hashMap[grade1.text.capitalizedString];
-        grossGPA = grossGPA + (grade.doubleValue)*c1;
+    if (![grade1.text isEqualToString:@""] && ![cred1.text isEqualToString:@""]) {
+        
+        NSString *trimmedGrade = [grade1.text stringByReplacingOccurrencesOfString:(@" ") withString:(@"")];
+        trimmedGrade = [trimmedGrade uppercaseString];
+        
+        if([self checkInputFor:trimmedGrade and:cred1.text]){
+            double c1 = cred1.text.doubleValue;
+            creds = creds + c1;
+            NSDecimalNumber *grade = hashMap[trimmedGrade];
+            grossGPA = grossGPA + (grade.doubleValue)*c1;
         }
     }
-    if (grade2.text != nil && cred2.text != nil) {
-        if([self checkInput:grade2 second:cred2] == 0){
-        double c2 = cred2.text.doubleValue;
-        creds = creds + c2;
-        NSDecimalNumber *grade = hashMap[grade2.text.capitalizedString];
-        grossGPA = grossGPA + (grade.doubleValue)*c2;
+    if (![grade2.text isEqualToString:@""] && ![cred2.text isEqualToString:@""]) {
+        
+        NSString *trimmedGrade = [grade2.text stringByReplacingOccurrencesOfString:(@" ") withString:(@"")];
+        trimmedGrade = [trimmedGrade uppercaseString];
+        
+        if([self checkInputFor:trimmedGrade and:cred2.text]){
+            double c2 = cred2.text.doubleValue;
+            creds = creds + c2;
+            NSDecimalNumber *grade = hashMap[trimmedGrade];
+            grossGPA = grossGPA + (grade.doubleValue)*c2;
         }
     }
-    if (grade3.text != nil && cred3.text != nil) {
-        if([self checkInput:grade3 second:cred3] == 0){
+    if (![grade3.text isEqualToString:@""] && ![cred3.text isEqualToString:@""]) {
+        
+        NSString *trimmedGrade = [grade3.text stringByReplacingOccurrencesOfString:(@" ") withString:(@"")];
+        trimmedGrade = [trimmedGrade uppercaseString];
+        
+        if([self checkInputFor:trimmedGrade and:cred3.text]){
         double c3 = cred3.text.doubleValue;
         creds = creds + c3;
-        NSDecimalNumber *grade = hashMap[grade3.text.capitalizedString];
+        NSDecimalNumber *grade = hashMap[trimmedGrade];
         grossGPA = grossGPA + (grade.doubleValue)*c3;
         }
     }
-    if (grade4.text != nil && cred4.text != nil) {
-        if([self checkInput:grade4 second:cred4] == 0){
+    if (![grade4.text isEqualToString:@""] && ![cred4.text isEqualToString:@""]) {
+        
+        NSString *trimmedGrade = [grade4.text stringByReplacingOccurrencesOfString:(@" ") withString:(@"")];
+        trimmedGrade = [trimmedGrade uppercaseString];
+        
+        if([self checkInputFor:trimmedGrade and:cred4.text]){
         double c4 = cred4.text.doubleValue;
         creds = creds + c4;
-        NSDecimalNumber *grade = hashMap[grade4.text.capitalizedString];
+        NSDecimalNumber *grade = hashMap[trimmedGrade];
         grossGPA = grossGPA + (grade.doubleValue)*c4;
         }
     }
-    if (grade5.text != nil && cred5.text != nil) {
-        if([self checkInput:grade5 second:cred5] == 0){
+    if (![grade5.text isEqualToString:@""] && ![cred5.text isEqualToString:@""]) {
+        
+        NSString *trimmedGrade = [grade5.text stringByReplacingOccurrencesOfString:(@" ") withString:(@"")];
+        trimmedGrade = [trimmedGrade uppercaseString];
+        
+        if([self checkInputFor:trimmedGrade and:cred5.text]){
         double c5 = cred5.text.doubleValue;
         creds = creds + c5;
-        NSDecimalNumber *grade = hashMap[grade5.text.capitalizedString];
+        NSDecimalNumber *grade = hashMap[trimmedGrade];
         grossGPA = grossGPA + (grade.doubleValue)*c5;
         }
     }
-    if (grade6.text != nil && cred6.text != nil) {
-        if([self checkInput:grade6 second:cred6] == 0){
+    if (![grade6.text isEqualToString:@""] && ![cred6.text isEqualToString:@""]) {
+        
+        NSString *trimmedGrade = [grade6.text stringByReplacingOccurrencesOfString:(@" ") withString:(@"")];
+        trimmedGrade = [trimmedGrade uppercaseString];
+        
+        if([self checkInputFor:trimmedGrade and:cred6.text]){
         double c6 = cred6.text.doubleValue;
         creds = creds + c6;
-        NSDecimalNumber *grade = hashMap[grade6.text.capitalizedString];
+        NSDecimalNumber *grade = hashMap[trimmedGrade];
         grossGPA = grossGPA + (grade.doubleValue)*c6;
         }
     }
-    if (grade7.text != nil && cred7.text != nil) {
-        if([self checkInput:grade7 second:cred7] == 0){
+    if (![grade7.text isEqualToString:@""] && ![cred7.text isEqualToString:@""]) {
+        
+        NSString *trimmedGrade = [grade7.text stringByReplacingOccurrencesOfString:(@" ") withString:(@"")];
+        trimmedGrade = [trimmedGrade uppercaseString];
+        
+        if([self checkInputFor:trimmedGrade and:cred7.text]){
         double c7 = cred7.text.doubleValue;
         creds = creds + c7;
-        NSDecimalNumber *grade = hashMap[grade7.text.capitalizedString];
+        NSDecimalNumber *grade = hashMap[trimmedGrade];
         grossGPA = grossGPA + (grade.doubleValue)*c7;
-        }
-    }
-    if (grade8.text != nil && cred8.text != nil) {
-        if([self checkInput:grade8 second:cred8] == 0){
-        double c8 = cred8.text.doubleValue;
-        creds = creds + c8;
-        NSDecimalNumber *grade = hashMap[grade8.text.capitalizedString];
-        grossGPA = grossGPA + (grade.doubleValue)*c8;
-        }
-    }
-    if (grade9.text != nil & cred9.text != nil) {
-        if([self checkInput:grade9 second:cred9] == 0){
-        double c9 = cred9.text.doubleValue;
-        creds = creds + c9;
-        NSDecimalNumber *grade = hashMap[grade9.text.capitalizedString];
-        grossGPA = grossGPA + (grade.doubleValue)*c9;
         }
     }
     
