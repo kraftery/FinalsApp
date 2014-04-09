@@ -54,8 +54,10 @@
              @"133-Mall at PG",
              nil
              ];
-             
-             
+    myTableView.dataSource = self;
+    myTableView.delegate = self;
+    myTableView.tableFooterView = [[UIView alloc] initWithFrame:CGRectZero];//makes the tableview only display
+    myTableView.backgroundColor = [UIColor clearColor];
 }
 
 -(NSInteger) tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section{
