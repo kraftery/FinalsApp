@@ -5,34 +5,34 @@
 	<key>IDESourceControlProjectFavoriteDictionaryKey</key>
 	<false/>
 	<key>IDESourceControlProjectIdentifier</key>
-	<string>A3626728-4312-41EE-B825-76D39EFF9DE6</string>
+	<string>7896E083-A455-47FD-852C-897D70404EE4</string>
 	<key>IDESourceControlProjectName</key>
 	<string>FinalsApp</string>
 	<key>IDESourceControlProjectOriginsDictionary</key>
 	<dict>
-		<key>0EBD67F0-73C3-4870-BE80-D0F7D955FF8C</key>
-		<string>https://github.com/kraftery/FinalsApp</string>
+		<key>5E9F35C3-29C5-4994-861A-7B9FDB7E9994</key>
+		<string>https://github.com/kraftery/FinalsApp.git</string>
 	</dict>
 	<key>IDESourceControlProjectPath</key>
 	<string>FinalsApp.xcodeproj/project.xcworkspace</string>
 	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
 	<dict>
-		<key>0EBD67F0-73C3-4870-BE80-D0F7D955FF8C</key>
+		<key>5E9F35C3-29C5-4994-861A-7B9FDB7E9994</key>
 		<string>../..</string>
 	</dict>
 	<key>IDESourceControlProjectURL</key>
-	<string>https://github.com/kraftery/FinalsApp</string>
+	<string>https://github.com/kraftery/FinalsApp.git</string>
 	<key>IDESourceControlProjectVersion</key>
 	<integer>110</integer>
 	<key>IDESourceControlProjectWCCIdentifier</key>
-	<string>0EBD67F0-73C3-4870-BE80-D0F7D955FF8C</string>
+	<string>5E9F35C3-29C5-4994-861A-7B9FDB7E9994</string>
 	<key>IDESourceControlProjectWCConfigurations</key>
 	<array>
 		<dict>
 			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
 			<string>public.vcs.git</string>
 			<key>IDESourceControlWCCIdentifierKey</key>
-			<string>0EBD67F0-73C3-4870-BE80-D0F7D955FF8C</string>
+			<string>5E9F35C3-29C5-4994-861A-7B9FDB7E9994</string>
 			<key>IDESourceControlWCCName</key>
 			<string>FinalsApp</string>
 		</dict>

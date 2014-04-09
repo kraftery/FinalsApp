@@ -81,6 +81,18 @@
 		B3FFB1F918F2540F0043C3A2 /* GymViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = B3FFB1F718F2540F0043C3A2 /* GymViewController.xib */; };
 		B3FFB1FD18F2576C0043C3A2 /* DiningViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B3FFB1FB18F2576C0043C3A2 /* DiningViewController.m */; };
 		B3FFB1FE18F2576C0043C3A2 /* DiningViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = B3FFB1FC18F2576C0043C3A2 /* DiningViewController.xib */; };
+		BD6EF91818F4FE2F007ECB45 /* menu_01.png in Resources */ = {isa = PBXBuildFile; fileRef = BD6EF90C18F4FE2F007ECB45 /* menu_01.png */; };
+		BD6EF91918F4FE2F007ECB45 /* menu_02.png in Resources */ = {isa = PBXBuildFile; fileRef = BD6EF90D18F4FE2F007ECB45 /* menu_02.png */; };
+		BD6EF91A18F4FE2F007ECB45 /* menu_03.png in Resources */ = {isa = PBXBuildFile; fileRef = BD6EF90E18F4FE2F007ECB45 /* menu_03.png */; };
+		BD6EF91B18F4FE2F007ECB45 /* menu_04.png in Resources */ = {isa = PBXBuildFile; fileRef = BD6EF90F18F4FE2F007ECB45 /* menu_04.png */; };
+		BD6EF91C18F4FE2F007ECB45 /* menu_05.png in Resources */ = {isa = PBXBuildFile; fileRef = BD6EF91018F4FE2F007ECB45 /* menu_05.png */; };
+		BD6EF91D18F4FE2F007ECB45 /* menu_06.png in Resources */ = {isa = PBXBuildFile; fileRef = BD6EF91118F4FE2F007ECB45 /* menu_06.png */; };
+		BD6EF91E18F4FE2F007ECB45 /* menu2_01.png in Resources */ = {isa = PBXBuildFile; fileRef = BD6EF91218F4FE2F007ECB45 /* menu2_01.png */; };
+		BD6EF91F18F4FE2F007ECB45 /* menu2_02.png in Resources */ = {isa = PBXBuildFile; fileRef = BD6EF91318F4FE2F007ECB45 /* menu2_02.png */; };
+		BD6EF92018F4FE2F007ECB45 /* menu2_03.png in Resources */ = {isa = PBXBuildFile; fileRef = BD6EF91418F4FE2F007ECB45 /* menu2_03.png */; };
+		BD6EF92118F4FE2F007ECB45 /* menu2_04.png in Resources */ = {isa = PBXBuildFile; fileRef = BD6EF91518F4FE2F007ECB45 /* menu2_04.png */; };
+		BD6EF92218F4FE2F007ECB45 /* menu2_05.png in Resources */ = {isa = PBXBuildFile; fileRef = BD6EF91618F4FE2F007ECB45 /* menu2_05.png */; };
+		BD6EF92318F4FE2F007ECB45 /* menu2_06.png in Resources */ = {isa = PBXBuildFile; fileRef = BD6EF91718F4FE2F007ECB45 /* menu2_06.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -189,6 +201,18 @@
 		B3FFB1FA18F2576C0043C3A2 /* DiningViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DiningViewController.h; sourceTree = "<group>"; };
 		B3FFB1FB18F2576C0043C3A2 /* DiningViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DiningViewController.m; sourceTree = "<group>"; };
 		B3FFB1FC18F2576C0043C3A2 /* DiningViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = DiningViewController.xib; sourceTree = "<group>"; };
+		BD6EF90C18F4FE2F007ECB45 /* menu_01.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = menu_01.png; path = icons/images/menu_01.png; sourceTree = "<group>"; };
+		BD6EF90D18F4FE2F007ECB45 /* menu_02.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = menu_02.png; path = icons/images/menu_02.png; sourceTree = "<group>"; };
+		BD6EF90E18F4FE2F007ECB45 /* menu_03.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = menu_03.png; path = icons/images/menu_03.png; sourceTree = "<group>"; };
+		BD6EF90F18F4FE2F007ECB45 /* menu_04.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = menu_04.png; path = icons/images/menu_04.png; sourceTree = "<group>"; };
+		BD6EF91018F4FE2F007ECB45 /* menu_05.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = menu_05.png; path = icons/images/menu_05.png; sourceTree = "<group>"; };
+		BD6EF91118F4FE2F007ECB45 /* menu_06.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = menu_06.png; path = icons/images/menu_06.png; sourceTree = "<group>"; };
+		BD6EF91218F4FE2F007ECB45 /* menu2_01.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = menu2_01.png; path = icons/images/menu2_01.png; sourceTree = "<group>"; };
+		BD6EF91318F4FE2F007ECB45 /* menu2_02.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = menu2_02.png; path = icons/images/menu2_02.png; sourceTree = "<group>"; };
+		BD6EF91418F4FE2F007ECB45 /* menu2_03.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = menu2_03.png; path = icons/images/menu2_03.png; sourceTree = "<group>"; };
+		BD6EF91518F4FE2F007ECB45 /* menu2_04.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = menu2_04.png; path = icons/images/menu2_04.png; sourceTree = "<group>"; };
+		BD6EF91618F4FE2F007ECB45 /* menu2_05.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = menu2_05.png; path = icons/images/menu2_05.png; sourceTree = "<group>"; };
+		BD6EF91718F4FE2F007ECB45 /* menu2_06.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = menu2_06.png; path = icons/images/menu2_06.png; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -317,6 +341,7 @@
 		B3451AC118D7D59D00D032F8 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				BD6EF92418F4FE48007ECB45 /* menu */,
 				B3451AC218D7D59D00D032F8 /* FinalsApp-Info.plist */,
 				B3451AC318D7D59D00D032F8 /* InfoPlist.strings */,
 				B3451AC618D7D59D00D032F8 /* main.m */,
@@ -370,6 +395,25 @@
 				B3D253C918D8BA8E0049D016 /* splash4.png */,
 			);
 			path = icons;
+			sourceTree = "<group>";
+		};
+		BD6EF92418F4FE48007ECB45 /* menu */ = {
+			isa = PBXGroup;
+			children = (
+				BD6EF90C18F4FE2F007ECB45 /* menu_01.png */,
+				BD6EF90D18F4FE2F007ECB45 /* menu_02.png */,
+				BD6EF90E18F4FE2F007ECB45 /* menu_03.png */,
+				BD6EF90F18F4FE2F007ECB45 /* menu_04.png */,
+				BD6EF91018F4FE2F007ECB45 /* menu_05.png */,
+				BD6EF91118F4FE2F007ECB45 /* menu_06.png */,
+				BD6EF91218F4FE2F007ECB45 /* menu2_01.png */,
+				BD6EF91318F4FE2F007ECB45 /* menu2_02.png */,
+				BD6EF91418F4FE2F007ECB45 /* menu2_03.png */,
+				BD6EF91518F4FE2F007ECB45 /* menu2_04.png */,
+				BD6EF91618F4FE2F007ECB45 /* menu2_05.png */,
+				BD6EF91718F4FE2F007ECB45 /* menu2_06.png */,
+			);
+			name = menu;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -460,17 +504,24 @@
 				B3D253DA18D8BA8E0049D016 /* party.png in Resources */,
 				B3D253D118D8BA8E0049D016 /* CSPAC.jpg in Resources */,
 				84A93C3D18DEB8E600E214A9 /* BusViewController.xib in Resources */,
+				BD6EF92318F4FE2F007ECB45 /* menu2_06.png in Resources */,
 				B36D0ABB18F2FE3B005D39BD /* AboutViewController.xib in Resources */,
 				B3D253DE18D8BA8E0049D016 /* splash4-1.png in Resources */,
 				B3451AC518D7D59D00D032F8 /* InfoPlist.strings in Resources */,
 				B3D253D918D8BA8E0049D016 /* McKeldin.jpg in Resources */,
+				BD6EF91D18F4FE2F007ECB45 /* menu_06.png in Resources */,
+				BD6EF91E18F4FE2F007ECB45 /* menu2_01.png in Resources */,
 				B36D0AA718F2FDE3005D39BD /* StressReliefViewController.xib in Resources */,
+				BD6EF92018F4FE2F007ECB45 /* menu2_03.png in Resources */,
 				B3D253D418D8BA8E0049D016 /* gym.png in Resources */,
+				BD6EF91818F4FE2F007ECB45 /* menu_01.png in Resources */,
 				B36D0AAC18F2FDFA005D39BD /* PicturesOfPAndKViewController.xib in Resources */,
 				B3451ACD18D7D59D00D032F8 /* Images.xcassets in Resources */,
 				B36A898018D8E40100CF1BD9 /* LibraryHoursViewController.xib in Resources */,
+				BD6EF91A18F4FE2F007ECB45 /* menu_03.png in Resources */,
 				B3D253CD18D8BA8E0049D016 /* bus.png in Resources */,
 				B3D253DF18D8BA8E0049D016 /* splash4.png in Resources */,
+				BD6EF91F18F4FE2F007ECB45 /* menu2_02.png in Resources */,
 				B3D253D718D8BA8E0049D016 /* icon.png in Resources */,
 				B3FFB1F918F2540F0043C3A2 /* GymViewController.xib in Resources */,
 				B3D253D018D8BA8E0049D016 /* coupon_header.png in Resources */,
@@ -482,8 +533,13 @@
 				B36D0AB118F2FE1A005D39BD /* TestudoOfferingViewController.xib in Resources */,
 				B3D253DC18D8BA8E0049D016 /* splash1.png in Resources */,
 				B3D253D318D8BA8E0049D016 /* food.png in Resources */,
+				BD6EF91918F4FE2F007ECB45 /* menu_02.png in Resources */,
 				B36D0AA218F2FDAB005D39BD /* TimeManagementViewController.xib in Resources */,
+				BD6EF92118F4FE2F007ECB45 /* menu2_04.png in Resources */,
+				BD6EF91C18F4FE2F007ECB45 /* menu_05.png in Resources */,
 				B3D253DD18D8BA8E0049D016 /* splash3.png in Resources */,
+				BD6EF92218F4FE2F007ECB45 /* menu2_05.png in Resources */,
+				BD6EF91B18F4FE2F007ECB45 /* menu_04.png in Resources */,
 				B3D253DB18D8BA8E0049D016 /* splash.png in Resources */,
 				B3D253D218D8BA8E0049D016 /* Engineering.jpg in Resources */,
 				B3D253CE18D8BA8E0049D016 /* cal.png in Resources */,
