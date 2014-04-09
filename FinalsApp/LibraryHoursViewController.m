@@ -156,9 +156,6 @@
     // The request is complete and data has been received
     // You can parse the stuff in your instance variable now
     NSArray *file_to_array = [self parse: responseData];
-    //NSArray *keys = [NSArray arrayWithArray:library]; //this is keys which are pretty much the library names
-    //NSArray *values = [NSArray arrayWithObjects:[[file_to_array objectAtIndex:0] componentsSeparatedByString:@"\n"], [[file_to_array objectAtIndex:1] componentsSeparatedByString:@"\n"], [[file_to_array objectAtIndex:2] componentsSeparatedByString:@"\n"], [[file_to_array objectAtIndex:3] componentsSeparatedByString:@"\n"], [[file_to_array objectAtIndex:4] componentsSeparatedByString:@"\n"], [[file_to_array objectAtIndex:5] componentsSeparatedByString:@"\n"], [[file_to_array objectAtIndex:6] componentsSeparatedByString:@"\n"], nil]; //values takes each index in file_to_array and further splits the current index by new line.
-    //library_info = [[NSDictionary alloc] initWithObjects:file_to_array forKeys:keys]; //our dictionary :)
     library_hours = [[NSMutableArray alloc] initWithArray:file_to_array];
     
 }
