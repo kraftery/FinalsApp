@@ -21,6 +21,7 @@
 #import "TestudoOfferingViewController.h"
 #import "QuoteViewController.h"
 #import "AboutViewController.h"
+#import "EventActualViewController.h"
 
 
 @interface RootViewController ()
@@ -45,7 +46,16 @@
     self.scrollView.contentSize = self.myView.bounds.size;
     [self.scrollView addSubview:self.myView];
     [self.scrollView flashScrollIndicators];
-    
+}
+
+-(void)viewWillAppear:(BOOL)animated
+{
+    [self.navigationController setNavigationBarHidden:YES animated:NO];
+
+}
+-(void)viewDidDisappear:(BOOL)animated
+{
+    [self.navigationController setNavigationBarHidden:NO animated:NO];
 }
 
 - (void)didReceiveMemoryWarning
@@ -63,7 +73,7 @@
 
 - (IBAction)eventsButton:(id)sender {
     
-    EventsViewController *viewController = [[EventsViewController alloc] init];
+    EventActualViewController *viewController = [[EventActualViewController alloc] init];
     [[self navigationController] pushViewController:viewController animated:YES];
 }
 

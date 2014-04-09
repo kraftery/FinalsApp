@@ -8,9 +8,11 @@
 
 #import <UIKit/UIKit.h>
 
-@interface EventActualViewController : UIViewController<UITableViewDelegate, UITableViewDataSource>{
+@interface EventActualViewController : UIViewController<UITableViewDelegate, UITableViewDataSource, NSURLConnectionDelegate>{
     IBOutlet UITableView *myTableView;
     NSArray *days;
+    NSMutableArray *returned_events;
+    NSMutableData *responseData;
 }
 
 @end

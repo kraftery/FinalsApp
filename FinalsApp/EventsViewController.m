@@ -28,6 +28,9 @@
 {
     [super viewDidLoad];
     // Do any additional setup after loading the view from its nib.
+    self.title = @"Events";
+    textView.text = textViewText;
+    label.text = labelText;
 }
 
 - (void)didReceiveMemoryWarning
