@@ -53,11 +53,3 @@
 
 @end
 
-@implementation UINavigationBar (background)
-
-- (void)drawRect:(CGRect)rect {
-    UIImage *image = [UIImage imageNamed:@"header_01.png"];
-    [image drawInRect:CGRectMake(0, 0, self.frame.size.width, self.frame.size.height)];
-}
-
-@end

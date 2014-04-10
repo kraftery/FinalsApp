@@ -8,6 +8,7 @@
 
 #import "EventActualViewController.h"
 #import "EventsViewController.h"
+#import "RootViewController.h"
 
 @interface EventActualViewController ()
 
@@ -36,6 +37,13 @@
     myTableView.dataSource = self;
     myTableView.tableFooterView = [[UIView alloc] initWithFrame:CGRectZero];//makes the tableview only display
     myTableView.backgroundColor = [UIColor clearColor];
+}
+
+-(void)viewWillAppear:(BOOL)animated
+{
+    [self.navigationController setNavigationBarHidden:YES animated:NO];
+    
+    
 }
 
 -(NSInteger) tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section{
@@ -117,5 +125,11 @@
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
 }
+
+-(IBAction)backToRoot:(id)sender{
+    RootViewController *viewController = [[RootViewController alloc] init];
+    [[self navigationController] pushViewController:viewController animated:YES];
+}
+
 
 @end
