@@ -101,8 +101,8 @@
         [errorView show];
         return FALSE;
     }
-    else if (numberOfMatches2 != 1) {
-        UIAlertView *errorView = [[UIAlertView alloc] initWithTitle:@"Error" message:@"That is not a valid credit number, Try again." delegate:self cancelButtonTitle:@"Dismiss" otherButtonTitles:nil, nil];
+    if (numberOfMatches2 != 1) {
+        UIAlertView *errorView = [[UIAlertView alloc] initWithTitle:@"Error" message:@"Number of credits can only be from 1 to 6" delegate:self cancelButtonTitle:@"Dismiss" otherButtonTitles:nil, nil];
         [errorView show];
         return FALSE;
     } else {
@@ -126,6 +126,8 @@
             creds = creds + c1;
             NSDecimalNumber *grade = hashMap[trimmedGrade];
             grossGPA = grossGPA + (grade.doubleValue)*c1;
+        }else{
+            return;
         }
     }
     if (![grade2.text isEqualToString:@""] && ![cred2.text isEqualToString:@""]) {
@@ -138,6 +140,8 @@
             creds = creds + c2;
             NSDecimalNumber *grade = hashMap[trimmedGrade];
             grossGPA = grossGPA + (grade.doubleValue)*c2;
+        }else{
+            return;
         }
     }
     if (![grade3.text isEqualToString:@""] && ![cred3.text isEqualToString:@""]) {
@@ -150,6 +154,8 @@
         creds = creds + c3;
         NSDecimalNumber *grade = hashMap[trimmedGrade];
         grossGPA = grossGPA + (grade.doubleValue)*c3;
+        }else{
+            return;
         }
     }
     if (![grade4.text isEqualToString:@""] && ![cred4.text isEqualToString:@""]) {
@@ -162,6 +168,8 @@
         creds = creds + c4;
         NSDecimalNumber *grade = hashMap[trimmedGrade];
         grossGPA = grossGPA + (grade.doubleValue)*c4;
+        }else{
+            return;
         }
     }
     if (![grade5.text isEqualToString:@""] && ![cred5.text isEqualToString:@""]) {
@@ -174,6 +182,8 @@
         creds = creds + c5;
         NSDecimalNumber *grade = hashMap[trimmedGrade];
         grossGPA = grossGPA + (grade.doubleValue)*c5;
+        }else{
+            return;
         }
     }
     if (![grade6.text isEqualToString:@""] && ![cred6.text isEqualToString:@""]) {
@@ -186,6 +196,8 @@
         creds = creds + c6;
         NSDecimalNumber *grade = hashMap[trimmedGrade];
         grossGPA = grossGPA + (grade.doubleValue)*c6;
+        }else{
+            return;
         }
     }
     if (![grade7.text isEqualToString:@""] && ![cred7.text isEqualToString:@""]) {
@@ -198,6 +210,8 @@
         creds = creds + c7;
         NSDecimalNumber *grade = hashMap[trimmedGrade];
         grossGPA = grossGPA + (grade.doubleValue)*c7;
+        }else{
+            return;
         }
     }
     
