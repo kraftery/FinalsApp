@@ -32,7 +32,8 @@
     self.title = @"Events";
     NSURLRequest *request = [NSURLRequest requestWithURL:[NSURL URLWithString:@"http://mobileappdevelopersclub.com/shellp/events.txt"] cachePolicy:NSURLRequestUseProtocolCachePolicy timeoutInterval:60.0];
     NSURLConnection *conn = [[NSURLConnection alloc] initWithRequest:request delegate:self];
-    days = [[NSArray alloc] initWithObjects:@"Monday, May 12", @"Tuesday, May 13", @"Wednesday, May 14", @"Thursday, May 15", @"Friday, May 16", @"Saturday, May 17", @"Sunday, May 18", @"Monday, May 19", @"Tueday, May 20", @"Wednesday, May 21", @"", @"", nil];
+    days = [[NSArray alloc] initWithObjects:@"Monday, May 12", @"Tuesday, May 13", @"Wednesday, May 14", @"Thursday, May 15", @"Friday, May 16", @"Saturday, May 17", @"Sunday, May 18", @"Monday, May 19", @"Tueday, May 20", @"Wednesday, May 21", nil];
+    //returned_events = [[NSMutableArray alloc] init];
     myTableView.delegate = self;
     myTableView.dataSource = self;
     //myTableView.tableFooterView = [[UIView alloc] initWithFrame:CGRectZero];//makes the tableview only display
@@ -68,7 +69,19 @@
     return current_cell;
 }
 
+-(void) sendRequest{
+    NSURLRequest *request = [NSURLRequest requestWithURL:[NSURL URLWithString:@"http://mobileappdevelopersclub.com/shellp/events.txt"] cachePolicy:NSURLRequestReloadIgnoringCacheData timeoutInterval:60.0];
+    NSURLConnection *conn = [[NSURLConnection alloc] initWithRequest:request delegate:self];
+    //[conn start];
+}
+
 -(void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath {
+    if ([returned_events isEqual:[NSNull null]] || returned_events == nil || [returned_events count] == 0 || returned_events == Nil) {
+        UIAlertView *errorView = [[UIAlertView alloc] initWithTitle:@"WARNING:" message:@"Internet connection is bad. Please retry" delegate:self cancelButtonTitle:@"Dismiss" otherButtonTitles:nil, nil];
+        [errorView show];
+        return;
+        //[self sendRequest];
+    }
     EventsViewController *eventView = [[EventsViewController alloc] initWithNibName:@"EventsViewController" bundle:[NSBundle mainBundle]];
     switch (indexPath.row) {
         case 0:
@@ -112,6 +125,7 @@
             eventView.textViewText = [[NSString alloc] initWithString:[returned_events  objectAtIndex:9]];
             break;
         default:
+            [returned_events removeAllObjects];
             break;
     }
     [tableView deselectRowAtIndexPath:indexPath animated:YES];
