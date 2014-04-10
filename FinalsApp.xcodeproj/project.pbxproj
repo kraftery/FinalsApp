@@ -14,7 +14,6 @@
 		8444C1CD18E7684600CDDE30 /* SelectedLibraryViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8444C1CB18E7684600CDDE30 /* SelectedLibraryViewController.m */; };
 		8444C1CE18E7684600CDDE30 /* SelectedLibraryViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8444C1CC18E7684600CDDE30 /* SelectedLibraryViewController.xib */; };
 		847997C918EBC7B9008903C4 /* EventActualViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 847997C718EBC7B8008903C4 /* EventActualViewController.m */; };
-		847997CA18EBC7B9008903C4 /* EventActualViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 847997C818EBC7B8008903C4 /* EventActualViewController.xib */; };
 		847997CE18EDB361008903C4 /* CouponListViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 847997CC18EDB361008903C4 /* CouponListViewController.m */; };
 		847997CF18EDB361008903C4 /* CouponListViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 847997CD18EDB361008903C4 /* CouponListViewController.xib */; };
 		84A93C3C18DEB8E600E214A9 /* BusViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 84A93C3A18DEB8E600E214A9 /* BusViewController.m */; };
@@ -94,6 +93,11 @@
 		BD6EF92218F4FE2F007ECB45 /* menu2_05.png in Resources */ = {isa = PBXBuildFile; fileRef = BD6EF91618F4FE2F007ECB45 /* menu2_05.png */; };
 		BD6EF92318F4FE2F007ECB45 /* menu2_06.png in Resources */ = {isa = PBXBuildFile; fileRef = BD6EF91718F4FE2F007ECB45 /* menu2_06.png */; };
 		BD6EF92618F5001F007ECB45 /* header_01.png in Resources */ = {isa = PBXBuildFile; fileRef = BD6EF92518F5001F007ECB45 /* header_01.png */; };
+		BDC3E5C718F643AC00A893D4 /* specialButton_01.png in Resources */ = {isa = PBXBuildFile; fileRef = BDC3E5C618F643AC00A893D4 /* specialButton_01.png */; };
+		BDC3E5CB18F6481200A893D4 /* back2.png in Resources */ = {isa = PBXBuildFile; fileRef = BDC3E5CA18F6481200A893D4 /* back2.png */; };
+		BDC3E5E118F649A100A893D4 /* campusEventsText.png in Resources */ = {isa = PBXBuildFile; fileRef = BDC3E5CC18F649A100A893D4 /* campusEventsText.png */; };
+		BDC3E61B18F649E300A893D4 /* emptyHeader_01.png in Resources */ = {isa = PBXBuildFile; fileRef = BDC3E61A18F649E300A893D4 /* emptyHeader_01.png */; };
+		BDC3E61D18F6503600A893D4 /* EventActualViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = BDC3E61C18F6503600A893D4 /* EventActualViewController.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -115,7 +119,6 @@
 		8444C1CC18E7684600CDDE30 /* SelectedLibraryViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SelectedLibraryViewController.xib; sourceTree = "<group>"; };
 		847997C618EBC7B8008903C4 /* EventActualViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EventActualViewController.h; sourceTree = "<group>"; };
 		847997C718EBC7B8008903C4 /* EventActualViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EventActualViewController.m; sourceTree = "<group>"; };
-		847997C818EBC7B8008903C4 /* EventActualViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = EventActualViewController.xib; sourceTree = "<group>"; };
 		847997CB18EDB361008903C4 /* CouponListViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CouponListViewController.h; sourceTree = "<group>"; };
 		847997CC18EDB361008903C4 /* CouponListViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CouponListViewController.m; sourceTree = "<group>"; };
 		847997CD18EDB361008903C4 /* CouponListViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CouponListViewController.xib; sourceTree = "<group>"; };
@@ -215,6 +218,11 @@
 		BD6EF91618F4FE2F007ECB45 /* menu2_05.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = menu2_05.png; path = icons/images/menu2_05.png; sourceTree = "<group>"; };
 		BD6EF91718F4FE2F007ECB45 /* menu2_06.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = menu2_06.png; path = icons/images/menu2_06.png; sourceTree = "<group>"; };
 		BD6EF92518F5001F007ECB45 /* header_01.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = header_01.png; path = icons/images/images/header_01.png; sourceTree = "<group>"; };
+		BDC3E5C618F643AC00A893D4 /* specialButton_01.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = specialButton_01.png; path = icons/images/specialButton_01.png; sourceTree = "<group>"; };
+		BDC3E5CA18F6481200A893D4 /* back2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = back2.png; path = icons/back2.png; sourceTree = "<group>"; };
+		BDC3E5CC18F649A100A893D4 /* campusEventsText.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = campusEventsText.png; path = icons/campusEventsText.png; sourceTree = "<group>"; };
+		BDC3E61A18F649E300A893D4 /* emptyHeader_01.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = emptyHeader_01.png; path = icons/images/emptyHeader_01.png; sourceTree = "<group>"; };
+		BDC3E61C18F6503600A893D4 /* EventActualViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = EventActualViewController.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -286,8 +294,8 @@
 				B36A897318D8E39600CF1BD9 /* EventsViewController.m */,
 				B36A897418D8E39600CF1BD9 /* EventsViewController.xib */,
 				847997C618EBC7B8008903C4 /* EventActualViewController.h */,
+				BDC3E61C18F6503600A893D4 /* EventActualViewController.xib */,
 				847997C718EBC7B8008903C4 /* EventActualViewController.m */,
-				847997C818EBC7B8008903C4 /* EventActualViewController.xib */,
 				2768329418E723D400D3EE08 /* GPAViewController.h */,
 				2768329518E723D400D3EE08 /* GPAViewController.m */,
 				2768329618E723D400D3EE08 /* GPAViewController.xib */,
@@ -343,6 +351,10 @@
 		B3451AC118D7D59D00D032F8 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				BDC3E61A18F649E300A893D4 /* emptyHeader_01.png */,
+				BDC3E5CC18F649A100A893D4 /* campusEventsText.png */,
+				BDC3E5CA18F6481200A893D4 /* back2.png */,
+				BDC3E5C618F643AC00A893D4 /* specialButton_01.png */,
 				BD6EF92418F4FE48007ECB45 /* menu */,
 				B3451AC218D7D59D00D032F8 /* FinalsApp-Info.plist */,
 				B3451AC318D7D59D00D032F8 /* InfoPlist.strings */,
@@ -495,14 +507,15 @@
 			buildActionMask = 2147483647;
 			files = (
 				B3D253CB18D8BA8E0049D016 /* Art.jpg in Resources */,
+				BDC3E5CB18F6481200A893D4 /* back2.png in Resources */,
 				B3D253D518D8BA8E0049D016 /* Hornbake.jpg in Resources */,
 				B3D253D618D8BA8E0049D016 /* icon-120.png in Resources */,
 				B36A898518D8E40F00CF1BD9 /* BusScheduleViewController.xib in Resources */,
 				B3D253CC18D8BA8E0049D016 /* Blank Coupon iphone 4.jpeg in Resources */,
 				B36A897618D8E39600CF1BD9 /* EventsViewController.xib in Resources */,
-				847997CA18EBC7B9008903C4 /* EventActualViewController.xib in Resources */,
 				B36D0AB618F2FE30005D39BD /* QuoteViewController.xib in Resources */,
 				B36A898A18D8E42200CF1BD9 /* CouponsViewController.xib in Resources */,
+				BDC3E5E118F649A100A893D4 /* campusEventsText.png in Resources */,
 				B3D253CF18D8BA8E0049D016 /* Chemistry.jpg in Resources */,
 				B3D253DA18D8BA8E0049D016 /* party.png in Resources */,
 				B3D253D118D8BA8E0049D016 /* CSPAC.jpg in Resources */,
@@ -538,12 +551,15 @@
 				B3D253D318D8BA8E0049D016 /* food.png in Resources */,
 				BD6EF91918F4FE2F007ECB45 /* menu_02.png in Resources */,
 				B36D0AA218F2FDAB005D39BD /* TimeManagementViewController.xib in Resources */,
+				BDC3E61D18F6503600A893D4 /* EventActualViewController.xib in Resources */,
 				BD6EF92118F4FE2F007ECB45 /* menu2_04.png in Resources */,
 				BD6EF91C18F4FE2F007ECB45 /* menu_05.png in Resources */,
 				B3D253DD18D8BA8E0049D016 /* splash3.png in Resources */,
+				BDC3E61B18F649E300A893D4 /* emptyHeader_01.png in Resources */,
 				BD6EF92218F4FE2F007ECB45 /* menu2_05.png in Resources */,
 				BD6EF91B18F4FE2F007ECB45 /* menu_04.png in Resources */,
 				BD6EF92618F5001F007ECB45 /* header_01.png in Resources */,
+				BDC3E5C718F643AC00A893D4 /* specialButton_01.png in Resources */,
 				B3D253DB18D8BA8E0049D016 /* splash.png in Resources */,
 				B3D253D218D8BA8E0049D016 /* Engineering.jpg in Resources */,
 				B3D253CE18D8BA8E0049D016 /* cal.png in Resources */,
