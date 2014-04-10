@@ -60,7 +60,7 @@
         }
     }
     
-    current_cell.backgroundColor = [UIColor yellowColor];
+    current_cell.backgroundColor = [UIColor whiteColor];
     current_cell.textLabel.text = [days objectAtIndex:indexPath.row];
     
     return current_cell;
@@ -128,7 +128,7 @@
 
 -(IBAction)backToRoot:(id)sender{
     RootViewController *viewController = [[RootViewController alloc] init];
-    [[self navigationController] pushViewController:viewController animated:YES];
+    [[self navigationController] pushViewController:viewController animated:NO];
 }
 
 

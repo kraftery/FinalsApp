@@ -7,6 +7,7 @@
 //
 
 #import "EventsViewController.h"
+#import "EventActualViewController.h"
 
 @interface EventsViewController ()
 
@@ -48,6 +49,11 @@
 {
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
+}
+
+-(IBAction)backToEvents:(id)sender{
+    EventActualViewController *viewController = [[EventActualViewController alloc] init];
+    [[self navigationController] pushViewController:viewController animated:NO];
 }
 
 @end
