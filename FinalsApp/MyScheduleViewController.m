@@ -7,6 +7,7 @@
 //
 
 #import "MyScheduleViewController.h"
+#import "RootViewController.h"
 
 @interface MyScheduleViewController ()
 
@@ -22,6 +23,9 @@
     }
     return self;
 }
+-(void)viewWillAppear:(BOOL)animated{
+    [self.navigationController setNavigationBarHidden:YES animated:NO];
+}
 
 - (void)viewDidLoad
 {
@@ -33,12 +37,21 @@
     self.navigationItem.rightBarButtonItem = add;
     
     finalData = [[NSMutableData alloc] init];
+    
 }
 
 - (void)didReceiveMemoryWarning
 {
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
+}
+
+-(IBAction)add:(id)sender{
+    [self addButtonClick];
+}
+- (IBAction)goBackHome:(id)sender {
+    RootViewController *view = [[RootViewController alloc] init];
+    [self.navigationController pushViewController:view animated:NO];
 }
 
 -(void) addButtonClick{

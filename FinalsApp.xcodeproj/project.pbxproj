@@ -98,6 +98,8 @@
 		BDC3E5E118F649A100A893D4 /* campusEventsText.png in Resources */ = {isa = PBXBuildFile; fileRef = BDC3E5CC18F649A100A893D4 /* campusEventsText.png */; };
 		BDC3E61B18F649E300A893D4 /* emptyHeader_01.png in Resources */ = {isa = PBXBuildFile; fileRef = BDC3E61A18F649E300A893D4 /* emptyHeader_01.png */; };
 		BDC3E61D18F6503600A893D4 /* EventActualViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = BDC3E61C18F6503600A893D4 /* EventActualViewController.xib */; };
+		BDE60F3D18F7A5E70000C546 /* eventsSchedtext.png in Resources */ = {isa = PBXBuildFile; fileRef = BDE60F3C18F7A5E70000C546 /* eventsSchedtext.png */; };
+		BDE60F3F18F7A6E50000C546 /* add.png in Resources */ = {isa = PBXBuildFile; fileRef = BDE60F3E18F7A6E50000C546 /* add.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -223,6 +225,8 @@
 		BDC3E5CC18F649A100A893D4 /* campusEventsText.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = campusEventsText.png; path = icons/campusEventsText.png; sourceTree = "<group>"; };
 		BDC3E61A18F649E300A893D4 /* emptyHeader_01.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = emptyHeader_01.png; path = icons/images/emptyHeader_01.png; sourceTree = "<group>"; };
 		BDC3E61C18F6503600A893D4 /* EventActualViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = EventActualViewController.xib; sourceTree = "<group>"; };
+		BDE60F3C18F7A5E70000C546 /* eventsSchedtext.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = eventsSchedtext.png; path = icons/eventsSchedtext.png; sourceTree = "<group>"; };
+		BDE60F3E18F7A6E50000C546 /* add.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = add.png; path = icons/add.png; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -351,6 +355,8 @@
 		B3451AC118D7D59D00D032F8 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				BDE60F3E18F7A6E50000C546 /* add.png */,
+				BDE60F3C18F7A5E70000C546 /* eventsSchedtext.png */,
 				BDC3E61A18F649E300A893D4 /* emptyHeader_01.png */,
 				BDC3E5CC18F649A100A893D4 /* campusEventsText.png */,
 				BDC3E5CA18F6481200A893D4 /* back2.png */,
@@ -513,6 +519,7 @@
 				B36A898518D8E40F00CF1BD9 /* BusScheduleViewController.xib in Resources */,
 				B3D253CC18D8BA8E0049D016 /* Blank Coupon iphone 4.jpeg in Resources */,
 				B36A897618D8E39600CF1BD9 /* EventsViewController.xib in Resources */,
+				BDE60F3F18F7A6E50000C546 /* add.png in Resources */,
 				B36D0AB618F2FE30005D39BD /* QuoteViewController.xib in Resources */,
 				B36A898A18D8E42200CF1BD9 /* CouponsViewController.xib in Resources */,
 				BDC3E5E118F649A100A893D4 /* campusEventsText.png in Resources */,
@@ -548,6 +555,7 @@
 				B3D253D818D8BA8E0049D016 /* library.png in Resources */,
 				B36D0AB118F2FE1A005D39BD /* TestudoOfferingViewController.xib in Resources */,
 				B3D253DC18D8BA8E0049D016 /* splash1.png in Resources */,
+				BDE60F3D18F7A5E70000C546 /* eventsSchedtext.png in Resources */,
 				B3D253D318D8BA8E0049D016 /* food.png in Resources */,
 				BD6EF91918F4FE2F007ECB45 /* menu_02.png in Resources */,
 				B36D0AA218F2FDAB005D39BD /* TimeManagementViewController.xib in Resources */,

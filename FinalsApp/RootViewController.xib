@@ -21,7 +21,7 @@
                     <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxX="YES" flexibleMinY="YES" heightSizable="YES" flexibleMaxY="YES"/>
                 </scrollView>
                 <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="header_01.png" id="tNc-VE-SrT">
-                    <rect key="frame" x="0.0" y="23" width="320" height="75"/>
+                    <rect key="frame" x="0.0" y="20" width="320" height="75"/>
                     <autoresizingMask key="autoresizingMask" widthSizable="YES"/>
                 </imageView>
             </subviews>
