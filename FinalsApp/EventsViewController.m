@@ -36,16 +36,6 @@
     [textView setFont:[UIFont systemFontOfSize:18]];
 }
 
--(void)viewWillAppear:(BOOL)animated
-{
-    [self.navigationController setNavigationBarHidden:YES animated:NO];
-    
-    
-}
--(void)viewWillDisappear:(BOOL)animated
-{
-    [self.navigationController setNavigationBarHidden:NO animated:NO];
-}
 
 - (void)didReceiveMemoryWarning
 {

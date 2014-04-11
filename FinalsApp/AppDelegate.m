@@ -21,6 +21,16 @@
     
     self.window.backgroundColor = [UIColor whiteColor];
     [self.window makeKeyAndVisible];
+    
+    //nav bar appearance
+    [[UINavigationBar appearance]
+     setBarTintColor:[UIColor colorWithHue:0 saturation:1 brightness:.6 alpha:1]];
+    [[UINavigationBar appearance] setTintColor:[UIColor whiteColor]];
+
+   /*If we choose to use bg img for navBar
+    [[UINavigationBar appearance] setBackgroundImage:[UIImage imageNamed:@"emptyHeader_01.png"] forBarMetrics:UIBarMetricsDefault];*/
+
+    
     return YES;
 }
 

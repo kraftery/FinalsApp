@@ -42,12 +42,6 @@
     //[myTableView setAlwaysBounceVertical:YES];
 }
 
--(void)viewWillAppear:(BOOL)animated
-{
-    [self.navigationController setNavigationBarHidden:YES animated:NO];
-    
-    
-}
 
 -(NSInteger) tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section{
     return [days count];
