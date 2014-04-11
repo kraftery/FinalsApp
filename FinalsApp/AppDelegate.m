@@ -26,7 +26,13 @@
     [[UINavigationBar appearance]
      setBarTintColor:[UIColor colorWithHue:0 saturation:1 brightness:.6 alpha:1]];
     [[UINavigationBar appearance] setTintColor:[UIColor whiteColor]];
+    //[[UINavigationBar appearance] setBackIndicatorImage:[UIImage imageNamed:@"back3.png"]];
+    //[[UINavigationBar appearance] setBackIndicatorTransitionMaskImage:[UIImage imageNamed:@"back3.png"]];
+    [[UIApplication sharedApplication] setStatusBarStyle:UIStatusBarStyleLightContent];
 
+    [[UINavigationBar appearance] setTitleTextAttributes: [NSDictionary dictionaryWithObjectsAndKeys:
+                                    [UIColor colorWithRed:255.0/255.0 green:255.0/255.0 blue:245.0/255.0 alpha:1.0], NSForegroundColorAttributeName,
+                                    [UIFont fontWithName:@"Arial" size:21.0], NSFontAttributeName, nil]];
    /*If we choose to use bg img for navBar
     [[UINavigationBar appearance] setBackgroundImage:[UIImage imageNamed:@"emptyHeader_01.png"] forBarMetrics:UIBarMetricsDefault];*/
 
