@@ -13,6 +13,7 @@
 
 @property (weak, nonatomic) IBOutlet UIScrollView *scrollView;
 @property (strong, nonatomic) IBOutlet UIView *myView;
+@property (weak, nonatomic) IBOutlet UIImageView *header;
 
 - (IBAction)scheduleButton:(id)sender;
 - (IBAction)eventsButton:(id)sender;

@@ -100,6 +100,7 @@
 		BDC3E61D18F6503600A893D4 /* EventActualViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = BDC3E61C18F6503600A893D4 /* EventActualViewController.xib */; };
 		BDE60F3D18F7A5E70000C546 /* eventsSchedtext.png in Resources */ = {isa = PBXBuildFile; fileRef = BDE60F3C18F7A5E70000C546 /* eventsSchedtext.png */; };
 		BDE60F3F18F7A6E50000C546 /* add.png in Resources */ = {isa = PBXBuildFile; fileRef = BDE60F3E18F7A6E50000C546 /* add.png */; };
+		BDE60F4318F8A8F10000C546 /* header.png in Resources */ = {isa = PBXBuildFile; fileRef = BDE60F4218F8A8F10000C546 /* header.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -227,6 +228,7 @@
 		BDC3E61C18F6503600A893D4 /* EventActualViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = EventActualViewController.xib; sourceTree = "<group>"; };
 		BDE60F3C18F7A5E70000C546 /* eventsSchedtext.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = eventsSchedtext.png; path = icons/eventsSchedtext.png; sourceTree = "<group>"; };
 		BDE60F3E18F7A6E50000C546 /* add.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = add.png; path = icons/add.png; sourceTree = "<group>"; };
+		BDE60F4218F8A8F10000C546 /* header.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = header.png; path = images/header.png; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -391,6 +393,7 @@
 		B3D253B318D8BA8E0049D016 /* icons */ = {
 			isa = PBXGroup;
 			children = (
+				BDE60F4218F8A8F10000C546 /* header.png */,
 				B3D253B418D8BA8E0049D016 /* Architecture.jpg */,
 				B3D253B518D8BA8E0049D016 /* Art.jpg */,
 				B3D253B618D8BA8E0049D016 /* Blank Coupon iphone 4.jpeg */,
@@ -536,6 +539,7 @@
 				BD6EF91E18F4FE2F007ECB45 /* menu2_01.png in Resources */,
 				B36D0AA718F2FDE3005D39BD /* StressReliefViewController.xib in Resources */,
 				BD6EF92018F4FE2F007ECB45 /* menu2_03.png in Resources */,
+				BDE60F4318F8A8F10000C546 /* header.png in Resources */,
 				B3D253D418D8BA8E0049D016 /* gym.png in Resources */,
 				BD6EF91818F4FE2F007ECB45 /* menu_01.png in Resources */,
 				B36D0AAC18F2FDFA005D39BD /* PicturesOfPAndKViewController.xib in Resources */,
