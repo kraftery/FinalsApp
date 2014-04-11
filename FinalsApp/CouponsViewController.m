@@ -13,7 +13,7 @@
 @end
 
 @implementation CouponsViewController
-@synthesize imageView;
+@synthesize imageView, c_image;
 
 - (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil
 {
@@ -28,6 +28,7 @@
 {
     [super viewDidLoad];
     // Do any additional setup after loading the view from its nib.
+    imageView.image = c_image;
 }
 
 - (void)didReceiveMemoryWarning

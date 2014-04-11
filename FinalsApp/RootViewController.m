@@ -11,7 +11,7 @@
 #import "EventsViewController.h"
 #import "LibraryHoursViewController.h"
 #import "BusScheduleViewController.h"
-#import "CouponsViewController.h"
+#import "CouponListViewController.h"
 #import "GymViewController.h"
 #import "DiningViewController.h"
 #import "GPAViewController.h"
@@ -102,7 +102,7 @@
 
 - (IBAction)couponsButton:(id)sender {
     
-    CouponsViewController *viewController = [[CouponsViewController alloc] init];
+    CouponListViewController *viewController = [[CouponListViewController alloc] init];
     [[self navigationController] pushViewController:viewController animated:YES];
 }
 
