@@ -32,10 +32,24 @@
                     <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                     <dataDetectorType key="dataDetectorTypes" link="YES"/>
                 </textView>
-                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="specialButton_01.png" translatesAutoresizingMaskIntoConstraints="NO" id="MOj-fr-8MK">
-                    <rect key="frame" x="0.0" y="23" width="320" height="74"/>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="emptyHeader_01.png" translatesAutoresizingMaskIntoConstraints="NO" id="PjD-uU-Vxk">
+                    <rect key="frame" x="0.0" y="20" width="320" height="74"/>
                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                 </imageView>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="campusEventsText.png" translatesAutoresizingMaskIntoConstraints="NO" id="fBQ-df-ugV">
+                    <rect key="frame" x="0.0" y="38" width="320" height="38"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                </imageView>
+                <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fS9-eJ-5Q7">
+                    <rect key="frame" x="5" y="31" width="52" height="52"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                    <state key="normal" image="back2.png">
+                        <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                    </state>
+                    <connections>
+                        <action selector="backToEvents:" destination="-1" eventType="touchUpInside" id="6h8-ZJ-JVp"/>
+                    </connections>
+                </button>
             </subviews>
             <color key="backgroundColor" red="0.99607849120000003" green="0.84705889229999998" blue="0.0" alpha="1" colorSpace="deviceRGB"/>
             <simulatedStatusBarMetrics key="simulatedStatusBarMetrics"/>
@@ -44,6 +58,8 @@
         </view>
     </objects>
     <resources>
-        <image name="specialButton_01.png" width="320" height="74"/>
+        <image name="back2.png" width="52" height="52"/>
+        <image name="campusEventsText.png" width="320" height="38"/>
+        <image name="emptyHeader_01.png" width="320" height="74"/>
     </resources>
 </document>
