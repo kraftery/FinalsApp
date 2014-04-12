@@ -22,6 +22,7 @@
 #import "QuoteViewController.h"
 #import "AboutViewController.h"
 #import "EventActualViewController.h"
+#import "StressHelpViewController.h"
 
 
 @interface RootViewController ()
@@ -124,9 +125,10 @@
     
     StressReliefViewController *stress = [[StressReliefViewController alloc] init];
     PicturesOfPAndKViewController *pics = [[PicturesOfPAndKViewController alloc] init];
+    StressHelpViewController *help = [[StressHelpViewController alloc] init];
     
     UITabBarController *tabController = [[UITabBarController alloc] init];
-    [tabController setViewControllers:[NSArray arrayWithObjects: stress, pics, nil]];
+    [tabController setViewControllers:[NSArray arrayWithObjects: stress, help, pics, nil]];
     [[self navigationController] pushViewController:tabController animated:YES];
 }
 

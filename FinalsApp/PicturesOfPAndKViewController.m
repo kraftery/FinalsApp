@@ -14,12 +14,14 @@
 
 @implementation PicturesOfPAndKViewController
 
+@synthesize scrollView, myView;
+
 - (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil
 {
     self = [super initWithNibName:nibNameOrNil bundle:nibBundleOrNil];
     if (self) {
         UITabBarItem *tbi = [self tabBarItem];
-        [tbi setTitle:@"Pictures Of Puppies And Kittens"];
+        [tbi setTitle:@"Puppies And Kittens"];
     }
     return self;
 }
@@ -28,6 +30,9 @@
 {
     [super viewDidLoad];
     // Do any additional setup after loading the view from its nib.
+    self.scrollView.contentSize = self.myView.bounds.size;
+    [self.scrollView addSubview:self.myView];
+    [self.scrollView flashScrollIndicators];
 }
 
 - (void)didReceiveMemoryWarning
