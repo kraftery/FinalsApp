@@ -10,4 +10,6 @@
 
 @interface StressReliefViewController : UIViewController
 
+@property (weak, nonatomic) IBOutlet UITextView *textView;
+
 @end
