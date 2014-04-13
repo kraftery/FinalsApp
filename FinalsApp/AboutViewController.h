@@ -8,6 +8,10 @@
 
 #import <UIKit/UIKit.h>
 
-@interface AboutViewController : UIViewController
+@interface AboutViewController : UIViewController<NSURLConnectionDelegate>{
+    NSMutableData *responseData;
+    NSString *aboutText;
+}
+@property (retain, nonatomic) IBOutlet UITextView *textView;
 
 @end
