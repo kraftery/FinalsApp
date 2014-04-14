@@ -14,7 +14,7 @@
 
 @implementation StressHelpViewController
 
-@synthesize textView;
+@synthesize textView, indicator;
 
 - (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil
 {
@@ -33,6 +33,7 @@
     // Do any additional setup after loading the view from its nib.
     NSURLRequest *request = [NSURLRequest requestWithURL:[NSURL URLWithString:@"http://mobileappdevelopersclub.com/shellp/stressHelp.txt"] cachePolicy:NSURLRequestUseProtocolCachePolicy timeoutInterval:60.0];
     NSURLConnection *conn = [[NSURLConnection alloc] initWithRequest:request delegate:self];
+    [conn start];
 }
 
 #pragma mark NSURLConnection Delegate Methods
@@ -42,6 +43,7 @@
     // so that we can append data to it in the didReceiveData method
     // Furthermore, this method is called each time there is a redirect so reinitializing it
     // also serves to clear it
+    [indicator startAnimating];
     responseData = [[NSMutableData alloc] init];
 }
 
@@ -62,6 +64,7 @@
     textView.text = [[NSString alloc] initWithData:responseData encoding:NSUTF8StringEncoding];
     textView.dataDetectorTypes = UIDataDetectorTypeLink; //if you click on the email, it will open your mail app to email
     textView.font = [UIFont fontWithName:@"Verdana" size:16.0f];
+    [indicator stopAnimating];
 }
 
 - (void)connection:(NSURLConnection *)connection didFailWithError:(NSError *)error {

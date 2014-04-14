@@ -82,6 +82,7 @@
         NSString *url_string = [NSString stringWithFormat:@"http://mobileappdevelopersclub.com/shellp/ShelLp_Final/%@",className];
         NSURLRequest *request = [NSURLRequest requestWithURL:[NSURL URLWithString:url_string] cachePolicy:NSURLRequestUseProtocolCachePolicy timeoutInterval:60.0];
         NSURLConnection *conn = [[NSURLConnection alloc] initWithRequest:request delegate:self];
+        [conn start];
         if (finalData == nil) {
             UIAlertView *errorView = [[UIAlertView alloc] initWithTitle:@"Error" message:@"Something Went wrong with the data." delegate:self cancelButtonTitle:@"Dismiss" otherButtonTitles:nil, nil];
             [errorView show];

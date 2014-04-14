@@ -14,7 +14,7 @@
 
 @implementation TimeManagementViewController
 
-@synthesize textView;
+@synthesize textView, indicator;
 
 - (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil
 {
@@ -32,7 +32,6 @@
     NSURLRequest *request = [NSURLRequest requestWithURL:[NSURL URLWithString:@"http://mobileappdevelopersclub.com/shellp/timeManagement.txt"] cachePolicy:NSURLRequestUseProtocolCachePolicy timeoutInterval:60.0];
     NSURLConnection *conn = [[NSURLConnection alloc] initWithRequest:request delegate:self];
     [conn start];
-    //textView.text = @"1. Create a schedule and stick to it\n\n2. Turn off electronic devices so you are not distracted\n\n3. Prioritize what you need to get done\n\n4. Find a space to study where you will not be distracted\n\n5. Start studying early\n\n6. Don't try to cram the night before\n\n";
 }
 
 #pragma mark NSURLConnection Delegate Methods
@@ -42,6 +41,7 @@
     // so that we can append data to it in the didReceiveData method
     // Furthermore, this method is called each time there is a redirect so reinitializing it
     // also serves to clear it
+    [indicator startAnimating];
     responseData = [[NSMutableData alloc] init];
 }
 
@@ -62,6 +62,7 @@
     textView.text = [[NSString alloc] initWithData:responseData encoding:NSUTF8StringEncoding];
     textView.dataDetectorTypes = UIDataDetectorTypeLink; //if you click on the email, it will open your mail app to email
     textView.font = [UIFont fontWithName:@"Verdana" size:16.0f];
+    [indicator stopAnimating];
 }
 
 - (void)connection:(NSURLConnection *)connection didFailWithError:(NSError *)error {
