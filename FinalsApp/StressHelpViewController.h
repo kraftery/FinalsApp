@@ -13,5 +13,6 @@
 }
 
 @property (weak, nonatomic) IBOutlet UITextView *textView;
+@property (strong, nonatomic) IBOutlet UIActivityIndicatorView *indicator;
 
 @end

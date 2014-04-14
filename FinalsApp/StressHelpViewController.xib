@@ -6,6 +6,7 @@
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="StressHelpViewController">
             <connections>
+                <outlet property="indicator" destination="Llj-Ys-mrV" id="fDU-eS-uSk"/>
                 <outlet property="textView" destination="kO5-E6-u0I" id="WU2-pl-CzR"/>
                 <outlet property="view" destination="1" id="3"/>
             </connections>
@@ -23,6 +24,11 @@
                     <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                     <dataDetectorType key="dataDetectorTypes" phoneNumber="YES" link="YES"/>
                 </textView>
+                <activityIndicatorView opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" hidesWhenStopped="YES" animating="YES" style="whiteLarge" id="Llj-Ys-mrV">
+                    <rect key="frame" x="137" y="70" width="37" height="37"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                    <color key="color" red="0.60922639270000001" green="0.01419694549" blue="0.027777322159999999" alpha="1" colorSpace="calibratedRGB"/>
+                </activityIndicatorView>
             </subviews>
             <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
             <simulatedStatusBarMetrics key="simulatedStatusBarMetrics"/>

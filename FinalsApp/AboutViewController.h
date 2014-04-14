@@ -13,5 +13,6 @@
     NSString *aboutText;
 }
 @property (retain, nonatomic) IBOutlet UITextView *textView;
+@property (strong, nonatomic) IBOutlet UIActivityIndicatorView *indicator;
 
 @end

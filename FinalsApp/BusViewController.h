@@ -12,6 +12,7 @@
 
 }
 
+@property (strong, nonatomic) IBOutlet UIActivityIndicatorView *indicator;
 @property (nonatomic, strong) IBOutlet UIWebView *webView;
 @property(nonatomic, strong) NSString *fullURL;
 @end

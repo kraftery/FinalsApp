@@ -13,7 +13,7 @@
 @end
 
 @implementation BusViewController
-@synthesize webView, fullURL;
+@synthesize webView, fullURL,indicator;
 
 - (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil
 {
@@ -28,11 +28,13 @@
 {
     [super viewDidLoad];
     // Do any additional setup after loading the view from its nib.
+    [indicator startAnimating];
     NSURL *url = [NSURL URLWithString:fullURL];
     NSURLRequest *requestObj = [NSURLRequest requestWithURL:url];
     webView.scalesPageToFit = YES;
     webView.autoresizingMask = (UIViewAutoresizingFlexibleWidth | UIViewAutoresizingFlexibleHeight);
     [webView loadRequest:requestObj];
+    [indicator stopAnimating];
 }
 
 - (void)didReceiveMemoryWarning

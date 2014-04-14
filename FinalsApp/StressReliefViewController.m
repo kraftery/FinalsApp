@@ -14,7 +14,7 @@
 
 @implementation StressReliefViewController
 
-@synthesize textView;
+@synthesize textView, indicator;
 
 - (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil
 {
@@ -42,6 +42,7 @@
     // so that we can append data to it in the didReceiveData method
     // Furthermore, this method is called each time there is a redirect so reinitializing it
     // also serves to clear it
+    [indicator startAnimating];
     responseData = [[NSMutableData alloc] init];
 }
 
@@ -62,6 +63,7 @@
     textView.text = [[NSString alloc] initWithData:responseData encoding:NSUTF8StringEncoding];
     textView.dataDetectorTypes = UIDataDetectorTypeLink; //if you click on the email, it will open your mail app to email
     textView.font = [UIFont fontWithName:@"Verdana" size:16.0f];
+    [indicator stopAnimating];
 }
 
 - (void)connection:(NSURLConnection *)connection didFailWithError:(NSError *)error {
