@@ -58,7 +58,7 @@
         }
     }
     
-    current_cell.backgroundColor = [UIColor yellowColor];
+    current_cell.backgroundColor = [UIColor clearColor];
     current_cell.textLabel.text = [days objectAtIndex:indexPath.row];
     
     return current_cell;
