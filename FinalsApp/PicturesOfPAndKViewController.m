@@ -34,6 +34,7 @@
 }
 
 -(IBAction)button:(id)sender{
+    
     imageView.animationImages = [[NSArray alloc] initWithObjects:[UIImage imageNamed:@"CSPAC.jpg"],
         [UIImage imageNamed:@"Engineering.jpg"],
         [UIImage imageNamed:@"Hornbake.jpg"],
