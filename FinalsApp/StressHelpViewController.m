@@ -14,7 +14,7 @@
 
 @implementation StressHelpViewController
 
-@synthesize textView;
+@synthesize textView, indicator;
 
 - (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil
 {
@@ -31,8 +31,51 @@
 {
     [super viewDidLoad];
     // Do any additional setup after loading the view from its nib.
-    
-    textView.text = @"The Following Resources Are Available:\n\nUniversity Health Center: (301) 314-8180\nAfter Hours Nurse Line: (301) 314-9386\n\nMental Health Service @ the Health Center: (301) 314-8106\n\nHelp Center: (301) 314-4357\n\nCampus Chaplains: (301) 314-9866\n\nCounseling Center: 301-314-7651\n\nAssessment & Stabilization Center: \n(301) 618-3162 or (301) 322-2606\n\nNational Suicide Prevention Lifeline: 1-800-273-TALK\n\nMaryland Crisis Hotline: 1-800-422-0009";
+    NSURLRequest *request = [NSURLRequest requestWithURL:[NSURL URLWithString:@"http://mobileappdevelopersclub.com/shellp/stressHelp.txt"] cachePolicy:NSURLRequestUseProtocolCachePolicy timeoutInterval:60.0];
+    NSURLConnection *conn = [[NSURLConnection alloc] initWithRequest:request delegate:self];
+    [conn start];
+}
+
+#pragma mark NSURLConnection Delegate Methods
+
+- (void)connection:(NSURLConnection *)connection didReceiveResponse:(NSURLResponse *)response {
+    // A response has been received, this is where we initialize the instance var you created
+    // so that we can append data to it in the didReceiveData method
+    // Furthermore, this method is called each time there is a redirect so reinitializing it
+    // also serves to clear it
+    [indicator startAnimating];
+    responseData = [[NSMutableData alloc] init];
+}
+
+- (void)connection:(NSURLConnection *)connection didReceiveData:(NSData *)data {
+    // Append the new data to the instance variable you declared
+    [responseData appendData:data];
+}
+
+- (NSCachedURLResponse *)connection:(NSURLConnection *)connection
+                  willCacheResponse:(NSCachedURLResponse*)cachedResponse {
+    // Return nil to indicate not necessary to store a cached response for this connection
+    return cachedResponse;
+}
+
+- (void)connectionDidFinishLoading:(NSURLConnection *)connection {
+    // The request is complete and data has been received
+    // You can parse the stuff in your instance variable now
+    textView.text = [[NSString alloc] initWithData:responseData encoding:NSUTF8StringEncoding];
+    textView.dataDetectorTypes = UIDataDetectorTypeLink; //if you click on the email, it will open your mail app to email
+    textView.font = [UIFont fontWithName:@"Verdana" size:16.0f];
+    [indicator stopAnimating];
+}
+
+- (void)connection:(NSURLConnection *)connection didFailWithError:(NSError *)error {
+    // The request has failed for some reason!
+    // Check the error var
+    UIAlertView *errorView = [[UIAlertView alloc] initWithTitle:@"Error" message:@"Looks like your connection to the internet is too slow, Try again"
+                                                       delegate:self
+                                              cancelButtonTitle:@"Dismiss"
+                                              otherButtonTitles:nil, nil];
+    errorView.alertViewStyle = UIAlertViewStyleDefault;
+    [errorView show];
 }
 
 - (void)didReceiveMemoryWarning

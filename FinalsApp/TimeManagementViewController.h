@@ -8,8 +8,11 @@
 
 #import <UIKit/UIKit.h>
 
-@interface TimeManagementViewController : UIViewController
+@interface TimeManagementViewController : UIViewController<NSURLConnectionDelegate>{
+    NSMutableData *responseData;
+}
 
 @property (weak, nonatomic) IBOutlet UITextView *textView;
+@property (strong, nonatomic) IBOutlet UIActivityIndicatorView *indicator;
 
 @end

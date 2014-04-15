@@ -31,6 +31,7 @@
     // Do any additional setup after loading the view from its nib.
     NSURLRequest *request = [NSURLRequest requestWithURL:[NSURL URLWithString:@"http://mobileappdevelopersclub.com/shellp/library.txt"] cachePolicy:NSURLRequestUseProtocolCachePolicy timeoutInterval:60.0];
     NSURLConnection *conn = [[NSURLConnection alloc] initWithRequest:request delegate:self];
+    [conn start];
     library = [[NSArray alloc] initWithObjects:@"Architecture",@"Art",@"Chemistry",@"CSPAC",@"Engineering",@"Hornbake",@"McKeldin", nil];
     myTableView.tableFooterView = [[UIView alloc] initWithFrame:CGRectZero];//makes the tableview only display
     myTableView.backgroundColor = [UIColor clearColor];

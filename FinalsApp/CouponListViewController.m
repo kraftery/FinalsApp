@@ -32,7 +32,7 @@
     restaurants = [[NSArray alloc] initWithObjects:@"Chipotle", @"DP Dough",@"Jimmy Johns",nil];
     myTableView.delegate = self;
     myTableView.dataSource = self;
-    myTableView.backgroundColor = [UIColor yellowColor];
+    myTableView.backgroundColor = [UIColor clearColor];
     myTableView.tableFooterView = [[UIView alloc] initWithFrame:CGRectZero];//makes the tableview only display
 }
 
@@ -50,7 +50,7 @@
         }
     }
     
-    current_cell.backgroundColor = [UIColor yellowColor];
+    current_cell.backgroundColor = [UIColor clearColor];
     current_cell.textLabel.text = [restaurants objectAtIndex:indexPath.row];
     
     return current_cell;

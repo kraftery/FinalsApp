@@ -14,7 +14,7 @@
 
 @implementation PicturesOfPAndKViewController
 
-@synthesize scrollView, myView;
+@synthesize imageView;
 
 - (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil
 {
@@ -30,9 +30,21 @@
 {
     [super viewDidLoad];
     // Do any additional setup after loading the view from its nib.
-    self.scrollView.contentSize = self.myView.bounds.size;
-    [self.scrollView addSubview:self.myView];
-    [self.scrollView flashScrollIndicators];
+    
+}
+
+-(IBAction)button:(id)sender{
+    
+    imageView.animationImages = [[NSArray alloc] initWithObjects:[UIImage imageNamed:@"CSPAC.jpg"],
+        [UIImage imageNamed:@"Engineering.jpg"],
+        [UIImage imageNamed:@"Hornbake.jpg"],
+        [UIImage imageNamed:@"Architecture.jpg"],
+        [UIImage imageNamed:@"Art.jpg"],
+        nil];
+    
+    self.imageView.animationDuration = 20.0;
+    self.imageView.animationRepeatCount = 2;
+    [self.imageView startAnimating];
 }
 
 - (void)didReceiveMemoryWarning

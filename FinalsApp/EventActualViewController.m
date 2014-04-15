@@ -32,11 +32,12 @@
     self.title = @"Events";
     NSURLRequest *request = [NSURLRequest requestWithURL:[NSURL URLWithString:@"http://mobileappdevelopersclub.com/shellp/events.txt"] cachePolicy:NSURLRequestUseProtocolCachePolicy timeoutInterval:60.0];
     NSURLConnection *conn = [[NSURLConnection alloc] initWithRequest:request delegate:self];
+    [conn start];
     days = [[NSArray alloc] initWithObjects:@"Friday, May 9",@"Saturday, May 10",@"Sunday, May 11",@"Monday, May 12", @"Tuesday, May 13", @"Wednesday, May 14", @"Thursday, May 15", @"Friday, May 16", @"Saturday, May 17", @"Sunday, May 18", @"Monday, May 19", @"Tueday, May 20", nil];
     //returned_events = [[NSMutableArray alloc] init];
     myTableView.delegate = self;
     myTableView.dataSource = self;
-    //myTableView.tableFooterView = [[UIView alloc] initWithFrame:CGRectZero];//makes the tableview only display
+    myTableView.tableFooterView = [[UIView alloc] initWithFrame:CGRectZero];//makes the tableview only display
     myTableView.backgroundColor = [UIColor clearColor];
     //myTableView.bounces = YES;
     //[myTableView setAlwaysBounceVertical:YES];
@@ -57,7 +58,7 @@
         }
     }
     
-    current_cell.backgroundColor = [UIColor yellowColor];
+    current_cell.backgroundColor = [UIColor clearColor];
     current_cell.textLabel.text = [days objectAtIndex:indexPath.row];
     
     return current_cell;

@@ -29,6 +29,7 @@
     [super viewDidLoad];
     // Do any additional setup after loading the view from its nib.
     imageView.image = c_image;
+    
 }
 
 - (void)didReceiveMemoryWarning

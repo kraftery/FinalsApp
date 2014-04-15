@@ -29,10 +29,11 @@
 {
     [super viewDidLoad];
     // Do any additional setup after loading the view from its nib.
-    label.text = labelText;
+    //label.text = labelText;
     self.imageView.image = [UIImage imageNamed:imageName];
     textView.text = textViewText;
-    [textView setFont:[UIFont systemFontOfSize:14]];
+    self.isOpenLabel.text = @"Now open.";
+    //[textView setFont:[UIFont systemFontOfSize:14]];
 }
 
 - (void)didReceiveMemoryWarning

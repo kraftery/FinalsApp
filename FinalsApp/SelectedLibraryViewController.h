@@ -15,5 +15,6 @@
 @property(nonatomic, strong) NSString *labelText;
 @property(nonatomic, strong) NSString *imageName;
 @property(nonatomic, strong) NSString *textViewText;
+@property (weak, nonatomic) IBOutlet UILabel *isOpenLabel;
 
 @end

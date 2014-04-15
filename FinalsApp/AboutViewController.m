@@ -13,7 +13,7 @@
 @end
 
 @implementation AboutViewController
-@synthesize textView;
+@synthesize textView, indicator;
 - (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil
 {
     self = [super initWithNibName:nibNameOrNil bundle:nibBundleOrNil];
@@ -30,6 +30,7 @@
     self.title = @"About us";
     NSURLRequest *request = [NSURLRequest requestWithURL:[NSURL URLWithString:@"http://mobileappdevelopersclub.com/shellp/aboutme.txt"] cachePolicy:NSURLRequestUseProtocolCachePolicy timeoutInterval:60.0];
     NSURLConnection *conn = [[NSURLConnection alloc] initWithRequest:request delegate:self];
+    [conn start];
 }
 
 #pragma mark NSURLConnection Delegate Methods
@@ -39,6 +40,7 @@
     // so that we can append data to it in the didReceiveData method
     // Furthermore, this method is called each time there is a redirect so reinitializing it
     // also serves to clear it
+    [indicator startAnimating];
     responseData = [[NSMutableData alloc] init];
 }
 
@@ -59,12 +61,13 @@
     textView.text = [[NSString alloc] initWithData:responseData encoding:NSUTF8StringEncoding];
     textView.dataDetectorTypes = UIDataDetectorTypeLink; //if you click on the email, it will open your mail app to email
     textView.font = [UIFont fontWithName:@"Verdana" size:16.0f];
+    [indicator stopAnimating];
 }
 
 - (void)connection:(NSURLConnection *)connection didFailWithError:(NSError *)error {
     // The request has failed for some reason!
     // Check the error var
-    UIAlertView *errorView = [[UIAlertView alloc] initWithTitle:@"Error" message:@"Looks like your connection to the internet is to slow, Try again"
+    UIAlertView *errorView = [[UIAlertView alloc] initWithTitle:@"Error" message:@"Looks like your connection to the internet is too slow, Try again"
         delegate:self
         cancelButtonTitle:@"Dismiss"
         otherButtonTitles:nil, nil];

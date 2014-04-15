@@ -47,20 +47,11 @@
     self.scrollView.contentSize = self.myView.bounds.size;
     [self.scrollView addSubview:self.myView];
     [self.scrollView flashScrollIndicators];
-    //self.title = @"UMD Finals App";
-}
-
--(void)viewDidAppear:(BOOL)animated{
+    self.title = @"UMD Finals App";
     
-    
-}
--(void)viewWillAppear:(BOOL)animated{
-    [self.header setAlpha:(0.0f)];
-    [self.navigationController setNavigationBarHidden:YES animated:NO];
-    [self.header setAlpha:(1.0f)];
-}
--(void) viewWillDisappear:(BOOL)animated{
-    [self.navigationController setNavigationBarHidden:NO animated:NO];
+    UIImage *img = [UIImage imageNamed:@"icon.png"];
+    UIImageView *imageView = [[UIImageView alloc] initWithImage:img];
+    [[self navigationItem] setTitleView:imageView];
 }
 - (void)didReceiveMemoryWarning
 {
