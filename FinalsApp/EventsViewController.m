@@ -32,7 +32,6 @@
     self.title = @"Events";
     textView.text = textViewText;
     label.text = labelText;
-    
     [textView setFont:[UIFont systemFontOfSize:18]];
 }
 
