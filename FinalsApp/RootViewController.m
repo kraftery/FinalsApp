@@ -50,9 +50,8 @@
     self.title = @"UMD Finals App";
     
     UIImage *img = [UIImage imageNamed:@"icon.png"];
-    UIBarButtonItem *logo = [[UIBarButtonItem alloc] initWithImage:img style:UIBarButtonItemStylePlain target:self action:nil];
-    
-    self.navigationController.navigationItem.leftBarButtonItem = logo;
+    UIImageView *imageView = [[UIImageView alloc] initWithImage:img];
+    [[self navigationItem] setTitleView:imageView];
 }
 - (void)didReceiveMemoryWarning
 {

@@ -34,6 +34,7 @@
     add = [[UIBarButtonItem alloc] initWithBarButtonSystemItem:UIBarButtonSystemItemAdd target:self action:@selector(addButtonClick)];
     self.navigationItem.rightBarButtonItem = add;
     
+    myTableView.backgroundColor = [UIColor clearColor];
     finalData = [[NSMutableData alloc] init];
     
 }
