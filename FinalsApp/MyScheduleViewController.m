@@ -7,6 +7,7 @@
 //
 
 #import "MyScheduleViewController.h"
+#import "RootViewController.h"
 
 @interface MyScheduleViewController ()
 
@@ -23,21 +24,32 @@
     return self;
 }
 
+
 - (void)viewDidLoad
 {
     [super viewDidLoad];
     // Do any additional setup after loading the view from its nib.
     self.title = @"My Schedule";
     myExams = [[NSMutableArray alloc] init];
-    add = [[UIBarButtonItem alloc] initWithTitle:@"Add" style:UIBarButtonItemStyleBordered target:self action:@selector(addButtonClick)];
+    add = [[UIBarButtonItem alloc] initWithBarButtonSystemItem:UIBarButtonSystemItemAdd target:self action:@selector(addButtonClick)];
     self.navigationItem.rightBarButtonItem = add;
+    
     finalData = [[NSMutableData alloc] init];
+    
 }
 
 - (void)didReceiveMemoryWarning
 {
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
+}
+
+-(IBAction)add:(id)sender{
+    [self addButtonClick];
+}
+- (IBAction)goBackHome:(id)sender {
+    RootViewController *view = [[RootViewController alloc] init];
+    [self.navigationController pushViewController:view animated:NO];
 }
 
 -(void) addButtonClick{

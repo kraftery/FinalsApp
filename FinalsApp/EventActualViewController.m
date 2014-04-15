@@ -8,6 +8,7 @@
 
 #import "EventActualViewController.h"
 #import "EventsViewController.h"
+#import "RootViewController.h"
 
 @interface EventActualViewController ()
 
@@ -31,12 +32,16 @@
     self.title = @"Events";
     NSURLRequest *request = [NSURLRequest requestWithURL:[NSURL URLWithString:@"http://mobileappdevelopersclub.com/shellp/events.txt"] cachePolicy:NSURLRequestUseProtocolCachePolicy timeoutInterval:60.0];
     NSURLConnection *conn = [[NSURLConnection alloc] initWithRequest:request delegate:self];
-    days = [[NSArray alloc] initWithObjects:@"Sunday, December 15", @"Monday, December 16", @"Tuesday, December 17", @"Wednesday, December 18", @"Thursday, December 19", @"Friday, December 20", nil];
+    days = [[NSArray alloc] initWithObjects:@"Friday, May 9",@"Saturday, May 10",@"Sunday, May 11",@"Monday, May 12", @"Tuesday, May 13", @"Wednesday, May 14", @"Thursday, May 15", @"Friday, May 16", @"Saturday, May 17", @"Sunday, May 18", @"Monday, May 19", @"Tueday, May 20", nil];
+    //returned_events = [[NSMutableArray alloc] init];
     myTableView.delegate = self;
     myTableView.dataSource = self;
-    myTableView.tableFooterView = [[UIView alloc] initWithFrame:CGRectZero];//makes the tableview only display
+    //myTableView.tableFooterView = [[UIView alloc] initWithFrame:CGRectZero];//makes the tableview only display
     myTableView.backgroundColor = [UIColor clearColor];
+    //myTableView.bounces = YES;
+    //[myTableView setAlwaysBounceVertical:YES];
 }
+
 
 -(NSInteger) tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section{
     return [days count];
@@ -58,15 +63,71 @@
     return current_cell;
 }
 
+-(void) sendRequest{
+    NSURLRequest *request = [NSURLRequest requestWithURL:[NSURL URLWithString:@"http://mobileappdevelopersclub.com/shellp/events.txt"] cachePolicy:NSURLRequestReloadIgnoringCacheData timeoutInterval:60.0];
+    NSURLConnection *conn = [[NSURLConnection alloc] initWithRequest:request delegate:self];
+    //[conn start];
+}
+
 -(void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath {
+    if ([returned_events isEqual:[NSNull null]] || returned_events == nil || [returned_events count] == 0 || returned_events == Nil) {
+        UIAlertView *errorView = [[UIAlertView alloc] initWithTitle:@"WARNING:" message:@"Internet connection is bad. Please retry" delegate:self cancelButtonTitle:@"Dismiss" otherButtonTitles:nil, nil];
+        [errorView show];
+        return;
+        //[self sendRequest];
+    }
     EventsViewController *eventView = [[EventsViewController alloc] initWithNibName:@"EventsViewController" bundle:[NSBundle mainBundle]];
     switch (indexPath.row) {
         case 0:
-            eventView.labelText = [days objectAtIndex:0];
+            eventView.labelText = @"Friday 9th";
             eventView.textViewText = [[NSString alloc] initWithString:[returned_events  objectAtIndex:0]];
             break;
-            
+        case 1:
+            eventView.labelText = @"Saturday 10th";
+            eventView.textViewText = [[NSString alloc] initWithString:[returned_events  objectAtIndex:1]];
+            break;
+        case 2:
+            eventView.labelText = @"Sunday 11th";
+            eventView.textViewText = [[NSString alloc] initWithString:[returned_events  objectAtIndex:2]];
+            break;
+        case 3:
+            eventView.labelText = @"Monday 12th";
+            eventView.textViewText = [[NSString alloc] initWithString:[returned_events  objectAtIndex:3]];
+            break;
+        case 4:
+            eventView.labelText = @"Tuesday 13th";
+            eventView.textViewText = [[NSString alloc] initWithString:[returned_events  objectAtIndex:4]];
+            break;
+        case 5:
+            eventView.labelText = @"Wednesday 14th";
+            eventView.textViewText = [[NSString alloc] initWithString:[returned_events  objectAtIndex:5]];
+            break;
+        case 6:
+            eventView.labelText = @"Thursday 15th";
+            eventView.textViewText = [[NSString alloc] initWithString:[returned_events  objectAtIndex:6]];
+            break;
+        case 7:
+            eventView.labelText = @"Friday 16th";
+            eventView.textViewText = [[NSString alloc] initWithString:[returned_events  objectAtIndex:7]];
+            break;
+        case 8:
+            eventView.labelText = @"Saturday 17th";
+            eventView.textViewText = [[NSString alloc] initWithString:[returned_events  objectAtIndex:8]];
+            break;
+        case 9:
+            eventView.labelText = @"Sunday 18th";
+            eventView.textViewText = [[NSString alloc] initWithString:[returned_events  objectAtIndex:9]];
+            break;
+        case 10:
+            eventView.labelText = @"Monday 19th";
+            eventView.textViewText = [[NSString alloc] initWithString:[returned_events  objectAtIndex:10]];
+            break;
+        case 11:
+            eventView.labelText = @"Tuesday 20th";
+            eventView.textViewText = [[NSString alloc] initWithString:[returned_events  objectAtIndex:11]];
+            break;
         default:
+            [returned_events removeAllObjects];
             break;
     }
     [tableView deselectRowAtIndexPath:indexPath animated:YES];
@@ -117,5 +178,11 @@
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
 }
+
+-(IBAction)backToRoot:(id)sender{
+    RootViewController *viewController = [[RootViewController alloc] init];
+    [[self navigationController] pushViewController:viewController animated:YES];
+}
+
 
 @end

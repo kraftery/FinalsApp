@@ -10,4 +10,8 @@
 
 @interface PicturesOfPAndKViewController : UIViewController
 
+@property (weak, nonatomic) IBOutlet UIScrollView *scrollView;
+@property (strong, nonatomic) IBOutlet UIView *myView;
+
+
 @end

@@ -7,6 +7,7 @@
 //
 
 #import "EventsViewController.h"
+#import "EventActualViewController.h"
 
 @interface EventsViewController ()
 
@@ -31,12 +32,19 @@
     self.title = @"Events";
     textView.text = textViewText;
     label.text = labelText;
+    
+    [textView setFont:[UIFont systemFontOfSize:18]];
 }
+
 
 - (void)didReceiveMemoryWarning
 {
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
+}
+- (IBAction)backToEvents:(id)sender {
+    EventActualViewController *view = [[EventActualViewController alloc] init];
+    [self.navigationController pushViewController:view animated:NO];
 }
 
 @end

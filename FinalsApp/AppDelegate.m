@@ -21,7 +21,23 @@
     
     self.window.backgroundColor = [UIColor whiteColor];
     [self.window makeKeyAndVisible];
-    return YES;
+    
+    //nav bar appearance
+    [[UINavigationBar appearance]
+     setBarTintColor:[UIColor colorWithHue:0 saturation:1 brightness:.6 alpha:1]];
+    [[UINavigationBar appearance] setTintColor:[UIColor whiteColor]];
+    //[[UINavigationBar appearance] setBackIndicatorTransitionMaskImage:[UIImage imageNamed:@"back3.png"]];
+    [[UIApplication sharedApplication] setStatusBarStyle:UIStatusBarStyleLightContent];
+    
+    
+    NSMutableDictionary *attributes = [NSMutableDictionary dictionary];
+    [attributes setValue:[UIColor colorWithRed:(1.0f) green:(1.0f) blue:(1.0f) alpha:1.0f] forKey:NSForegroundColorAttributeName];
+    [attributes setValue:[UIFont fontWithName:@"Avenir" size:21.0f] forKey:NSFontAttributeName];
+    
+    [[UINavigationBar appearance] setTitleTextAttributes: attributes];//for Title
+    [[UIBarButtonItem appearance] setTitleTextAttributes:attributes forState:UIControlStateNormal];//for nav btn
+    //If we choose to use bg img for navBar
+    [[UINavigationBar appearance] setBackgroundImage:[UIImage imageNamed:@"emptyHeader_01_01.png"] forBarMetrics:UIBarMetricsDefault];    return YES;
 }
 
 - (void)applicationWillResignActive:(UIApplication *)application
@@ -52,3 +68,4 @@
 }
 
 @end
+

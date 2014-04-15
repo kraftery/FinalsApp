@@ -8,8 +8,9 @@
 
 #import <UIKit/UIKit.h>
 
-@interface CouponsViewController : UIViewController<NSURLConnectionDelegate>{
+@interface CouponsViewController : UIViewController{
+    //UIImage *coupon;
 }
 @property (strong, nonatomic) IBOutlet UIImageView *imageView;
-
+@property (nonatomic, strong) UIImage *c_image;
 @end

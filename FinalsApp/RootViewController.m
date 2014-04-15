@@ -11,7 +11,7 @@
 #import "EventsViewController.h"
 #import "LibraryHoursViewController.h"
 #import "BusScheduleViewController.h"
-#import "CouponsViewController.h"
+#import "CouponListViewController.h"
 #import "GymViewController.h"
 #import "DiningViewController.h"
 #import "GPAViewController.h"
@@ -22,6 +22,7 @@
 #import "QuoteViewController.h"
 #import "AboutViewController.h"
 #import "EventActualViewController.h"
+#import "StressHelpViewController.h"
 
 
 @interface RootViewController ()
@@ -46,18 +47,21 @@
     self.scrollView.contentSize = self.myView.bounds.size;
     [self.scrollView addSubview:self.myView];
     [self.scrollView flashScrollIndicators];
+    //self.title = @"UMD Finals App";
 }
 
--(void)viewWillAppear:(BOOL)animated
-{
+-(void)viewDidAppear:(BOOL)animated{
+    
+    
+}
+-(void)viewWillAppear:(BOOL)animated{
+    [self.header setAlpha:(0.0f)];
     [self.navigationController setNavigationBarHidden:YES animated:NO];
-
+    [self.header setAlpha:(1.0f)];
 }
--(void)viewDidDisappear:(BOOL)animated
-{
+-(void) viewWillDisappear:(BOOL)animated{
     [self.navigationController setNavigationBarHidden:NO animated:NO];
 }
-
 - (void)didReceiveMemoryWarning
 {
     [super didReceiveMemoryWarning];
@@ -101,7 +105,7 @@
 
 - (IBAction)couponsButton:(id)sender {
     
-    CouponsViewController *viewController = [[CouponsViewController alloc] init];
+    CouponListViewController *viewController = [[CouponListViewController alloc] init];
     [[self navigationController] pushViewController:viewController animated:YES];
 }
 
@@ -121,9 +125,10 @@
     
     StressReliefViewController *stress = [[StressReliefViewController alloc] init];
     PicturesOfPAndKViewController *pics = [[PicturesOfPAndKViewController alloc] init];
+    StressHelpViewController *help = [[StressHelpViewController alloc] init];
     
     UITabBarController *tabController = [[UITabBarController alloc] init];
-    [tabController setViewControllers:[NSArray arrayWithObjects: stress, pics, nil]];
+    [tabController setViewControllers:[NSArray arrayWithObjects: stress, help, pics, nil]];
     [[self navigationController] pushViewController:tabController animated:YES];
 }
 
