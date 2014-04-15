@@ -19,7 +19,7 @@
     UINavigationController *nav = [[UINavigationController alloc] initWithRootViewController:root];
     [[self window] setRootViewController:nav];
     
-    self.window.backgroundColor = [UIColor whiteColor];
+    self.window.backgroundColor = [UIColor colorWithRed:255/255 green:216/255 blue:0.0 alpha:1.0];
     [self.window makeKeyAndVisible];
     
     //nav bar appearance
