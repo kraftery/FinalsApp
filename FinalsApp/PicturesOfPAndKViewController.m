@@ -7,6 +7,7 @@
 //
 
 #import "PicturesOfPAndKViewController.h"
+#import "RootViewController.h"
 
 @interface PicturesOfPAndKViewController ()
 
@@ -30,11 +31,13 @@
 {
     [super viewDidLoad];
     // Do any additional setup after loading the view from its nib.
-    
+    self.title = @"Slide Show";
+    start = [[UIBarButtonItem alloc] initWithTitle:@"Start" style:UIBarButtonItemStyleBordered target:self action:@selector(button:)];
+    self.navigationItem.rightBarButtonItem = start;
 }
 
 -(IBAction)button:(id)sender{
-    
+    start.title = @"";
     imageView.animationImages = [[NSArray alloc] initWithObjects:[UIImage imageNamed:@"CSPAC.jpg"],
         [UIImage imageNamed:@"Engineering.jpg"],
         [UIImage imageNamed:@"Hornbake.jpg"],
