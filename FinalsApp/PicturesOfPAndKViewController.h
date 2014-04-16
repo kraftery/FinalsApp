@@ -8,7 +8,9 @@
 
 #import <UIKit/UIKit.h>
 
-@interface PicturesOfPAndKViewController : UIViewController
+@interface PicturesOfPAndKViewController : UIViewController{
+    UIBarButtonItem *start;
+}
 
 //@property (weak, nonatomic) IBOutlet UIScrollView *scrollView;
 //@property (strong, nonatomic) IBOutlet UIView *myView;
