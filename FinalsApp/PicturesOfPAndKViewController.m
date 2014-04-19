@@ -7,6 +7,7 @@
 //
 
 #import "PicturesOfPAndKViewController.h"
+#import "RootViewController.h"
 
 @interface PicturesOfPAndKViewController ()
 
@@ -14,7 +15,7 @@
 
 @implementation PicturesOfPAndKViewController
 
-@synthesize scrollView, myView;
+@synthesize imageView;
 
 - (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil
 {
@@ -30,9 +31,23 @@
 {
     [super viewDidLoad];
     // Do any additional setup after loading the view from its nib.
-    self.scrollView.contentSize = self.myView.bounds.size;
-    [self.scrollView addSubview:self.myView];
-    [self.scrollView flashScrollIndicators];
+    self.title = @"Slide Show";
+    start = [[UIBarButtonItem alloc] initWithTitle:@"Start" style:UIBarButtonItemStyleBordered target:self action:@selector(button:)];
+    self.navigationItem.rightBarButtonItem = start;
+}
+
+-(IBAction)button:(id)sender{
+    start.title = @"";
+    imageView.animationImages = [[NSArray alloc] initWithObjects:[UIImage imageNamed:@"CSPAC.jpg"],
+        [UIImage imageNamed:@"Engineering.jpg"],
+        [UIImage imageNamed:@"Hornbake.jpg"],
+        [UIImage imageNamed:@"Architecture.jpg"],
+        [UIImage imageNamed:@"Art.jpg"],
+        nil];
+    
+    self.imageView.animationDuration = 20.0;
+    self.imageView.animationRepeatCount = 2;
+    [self.imageView startAnimating];
 }
 
 - (void)didReceiveMemoryWarning

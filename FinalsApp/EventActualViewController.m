@@ -33,7 +33,7 @@
     NSURLRequest *request = [NSURLRequest requestWithURL:[NSURL URLWithString:@"http://mobileappdevelopersclub.com/shellp/events.txt"] cachePolicy:NSURLRequestUseProtocolCachePolicy timeoutInterval:60.0];
     NSURLConnection *conn = [[NSURLConnection alloc] initWithRequest:request delegate:self];
     [conn start];
-    days = [[NSArray alloc] initWithObjects:@"Friday, May 9",@"Saturday, May 10",@"Sunday, May 11",@"Monday, May 12", @"Tuesday, May 13", @"Wednesday, May 14", @"Thursday, May 15", @"Friday, May 16", @"Saturday, May 17", @"Sunday, May 18", @"Monday, May 19", @"Tueday, May 20", nil];
+    days = [[NSArray alloc] initWithObjects:@"Friday, May 9",@"Saturday, May 10",@"Sunday, May 11",@"Monday, May 12", @"Tuesday, May 13", @"Wednesday, May 14", @"Thursday, May 15", @"Friday, May 16", @"Saturday, May 17", @"Sunday, May 18", @"Monday, May 19", @"Tuesday, May 20", nil];
     //returned_events = [[NSMutableArray alloc] init];
     myTableView.delegate = self;
     myTableView.dataSource = self;
