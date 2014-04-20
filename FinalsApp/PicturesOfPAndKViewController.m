@@ -16,7 +16,7 @@
 @implementation PicturesOfPAndKViewController
 
 @synthesize imageView;
-int imageIndex = 1;
+int imageIndex = 0;
 - (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil
 {
     self = [super initWithNibName:nibNameOrNil bundle:nibBundleOrNil];
@@ -32,6 +32,8 @@ int imageIndex = 1;
     [super viewDidLoad];
     // Do any additional setup after loading the view from its nib.
     self.title = @"Puppies and Kittens";
+    UIAlertView *help = [[UIAlertView alloc] initWithTitle:@"" message:@"Swipe LEFT or RIGHT to view pictures...Happy viewing :)" delegate:self cancelButtonTitle:@"Dismiss" otherButtonTitles:nil, nil];
+    [help show];
     imageView.image = [UIImage imageNamed:@"CSPAC.jpg"];
     images = [[NSArray alloc] initWithObjects:@"CSPAC.jpg",
                        @"Engineering.jpg",
