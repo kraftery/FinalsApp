@@ -5,36 +5,49 @@
 	<key>IDESourceControlProjectFavoriteDictionaryKey</key>
 	<false/>
 	<key>IDESourceControlProjectIdentifier</key>
-	<string>AD59A903-D234-4A23-BCBE-9098F722BCD3</string>
+	<string>2CCF1018-6A46-4CF0-8E5C-24D573077CA6</string>
 	<key>IDESourceControlProjectName</key>
 	<string>FinalsApp</string>
 	<key>IDESourceControlProjectOriginsDictionary</key>
 	<dict>
-		<key>179C8BDF-DCA7-40C1-9310-AC93AFE6D748</key>
+		<key>444BB931-8ED4-4529-A274-E485685F25D5</key>
 		<string>https://github.com/kraftery/FinalsApp</string>
+		<key>E657550F-219C-4B1C-A50D-BF82925BA6AB</key>
+		<string>https://github.com/nicklockwood/iCarousel.git</string>
 	</dict>
 	<key>IDESourceControlProjectPath</key>
 	<string>FinalsApp.xcodeproj/project.xcworkspace</string>
 	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
 	<dict>
-		<key>179C8BDF-DCA7-40C1-9310-AC93AFE6D748</key>
+		<key>444BB931-8ED4-4529-A274-E485685F25D5</key>
 		<string>../..</string>
+		<key>E657550F-219C-4B1C-A50D-BF82925BA6AB</key>
+		<string>../../../../iCarousel</string>
 	</dict>
 	<key>IDESourceControlProjectURL</key>
 	<string>https://github.com/kraftery/FinalsApp</string>
 	<key>IDESourceControlProjectVersion</key>
 	<integer>110</integer>
 	<key>IDESourceControlProjectWCCIdentifier</key>
-	<string>179C8BDF-DCA7-40C1-9310-AC93AFE6D748</string>
+	<string>444BB931-8ED4-4529-A274-E485685F25D5</string>
 	<key>IDESourceControlProjectWCConfigurations</key>
 	<array>
 		<dict>
 			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
 			<string>public.vcs.git</string>
 			<key>IDESourceControlWCCIdentifierKey</key>
-			<string>179C8BDF-DCA7-40C1-9310-AC93AFE6D748</string>
+
+			<string>444BB931-8ED4-4529-A274-E485685F25D5</string>
 			<key>IDESourceControlWCCName</key>
 			<string>FinalsApp</string>
+		</dict>
+		<dict>
+			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
+			<string>public.vcs.git</string>
+			<key>IDESourceControlWCCIdentifierKey</key>
+			<string>E657550F-219C-4B1C-A50D-BF82925BA6AB</string>
+			<key>IDESourceControlWCCName</key>
+			<string>iCarousel</string>
 		</dict>
 	</array>
 </dict>

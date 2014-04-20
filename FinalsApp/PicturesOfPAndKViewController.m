@@ -16,7 +16,7 @@
 @implementation PicturesOfPAndKViewController
 
 @synthesize imageView;
-
+int imageIndex = 1;
 - (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil
 {
     self = [super initWithNibName:nibNameOrNil bundle:nibBundleOrNil];
@@ -31,29 +31,36 @@
 {
     [super viewDidLoad];
     // Do any additional setup after loading the view from its nib.
-    self.title = @"Slide Show";
-    start = [[UIBarButtonItem alloc] initWithTitle:@"Start" style:UIBarButtonItemStyleBordered target:self action:@selector(button:)];
-    self.navigationItem.rightBarButtonItem = start;
-}
-
--(IBAction)button:(id)sender{
-    start.title = @"";
-    imageView.animationImages = [[NSArray alloc] initWithObjects:[UIImage imageNamed:@"CSPAC.jpg"],
-        [UIImage imageNamed:@"Engineering.jpg"],
-        [UIImage imageNamed:@"Hornbake.jpg"],
-        [UIImage imageNamed:@"Architecture.jpg"],
-        [UIImage imageNamed:@"Art.jpg"],
-        nil];
-    
-    self.imageView.animationDuration = 20.0;
-    self.imageView.animationRepeatCount = 2;
-    [self.imageView startAnimating];
+    self.title = @"Puppies and Kittens";
+    imageView.image = [UIImage imageNamed:@"CSPAC.jpg"];
+    images = [[NSArray alloc] initWithObjects:@"CSPAC.jpg",
+                       @"Engineering.jpg",
+                       @"Hornbake.jpg",
+                       @"Architecture.jpg",
+                       @"Art.jpg", nil];
+    //start = [[UIBarButtonItem alloc] initWithTitle:@"Start" style:UIBarButtonItemStyleBordered target:self action:@selector(button:)];
+    //self.navigationItem.rightBarButtonItem = start;
 }
 
 - (void)didReceiveMemoryWarning
 {
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
+}
+
+- (IBAction)handleSwipe:(UIGestureRecognizer *)sender {
+    UISwipeGestureRecognizerDirection direction = [(UISwipeGestureRecognizer *) sender direction];
+    switch(direction){
+            case UISwipeGestureRecognizerDirectionRight:
+            imageIndex--;
+            break;
+            case UISwipeGestureRecognizerDirectionLeft:
+            imageIndex++;
+            default:
+            break;
+    }
+    imageIndex = (imageIndex < 0) ? ([images count] - 1) : (imageIndex % [images count]);
+    imageView.image = [UIImage imageNamed:[images objectAtIndex:imageIndex]];
 }
 
 @end

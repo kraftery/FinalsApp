@@ -11,6 +11,7 @@
 		2768329818E723D400D3EE08 /* GPAViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2768329518E723D400D3EE08 /* GPAViewController.m */; };
 		2768329918E723D400D3EE08 /* GPAViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2768329618E723D400D3EE08 /* GPAViewController.xib */; };
 		2768329A18E723D400D3EE08 /* GPAViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2768329618E723D400D3EE08 /* GPAViewController.xib */; };
+		84031600190388E200CF5145 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 840315FF190388E200CF5145 /* QuartzCore.framework */; };
 		8444C1CD18E7684600CDDE30 /* SelectedLibraryViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8444C1CB18E7684600CDDE30 /* SelectedLibraryViewController.m */; };
 		8444C1CE18E7684600CDDE30 /* SelectedLibraryViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8444C1CC18E7684600CDDE30 /* SelectedLibraryViewController.xib */; };
 		847997C918EBC7B9008903C4 /* EventActualViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 847997C718EBC7B8008903C4 /* EventActualViewController.m */; };
@@ -140,6 +141,7 @@
 		2768329418E723D400D3EE08 /* GPAViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GPAViewController.h; sourceTree = "<group>"; };
 		2768329518E723D400D3EE08 /* GPAViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GPAViewController.m; sourceTree = "<group>"; };
 		2768329618E723D400D3EE08 /* GPAViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = GPAViewController.xib; sourceTree = "<group>"; };
+		840315FF190388E200CF5145 /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
 		8444C1CA18E7684600CDDE30 /* SelectedLibraryViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SelectedLibraryViewController.h; sourceTree = "<group>"; };
 		8444C1CB18E7684600CDDE30 /* SelectedLibraryViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SelectedLibraryViewController.m; sourceTree = "<group>"; };
 		8444C1CC18E7684600CDDE30 /* SelectedLibraryViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SelectedLibraryViewController.xib; sourceTree = "<group>"; };
@@ -283,6 +285,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				84031600190388E200CF5145 /* QuartzCore.framework in Frameworks */,
 				B3451ABD18D7D59D00D032F8 /* CoreGraphics.framework in Frameworks */,
 				B3451ABF18D7D59D00D032F8 /* UIKit.framework in Frameworks */,
 				B3451ABB18D7D59D00D032F8 /* Foundation.framework in Frameworks */,
@@ -324,6 +327,7 @@
 		B3451AB918D7D59D00D032F8 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				840315FF190388E200CF5145 /* QuartzCore.framework */,
 				B3451ABA18D7D59D00D032F8 /* Foundation.framework */,
 				B3451ABC18D7D59D00D032F8 /* CoreGraphics.framework */,
 				B3451ABE18D7D59D00D032F8 /* UIKit.framework */,
@@ -341,10 +345,10 @@
 				B3451AEA18D7D6F000D032F8 /* RootViewController.m */,
 				B3451AEB18D7D6F000D032F8 /* RootViewController.xib */,
 				B36A896D18D8E35F00CF1BD9 /* MyScheduleViewController.h */,
+				B36A897318D8E39600CF1BD9 /* EventsViewController.m */,
 				B36A896E18D8E35F00CF1BD9 /* MyScheduleViewController.m */,
 				B36A896F18D8E35F00CF1BD9 /* MyScheduleViewController.xib */,
 				B36A897218D8E39600CF1BD9 /* EventsViewController.h */,
-				B36A897318D8E39600CF1BD9 /* EventsViewController.m */,
 				B36A897418D8E39600CF1BD9 /* EventsViewController.xib */,
 				847997C618EBC7B8008903C4 /* EventActualViewController.h */,
 				BDC3E61C18F6503600A893D4 /* EventActualViewController.xib */,
