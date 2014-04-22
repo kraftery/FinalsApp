@@ -40,8 +40,6 @@ int imageIndex = 0;
                        @"Hornbake.jpg",
                        @"Architecture.jpg",
                        @"Art.jpg", nil];
-    //start = [[UIBarButtonItem alloc] initWithTitle:@"Start" style:UIBarButtonItemStyleBordered target:self action:@selector(button:)];
-    //self.navigationItem.rightBarButtonItem = start;
 }
 
 - (void)didReceiveMemoryWarning

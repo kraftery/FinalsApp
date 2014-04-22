@@ -82,6 +82,7 @@
             libraryScreen.title = @"Art";
             libraryScreen.labelText = @"Art";
             libraryScreen.imageName = @"Art.jpg";
+            //libraryScreen.isOpenLabel
             libraryScreen.textViewText = [[NSString alloc] initWithString:[library_hours objectAtIndex:1]];
             break;
         case 2:
