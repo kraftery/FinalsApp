@@ -15,6 +15,8 @@
 
 @implementation MyScheduleViewController
 
+static int status;
+
 - (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil
 {
     self = [super initWithNibName:nibNameOrNil bundle:nibBundleOrNil];
@@ -30,6 +32,7 @@
     [super viewDidLoad];
     // Do any additional setup after loading the view from its nib.
     self.title = @"My Schedule";
+    status = 1;
     myExams = [[NSMutableArray alloc] init];
     add = [[UIBarButtonItem alloc] initWithBarButtonSystemItem:UIBarButtonSystemItemAdd target:self action:@selector(addButtonClick)];
     self.navigationItem.rightBarButtonItem = add;
@@ -80,16 +83,7 @@
             [errorView show];
             return;
         }
-        NSString *url_string = [NSString stringWithFormat:@"http://mobileappdevelopersclub.com/shellp/ShelLp_Final/%@",className];
-        NSURLRequest *request = [NSURLRequest requestWithURL:[NSURL URLWithString:url_string] cachePolicy:NSURLRequestUseProtocolCachePolicy timeoutInterval:60.0];
-        NSURLConnection *conn = [[NSURLConnection alloc] initWithRequest:request delegate:self];
-        [conn start];
-        if (finalData == nil) {
-            UIAlertView *errorView = [[UIAlertView alloc] initWithTitle:@"Error" message:@"Something Went wrong with the data." delegate:self cancelButtonTitle:@"Dismiss" otherButtonTitles:nil, nil];
-            [errorView show];
-            return;
-        }
-        NSMutableArray *examInfo = [self parse:className second:sectionNumber data:finalData];
+        NSMutableArray *examInfo = [self parse:className second:sectionNumber];
         if (examInfo != nil) {
             [myExams addObject:examInfo];
         }
@@ -102,11 +96,11 @@
     }
 }
 
--(NSMutableArray *) parse: (NSString *) className second: (NSString *) sectionNumber data: (NSMutableData *) jsonFile{
+-(NSMutableArray *) parse: (NSString *) className second: (NSString *) sectionNumber{
     NSMutableArray *final;
     NSMutableArray *to_return = nil;
     if(className == nil || [className length] == 0 || sectionNumber == nil || [sectionNumber length] == 0){
-        UIAlertView *errorView = [[UIAlertView alloc] initWithTitle:@"Error" message:@"You did not enter a class name or section number."
+        UIAlertView *errorView = [[UIAlertView alloc] initWithTitle:@"Error"                                                            message:@"You did not enter a class name or section number."
                                                            delegate:self
                                                   cancelButtonTitle:@"Dismiss"
                                                   otherButtonTitles:nil, nil];
@@ -114,17 +108,18 @@
         [errorView show];
         return nil;
     }
-    NSString *section, *day, *time, *location, *instructor;
+    NSString *urlString = [[NSString alloc] initWithFormat:@"http://mobileappdevelopersclub.com/shellp/ShelLp_Final/%@/", className];
+    NSData *jsonFile = [[NSData alloc] initWithContentsOfURL: [NSURL URLWithString:urlString]];
     
+    NSString *section, *day, *time, *location, *instructor;
     NSError *error = nil;
-    NSLog(@"%@",jsonFile);
     //this is an array of dictionaries aka hashes
     NSMutableArray *classArray = [NSJSONSerialization
                                   JSONObjectWithData: jsonFile
                                   options: NSJSONReadingMutableContainers
                                   error: &error
                                   ];
-    //NSLog(@"%@",error);
+    //NSLog(@"%@ error %@", classArray, error);
     if(error){
         UIAlertView *errorView = [[UIAlertView alloc] initWithTitle:@"Error" message:@"There was an error getting your class. Please try again later" delegate:self cancelButtonTitle:@"Dismiss" otherButtonTitles:nil, nil];
         [errorView show];
@@ -149,10 +144,11 @@
                 //Put all the above strings in an array
                 NSArray *final_object = [[NSArray alloc] initWithObjects:section, day, time, location, instructor, nil];
                 [final addObject:final_object];
-                
             }
         }
     }
+    //NSLog(final);
+    //preparing string to return
     for (NSArray *current_class in final) {
         if([sectionNumber isEqualToString:[current_class objectAtIndex:0]]){
             to_return = [[NSMutableArray alloc] initWithObjects:className, [current_class objectAtIndex:1], [current_class objectAtIndex:2], [current_class objectAtIndex:3], nil];
@@ -167,40 +163,4 @@
     return to_return;
 }
 
-#pragma mark NSURLConnection Delegate Methods
-
-- (void)connection:(NSURLConnection *)connection didReceiveResponse:(NSURLResponse *)response {
-    // A response has been received, this is where we initialize the instance var you created
-    // so that we can append data to it in the didReceiveData method
-    // Furthermore, this method is called each time there is a redirect so reinitializing it
-    // also serves to clear it
-    responseData = [[NSMutableData alloc] init];
-    NSLog(@"I'M ACTUALLY RUNNING DOWN HERE");
-}
-
-- (void)connection:(NSURLConnection *)connection didReceiveData:(NSData *)data {
-    // Append the new data to the instance variable you declared
-    [responseData appendData:data];
-}
-
-- (NSCachedURLResponse *)connection:(NSURLConnection *)connection
-                  willCacheResponse:(NSCachedURLResponse*)cachedResponse {
-    // Return nil to indicate not necessary to store a cached response for this connection
-    return cachedResponse;
-}
-
-- (void)connectionDidFinishLoading:(NSURLConnection *)connection {
-    // The request is complete and data has been received
-    // You can parse the stuff in your instance variable now
-   // NSArray *file_to_array = [self parse: responseData];
-//    library_hours = [[NSMutableArray alloc] initWithArray:file_to_array];
-    finalData = responseData;
-    NSLog(@"I'M ACTUALLY RUNNING DOWN HERE");
-}
-
-- (void)connection:(NSURLConnection *)connection didFailWithError:(NSError *)error {
-    // The request has failed for some reason!
-    // Check the error var
-}
-           
 @end

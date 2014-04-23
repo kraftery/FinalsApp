@@ -34,12 +34,25 @@ int imageIndex = 0;
     self.title = @"Puppies and Kittens";
     UIAlertView *help = [[UIAlertView alloc] initWithTitle:@"" message:@"Swipe LEFT or RIGHT to view pictures...Happy viewing :)" delegate:self cancelButtonTitle:@"Dismiss" otherButtonTitles:nil, nil];
     [help show];
-    imageView.image = [UIImage imageNamed:@"CSPAC.jpg"];
-    images = [[NSArray alloc] initWithObjects:@"CSPAC.jpg",
-                       @"Engineering.jpg",
-                       @"Hornbake.jpg",
-                       @"Architecture.jpg",
-                       @"Art.jpg", nil];
+    imageView.image = [UIImage imageNamed:@"pic1.png"];
+    images = [[NSArray alloc] initWithObjects:@"pic1.png",
+              @"pic2.png",
+              @"pic3.png",
+              @"pic4.png",
+              @"pic5.png",
+              @"pic6.png",
+              @"pic7.png",
+              @"pic8.png",
+              @"pic9.png",
+              @"pic10.png",
+              @"pic11.png",
+              @"pic12.png",
+              @"pic13.png",
+              @"pic14.png",
+              @"pic15.png",
+              @"pic16.png", nil];
+    //start = [[UIBarButtonItem alloc] initWithTitle:@"Start" style:UIBarButtonItemStyleBordered target:self action:@selector(button:)];
+    //self.navigationItem.rightBarButtonItem = start;
 }
 
 - (void)didReceiveMemoryWarning
@@ -51,12 +64,13 @@ int imageIndex = 0;
 - (IBAction)handleSwipe:(UIGestureRecognizer *)sender {
     UISwipeGestureRecognizerDirection direction = [(UISwipeGestureRecognizer *) sender direction];
     switch(direction){
-            case UISwipeGestureRecognizerDirectionRight:
+        case UISwipeGestureRecognizerDirectionRight:
             imageIndex--;
             break;
-            case UISwipeGestureRecognizerDirectionLeft:
+        case UISwipeGestureRecognizerDirectionLeft:
             imageIndex++;
-            default:
+            
+        default:
             break;
     }
     imageIndex = (imageIndex < 0) ? ([images count] - 1) : (imageIndex % [images count]);

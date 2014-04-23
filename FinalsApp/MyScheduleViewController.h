@@ -8,7 +8,7 @@
 
 #import <UIKit/UIKit.h>
 
-@interface MyScheduleViewController : UIViewController<NSURLConnectionDelegate>{
+@interface MyScheduleViewController : UIViewController{
     UIBarButtonItem *add;
     NSMutableData *responseData, *finalData;
     NSMutableArray *myExams;
