@@ -84,6 +84,7 @@ static int status;
             return;
         }
         NSMutableArray *examInfo = [self parse:className second:sectionNumber];
+        
         if (examInfo != nil) {
             [myExams addObject:examInfo];
         }
@@ -119,7 +120,6 @@ static int status;
                                   options: NSJSONReadingMutableContainers
                                   error: &error
                                   ];
-    //NSLog(@"%@ error %@", classArray, error);
     if(error){
         UIAlertView *errorView = [[UIAlertView alloc] initWithTitle:@"Error" message:@"There was an error getting your class. Please try again later" delegate:self cancelButtonTitle:@"Dismiss" otherButtonTitles:nil, nil];
         [errorView show];

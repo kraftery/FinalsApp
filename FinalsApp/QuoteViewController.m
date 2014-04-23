@@ -35,11 +35,18 @@
     NSString *date_String=[dateformate stringFromDate:[NSDate date]];
     currentDate = [date_String intValue];
     
-    quotes = [NSArray arrayWithObjects:@"Don't fail!", @"Your whole life depends on this moment.", @"No turning back now.",nil];
-    
+    //quotes = [NSMutableArray arrayWithObjects:@"Don't fail!", @"Your whole life depends on this moment.", @"No turning back now.",nil];
+    //quotes = [[NSMutableArray alloc] init];
     NSURLRequest *request = [NSURLRequest requestWithURL:[NSURL URLWithString:@"http://mobileappdevelopersclub.com/shellp/quote.txt"] cachePolicy:NSURLRequestUseProtocolCachePolicy timeoutInterval:60.0];
     NSURLConnection *conn = [[NSURLConnection alloc] initWithRequest:request delegate:self];
     [conn start];
+}
+
+-(NSArray *) parse: (NSMutableData *) response{
+    NSString * strData1= [[NSString alloc] initWithData:response encoding:NSUTF8StringEncoding]; //This is going to convert the data we get from the server into a large string, preserving all the new line characters.
+    NSArray *to_return = [strData1 componentsSeparatedByString:@"***"]; //this is going to put each section between "---" in the text file downloaded into an index in this array. Each section is info of a particular library info
+    return to_return;
+    
 }
 
 #pragma mark NSURLConnection Delegate Methods
@@ -68,7 +75,7 @@
     // The request is complete and data has been received
     // You can parse the stuff in your instance variable now
 //    textView.text = [[NSString alloc] initWithData:responseData encoding:NSUTF8StringEncoding];
-    
+    quotes = [[NSMutableArray alloc] initWithArray:[self parse: responseData]];
     NSInteger index = 15 - currentDate;
     /* If the current date is before of after finals week then just set the
         index to the first quote in the array */
