@@ -11,7 +11,6 @@
 		2768329818E723D400D3EE08 /* GPAViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2768329518E723D400D3EE08 /* GPAViewController.m */; };
 		2768329918E723D400D3EE08 /* GPAViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2768329618E723D400D3EE08 /* GPAViewController.xib */; };
 		2768329A18E723D400D3EE08 /* GPAViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2768329618E723D400D3EE08 /* GPAViewController.xib */; };
-		84031600190388E200CF5145 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 840315FF190388E200CF5145 /* QuartzCore.framework */; };
 		8444C1CD18E7684600CDDE30 /* SelectedLibraryViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8444C1CB18E7684600CDDE30 /* SelectedLibraryViewController.m */; };
 		8444C1CE18E7684600CDDE30 /* SelectedLibraryViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8444C1CC18E7684600CDDE30 /* SelectedLibraryViewController.xib */; };
 		847997C918EBC7B9008903C4 /* EventActualViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 847997C718EBC7B8008903C4 /* EventActualViewController.m */; };
@@ -285,7 +284,6 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				84031600190388E200CF5145 /* QuartzCore.framework in Frameworks */,
 				B3451ABD18D7D59D00D032F8 /* CoreGraphics.framework in Frameworks */,
 				B3451ABF18D7D59D00D032F8 /* UIKit.framework in Frameworks */,
 				B3451ABB18D7D59D00D032F8 /* Foundation.framework in Frameworks */,

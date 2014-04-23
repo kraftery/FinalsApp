@@ -13,8 +13,6 @@
     NSArray *images;
 }
 
-//@property (weak, nonatomic) IBOutlet UIScrollView *scrollView;
-//@property (strong, nonatomic) IBOutlet UIView *myView;
 @property (strong, nonatomic) IBOutlet UIImageView *imageView;
 - (IBAction)handleSwipe:(UIGestureRecognizer *)sender;
 

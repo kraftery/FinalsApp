@@ -8,6 +8,11 @@
 
 #import <UIKit/UIKit.h>
 
-@interface DiningViewController : UIViewController
+@interface DiningViewController : UIViewController<NSURLConnectionDelegate>{
+    NSMutableData *responseData;
+}
+
+@property (strong, nonatomic) IBOutlet UITextView *textView;
+@property (strong, nonatomic) IBOutlet UIActivityIndicatorView *indicator;
 
 @end
