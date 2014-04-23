@@ -28,6 +28,15 @@
 {
     [super viewDidLoad];
     // Do any additional setup after loading the view from its nib.
+    /* Getting the date converting it to string then to integer and storing it
+        */
+    NSDateFormatter *dateformate=[[NSDateFormatter alloc]init];
+    [dateformate setDateFormat:@"dd"];
+    NSString *date_String=[dateformate stringFromDate:[NSDate date]];
+    currentDate = [date_String intValue];
+    
+    quotes = [NSArray arrayWithObjects:@"Don't fail!", @"Your whole life depends on this moment.", @"No turning back now.",nil];
+    
     NSURLRequest *request = [NSURLRequest requestWithURL:[NSURL URLWithString:@"http://mobileappdevelopersclub.com/shellp/quote.txt"] cachePolicy:NSURLRequestUseProtocolCachePolicy timeoutInterval:60.0];
     NSURLConnection *conn = [[NSURLConnection alloc] initWithRequest:request delegate:self];
     [conn start];
@@ -58,7 +67,17 @@
 - (void)connectionDidFinishLoading:(NSURLConnection *)connection {
     // The request is complete and data has been received
     // You can parse the stuff in your instance variable now
-    textView.text = [[NSString alloc] initWithData:responseData encoding:NSUTF8StringEncoding];
+//    textView.text = [[NSString alloc] initWithData:responseData encoding:NSUTF8StringEncoding];
+    
+    NSInteger index = 15 - currentDate;
+    /* If the current date is before of after finals week then just set the
+        index to the first quote in the array */
+    if(index < 0) {
+        index = 0;
+    } else if (index > [quotes count]-1) {
+        index  = 0;
+    }
+    textView.text = quotes[index];
     textView.dataDetectorTypes = UIDataDetectorTypeLink; //if you click on the email, it will open your mail app to email
     textView.font = [UIFont fontWithName:@"Verdana" size:30.0f];
     [indicator stopAnimating];
