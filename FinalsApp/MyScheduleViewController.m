@@ -14,6 +14,7 @@
 @end
 
 @implementation MyScheduleViewController
+@synthesize myTableView;
 
 static int status;
 
@@ -34,6 +35,11 @@ static int status;
     self.title = @"My Schedule";
     status = 1;
     myExams = [[NSMutableArray alloc] init];
+    NSUserDefaults *defaults = [NSUserDefaults standardUserDefaults];
+    NSArray *exams = [defaults objectForKey:@"exams"];
+    for (NSString *s in exams) {
+        [myExams addObject:s];
+    }
     add = [[UIBarButtonItem alloc] initWithBarButtonSystemItem:UIBarButtonSystemItemAdd target:self action:@selector(addButtonClick)];
     self.navigationItem.rightBarButtonItem = add;
     
@@ -183,7 +189,7 @@ static int status;
     if (cell == nil) {
         cell = [[UITableViewCell alloc] initWithStyle:UITableViewCellStyleSubtitle reuseIdentifier:CellIdentifier];
     }
-    
+    NSLog(@"I AM ACTUALLY COMING HERE\n");
     NSMutableArray *exam = [myExams objectAtIndex:indexPath.row];
     NSString *timeDay, *header;
     

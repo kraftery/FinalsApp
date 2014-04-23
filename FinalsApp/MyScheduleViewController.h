@@ -12,8 +12,9 @@
     UIBarButtonItem *add;
     NSMutableData *responseData;
     NSMutableArray *myExams;
-    IBOutlet UITableView *myTableView;
+  //  IBOutlet UITableView *myTableView;
 }
+@property (strong, nonatomic) IBOutlet UITableView *myTableView;
 
 -(void) addButtonClick;
 
