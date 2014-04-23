@@ -10,6 +10,8 @@
 
 @interface QuoteViewController : UIViewController<NSURLConnectionDelegate>{
     NSMutableData *responseData;
+    NSInteger currentDate;
+    NSArray *quotes;
 }
 @property (strong, nonatomic) IBOutlet UITextView *textView;
 @property (strong, nonatomic) IBOutlet UIActivityIndicatorView *indicator;
