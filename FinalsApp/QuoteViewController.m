@@ -86,7 +86,7 @@
     }
     textView.text = quotes[index];
     textView.dataDetectorTypes = UIDataDetectorTypeLink; //if you click on the email, it will open your mail app to email
-    textView.font = [UIFont fontWithName:@"Verdana" size:30.0f];
+    textView.font = [UIFont fontWithName:@"Verdana" size:20.0f];
     [indicator stopAnimating];
 }
 
