@@ -38,8 +38,6 @@ static int status;
     self.navigationItem.rightBarButtonItem = add;
     
     myTableView.backgroundColor = [UIColor clearColor];
-    finalData = [[NSMutableData alloc] init];
-    
 }
 
 - (void)didReceiveMemoryWarning
@@ -161,6 +159,67 @@ static int status;
         return nil;
     }
     return to_return;
+}
+
+#pragma mark -
+#pragma mark Table view data source
+
+-(NSInteger)numberOfSectionsOfTableView:(UITableView *) tableView {
+    //return the number of sections
+    return 1;
+}
+
+-(NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section {
+    //return the number of rows in the section
+    //NSLog(@"%d", [myExams count]);
+    return [myExams count];
+}
+
+-(UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
+    
+    static NSString *CellIdentifier = @"Cell";
+    
+    UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:CellIdentifier];
+    if (cell == nil) {
+        cell = [[UITableViewCell alloc] initWithStyle:UITableViewCellStyleSubtitle reuseIdentifier:CellIdentifier];
+    }
+    
+    NSMutableArray *exam = [myExams objectAtIndex:indexPath.row];
+    NSString *timeDay, *header;
+    
+    //added checks for a few exams that gave wrong exam info
+    if([[exam objectAtIndex:1] isEqualToString:@"See Instructor"] || [[exam objectAtIndex:3] length] == 0|| [[exam objectAtIndex:0] isEqualToString:@"CMSC132"] || [[exam objectAtIndex:0] isEqualToString:@"EDMS451"] || [[exam objectAtIndex:0] isEqualToString:@"PHYS260"]){
+        timeDay = [[NSString alloc] initWithFormat:@"See your Instructor for your final's information"];
+        header = [[NSString alloc] initWithFormat:@"%@", [[exam objectAtIndex:0] uppercaseString]];
+    }
+    else{
+        timeDay = [[NSString alloc] initWithFormat:@"%@ %@", [exam objectAtIndex:1], [exam objectAtIndex:2]];
+        header = [[NSString alloc] initWithFormat:@"%@ - %@", [[exam objectAtIndex:0] uppercaseString], [exam objectAtIndex:3]];
+    }
+    cell.textLabel.text = header;
+    cell.detailTextLabel.text = timeDay;
+    
+    return cell;
+}
+
+// Override to allow swipe to delete method
+- (void)tableView:(UITableView *)tableView commitEditingStyle:(UITableViewCellEditingStyle)editingStyle forRowAtIndexPath:(NSIndexPath *)indexPath {
+    
+    if (editingStyle == UITableViewCellEditingStyleDelete) {
+        [myExams removeObject:[myExams objectAtIndex:indexPath.row]];
+        NSUserDefaults *defaults = [NSUserDefaults standardUserDefaults];
+        NSArray *exams = [[NSArray alloc] initWithArray:myExams];
+        [defaults setObject:exams forKey:@"exams"];
+        [defaults synchronize];
+        [tableView reloadData];
+    }
+}
+
+#pragma mark-
+#pragma mark Table view delegate
+
+- (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath {
+    [tableView deselectRowAtIndexPath:indexPath animated:YES];
 }
 
 @end

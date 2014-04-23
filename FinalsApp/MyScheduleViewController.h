@@ -10,7 +10,7 @@
 
 @interface MyScheduleViewController : UIViewController{
     UIBarButtonItem *add;
-    NSMutableData *responseData, *finalData;
+    NSMutableData *responseData;
     NSMutableArray *myExams;
     IBOutlet UITableView *myTableView;
 }
