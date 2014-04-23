@@ -6,7 +6,7 @@
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="MyScheduleViewController">
             <connections>
-                <outlet property="myTableView" destination="rZh-ty-9wD" id="fjQ-GU-lbP"/>
+                <outlet property="myTableView" destination="rZh-ty-9wD" id="nNO-Au-Z31"/>
                 <outlet property="view" destination="1" id="3"/>
             </connections>
         </placeholder>
