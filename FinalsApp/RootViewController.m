@@ -76,9 +76,10 @@
     
     GymViewController *gym = [[GymViewController alloc] init];
     DiningViewController *dining = [[DiningViewController alloc] init];
+    LibraryHoursViewController *library = [[LibraryHoursViewController alloc] init];
     
     UITabBarController *tabController = [[UITabBarController alloc] init];
-    [tabController setViewControllers:[NSArray arrayWithObjects: gym, dining, nil]];
+    [tabController setViewControllers:[NSArray arrayWithObjects: gym, dining, library, nil]];
     [[self navigationController] pushViewController:tabController animated:YES];
 }
 
