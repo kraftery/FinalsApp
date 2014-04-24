@@ -189,7 +189,7 @@ static int status;
     if (cell == nil) {
         cell = [[UITableViewCell alloc] initWithStyle:UITableViewCellStyleSubtitle reuseIdentifier:CellIdentifier];
     }
-    NSLog(@"I AM ACTUALLY COMING HERE\n");
+    
     NSMutableArray *exam = [myExams objectAtIndex:indexPath.row];
     NSString *timeDay, *header;
     
@@ -202,6 +202,8 @@ static int status;
         timeDay = [[NSString alloc] initWithFormat:@"%@ %@", [exam objectAtIndex:1], [exam objectAtIndex:2]];
         header = [[NSString alloc] initWithFormat:@"%@ - %@", [[exam objectAtIndex:0] uppercaseString], [exam objectAtIndex:3]];
     }
+    
+    cell.backgroundColor = [UIColor clearColor];
     cell.textLabel.text = header;
     cell.detailTextLabel.text = timeDay;
     
