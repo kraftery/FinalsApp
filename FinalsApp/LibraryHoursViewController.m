@@ -75,6 +75,7 @@
         case 0:
             libraryScreen.title = @"Architecture";
             libraryScreen.imageName = @"Architecture.jpg";
+            libraryScreen.textViewText = [[NSString alloc] initWithString:[library_hours objectAtIndex:0]];
             break;
         case 1:
             libraryScreen.title = @"Art";
