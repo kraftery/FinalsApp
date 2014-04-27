@@ -69,51 +69,40 @@
 
 -(void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath {
     SelectedLibraryViewController *libraryScreen = [[SelectedLibraryViewController alloc] initWithNibName:@"SelectedLibraryViewController" bundle:[NSBundle mainBundle]];
-    //NSLog(@"I RAN HERE CHECK ME PLEASE");
+    
     if([library_hours count] != 0 && library_hours != nil){
-        //NSLog(@"I RAN HERE CHECK ME PLEASE2");
-        //NSArray *arch, *art, *chem, *cspac, *engr, *horn, *mck;
     switch (indexPath.row) {
         case 0:
             libraryScreen.title = @"Architecture";
-            libraryScreen.labelText = @"Architecture";
             libraryScreen.imageName = @"Architecture.jpg";
-            libraryScreen.textViewText = [[NSString alloc] initWithString:[library_hours objectAtIndex:0]];
             break;
         case 1:
             libraryScreen.title = @"Art";
-            libraryScreen.labelText = @"Art";
             libraryScreen.imageName = @"Art.jpg";
-            //libraryScreen.isOpenLabel
             libraryScreen.textViewText = [[NSString alloc] initWithString:[library_hours objectAtIndex:1]];
             break;
         case 2:
             libraryScreen.title = @"Chemistry";
-            libraryScreen.labelText = @"Chemistry";
             libraryScreen.imageName = @"Chemistry.jpg";
             libraryScreen.textViewText = [[NSString alloc] initWithString:[library_hours objectAtIndex:2]];
             break;
         case 3:
             libraryScreen.title = @"CSPAC";
-            libraryScreen.labelText = @"CSPAC";
             libraryScreen.imageName = @"CSPAC.jpg";
             libraryScreen.textViewText = [[NSString alloc] initWithString:[library_hours objectAtIndex:3]];
             break;
         case 4:
             libraryScreen.title = @"Engineering";
-            libraryScreen.labelText = @"Engineering";
             libraryScreen.imageName = @"Engineering.jpg";
             libraryScreen.textViewText = [[NSString alloc] initWithString:[library_hours objectAtIndex:4]];
             break;
         case 5:
             libraryScreen.title = @"Hornbake";
-            libraryScreen.labelText = @"Hornbake";
             libraryScreen.imageName = @"Hornbake.jpg";
             libraryScreen.textViewText = [[NSString alloc] initWithString:[library_hours objectAtIndex:5]];
             break;
         case 6:
             libraryScreen.title = @"McKeldin";
-            libraryScreen.labelText = @"McKeldin";
             libraryScreen.imageName = @"McKeldin.jpg";
             libraryScreen.textViewText = [[NSString alloc] initWithString:[library_hours objectAtIndex:6]];
             break;
@@ -125,6 +114,8 @@
     }
     else{
         // network problem, we should handle what we'll do here
+        UIAlertView *errorView = [[UIAlertView alloc] initWithTitle:@"WARNING:" message:@"Internet connection is bad. Please retry" delegate:self cancelButtonTitle:@"Dismiss" otherButtonTitles:nil, nil];
+        [errorView show];
     }
 }
 
