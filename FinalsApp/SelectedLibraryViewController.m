@@ -14,7 +14,7 @@
 
 @implementation SelectedLibraryViewController
 
-@synthesize textView, label, imageView, labelText, imageName, textViewText;
+@synthesize textView, imageView, imageName, textViewText;
 
 - (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil
 {
@@ -32,7 +32,6 @@
     //label.text = labelText;
     self.imageView.image = [UIImage imageNamed:imageName];
     textView.text = textViewText;
-    self.isOpenLabel.text = @"Now open.";
     //[textView setFont:[UIFont systemFontOfSize:14]];
 }
 
