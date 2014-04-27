@@ -60,9 +60,38 @@
     CouponsViewController *couponView = [[CouponsViewController alloc] initWithNibName:@"CouponsViewController" bundle:[NSBundle mainBundle]];
     switch (indexPath.row) {
         case 0:
-            couponView.c_image = [UIImage imageWithData:[NSData dataWithContentsOfURL:[NSURL URLWithString:@"http://mobileappdevelopersclub.com/shellp/milan.jpg"]]];
+            couponView.c_image = [UIImage imageWithData:[NSData dataWithContentsOfURL:[NSURL URLWithString:@"http://mobileappdevelopersclub.com/shellp/0.jpg"]]];
             break;
-            
+        case 1:
+            couponView.c_image = [UIImage imageWithData:[NSData dataWithContentsOfURL:[NSURL URLWithString:@"http://mobileappdevelopersclub.com/shellp/1.jpg"]]];
+            break;
+        case 2:
+            couponView.c_image = [UIImage imageWithData:[NSData dataWithContentsOfURL:[NSURL URLWithString:@"http://mobileappdevelopersclub.com/shellp/2.jpg"]]];
+            break;
+        case 3:
+            couponView.c_image = [UIImage imageWithData:[NSData dataWithContentsOfURL:[NSURL URLWithString:@"http://mobileappdevelopersclub.com/shellp/3.jpg"]]];
+            break;
+        case 4:
+            couponView.c_image = [UIImage imageWithData:[NSData dataWithContentsOfURL:[NSURL URLWithString:@"http://mobileappdevelopersclub.com/shellp/4.jpg"]]];
+            break;
+        case 5:
+            couponView.c_image = [UIImage imageWithData:[NSData dataWithContentsOfURL:[NSURL URLWithString:@"http://mobileappdevelopersclub.com/shellp/5.jpg"]]];
+            break;
+        case 6:
+            couponView.c_image = [UIImage imageWithData:[NSData dataWithContentsOfURL:[NSURL URLWithString:@"http://mobileappdevelopersclub.com/shellp/6.jpg"]]];
+            break;
+        case 7:
+            couponView.c_image = [UIImage imageWithData:[NSData dataWithContentsOfURL:[NSURL URLWithString:@"http://mobileappdevelopersclub.com/shellp/7.jpg"]]];
+            break;
+        case 8:
+            couponView.c_image = [UIImage imageWithData:[NSData dataWithContentsOfURL:[NSURL URLWithString:@"http://mobileappdevelopersclub.com/shellp/8.jpg"]]];
+            break;
+        case 9:
+            couponView.c_image = [UIImage imageWithData:[NSData dataWithContentsOfURL:[NSURL URLWithString:@"http://mobileappdevelopersclub.com/shellp/9.jpg"]]];
+            break;
+        case 10:
+            couponView.c_image = [UIImage imageWithData:[NSData dataWithContentsOfURL:[NSURL URLWithString:@"http://mobileappdevelopersclub.com/shellp/10.jpg"]]];
+            break;
         default:
             break;
     }
