@@ -60,7 +60,8 @@
     CouponsViewController *couponView = [[CouponsViewController alloc] initWithNibName:@"CouponsViewController" bundle:[NSBundle mainBundle]];
     switch (indexPath.row) {
         case 0:
-            couponView.c_image = [UIImage imageWithData:[NSData dataWithContentsOfURL:[NSURL URLWithString:@"http://mobileappdevelopersclub.com/shellp/0.jpg"]]];
+            couponView.url = [NSString stringWithFormat:@"http://mobileappdevelopersclub.com/shellp/0.jpg"];
+            //couponView.c_image = [UIImage imageWithData:[NSData dataWithContentsOfURL:[NSURL URLWithString:@"http://mobileappdevelopersclub.com/shellp/0.jpg"]]];
             break;
         case 1:
             couponView.c_image = [UIImage imageWithData:[NSData dataWithContentsOfURL:[NSURL URLWithString:@"http://mobileappdevelopersclub.com/shellp/1.jpg"]]];
