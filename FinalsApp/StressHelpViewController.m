@@ -62,6 +62,7 @@
     // The request is complete and data has been received
     // You can parse the stuff in your instance variable now
     textView.text = [[NSString alloc] initWithData:responseData encoding:NSUTF8StringEncoding];
+    textView.dataDetectorTypes = UIDataDetectorTypePhoneNumber;
     textView.dataDetectorTypes = UIDataDetectorTypeLink; //if you click on the email, it will open your mail app to email
     textView.font = [UIFont fontWithName:@"Verdana" size:16.0f];
     [indicator stopAnimating];

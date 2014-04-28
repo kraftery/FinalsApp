@@ -49,9 +49,9 @@
     [self.scrollView flashScrollIndicators];
     self.title = @"UMD Finals App";
     
-    UIImage *img = [UIImage imageNamed:@"icon.png"];
-    UIImageView *imageView = [[UIImageView alloc] initWithImage:img];
-    [[self navigationItem] setTitleView:imageView];
+    //UIImage *img = [UIImage imageNamed:@"icon.png"];
+    //UIImageView *imageView = [[UIImageView alloc] initWithImage:img];
+    //[[self navigationItem] setTitleView:imageView];
 }
 - (void)didReceiveMemoryWarning
 {
@@ -76,9 +76,10 @@
     
     GymViewController *gym = [[GymViewController alloc] init];
     DiningViewController *dining = [[DiningViewController alloc] init];
+    LibraryHoursViewController *library = [[LibraryHoursViewController alloc] init];
     
     UITabBarController *tabController = [[UITabBarController alloc] init];
-    [tabController setViewControllers:[NSArray arrayWithObjects: gym, dining, nil]];
+    [tabController setViewControllers:[NSArray arrayWithObjects: gym, dining, library, nil]];
     [[self navigationController] pushViewController:tabController animated:YES];
 }
 

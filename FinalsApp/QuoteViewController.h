@@ -8,6 +8,12 @@
 
 #import <UIKit/UIKit.h>
 
-@interface QuoteViewController : UIViewController
+@interface QuoteViewController : UIViewController<NSURLConnectionDelegate>{
+    NSMutableData *responseData;
+    NSInteger currentDate;
+    NSMutableArray *quotes;
+}
+@property (strong, nonatomic) IBOutlet UITextView *textView;
+@property (strong, nonatomic) IBOutlet UIActivityIndicatorView *indicator;
 
 @end

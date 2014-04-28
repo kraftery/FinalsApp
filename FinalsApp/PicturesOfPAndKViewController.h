@@ -8,12 +8,13 @@
 
 #import <UIKit/UIKit.h>
 
-@interface PicturesOfPAndKViewController : UIViewController
+@interface PicturesOfPAndKViewController : UIViewController{
+    UIBarButtonItem *start;
+    NSArray *images;
+}
 
-//@property (weak, nonatomic) IBOutlet UIScrollView *scrollView;
-//@property (strong, nonatomic) IBOutlet UIView *myView;
 @property (strong, nonatomic) IBOutlet UIImageView *imageView;
--(IBAction)button:(id)sender;
+- (IBAction)handleSwipe:(UIGestureRecognizer *)sender;
 
 
 @end

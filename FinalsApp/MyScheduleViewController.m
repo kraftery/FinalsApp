@@ -14,6 +14,9 @@
 @end
 
 @implementation MyScheduleViewController
+@synthesize myTableView;
+
+static int status;
 
 - (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil
 {
@@ -30,13 +33,17 @@
     [super viewDidLoad];
     // Do any additional setup after loading the view from its nib.
     self.title = @"My Schedule";
+    status = 1;
     myExams = [[NSMutableArray alloc] init];
+    NSUserDefaults *defaults = [NSUserDefaults standardUserDefaults];
+    NSArray *exams = [defaults objectForKey:@"exams"];
+    for (NSString *s in exams) {
+        [myExams addObject:s];
+    }
     add = [[UIBarButtonItem alloc] initWithBarButtonSystemItem:UIBarButtonSystemItemAdd target:self action:@selector(addButtonClick)];
     self.navigationItem.rightBarButtonItem = add;
     
     myTableView.backgroundColor = [UIColor clearColor];
-    finalData = [[NSMutableData alloc] init];
-    
 }
 
 - (void)didReceiveMemoryWarning
@@ -80,16 +87,8 @@
             [errorView show];
             return;
         }
-        NSString *url_string = [NSString stringWithFormat:@"http://mobileappdevelopersclub.com/shellp/ShelLp_Final/%@",className];
-        NSURLRequest *request = [NSURLRequest requestWithURL:[NSURL URLWithString:url_string] cachePolicy:NSURLRequestUseProtocolCachePolicy timeoutInterval:60.0];
-        NSURLConnection *conn = [[NSURLConnection alloc] initWithRequest:request delegate:self];
-        [conn start];
-        if (finalData == nil) {
-            UIAlertView *errorView = [[UIAlertView alloc] initWithTitle:@"Error" message:@"Something Went wrong with the data." delegate:self cancelButtonTitle:@"Dismiss" otherButtonTitles:nil, nil];
-            [errorView show];
-            return;
-        }
-        NSMutableArray *examInfo = [self parse:className second:sectionNumber data:finalData];
+        NSMutableArray *examInfo = [self parse:className second:sectionNumber];
+        
         if (examInfo != nil) {
             [myExams addObject:examInfo];
         }
@@ -102,11 +101,11 @@
     }
 }
 
--(NSMutableArray *) parse: (NSString *) className second: (NSString *) sectionNumber data: (NSMutableData *) jsonFile{
+-(NSMutableArray *) parse: (NSString *) className second: (NSString *) sectionNumber{
     NSMutableArray *final;
     NSMutableArray *to_return = nil;
     if(className == nil || [className length] == 0 || sectionNumber == nil || [sectionNumber length] == 0){
-        UIAlertView *errorView = [[UIAlertView alloc] initWithTitle:@"Error" message:@"You did not enter a class name or section number."
+        UIAlertView *errorView = [[UIAlertView alloc] initWithTitle:@"Error"                                                            message:@"You did not enter a class name or section number."
                                                            delegate:self
                                                   cancelButtonTitle:@"Dismiss"
                                                   otherButtonTitles:nil, nil];
@@ -114,17 +113,17 @@
         [errorView show];
         return nil;
     }
-    NSString *section, *day, *time, *location, *instructor;
+    NSString *urlString = [[NSString alloc] initWithFormat:@"http://mobileappdevelopersclub.com/shellp/ShelLp_Final/%@/", className];
+    NSData *jsonFile = [[NSData alloc] initWithContentsOfURL: [NSURL URLWithString:urlString]];
     
+    NSString *section, *day, *time, *location, *instructor;
     NSError *error = nil;
-    NSLog(@"%@",jsonFile);
     //this is an array of dictionaries aka hashes
     NSMutableArray *classArray = [NSJSONSerialization
                                   JSONObjectWithData: jsonFile
                                   options: NSJSONReadingMutableContainers
                                   error: &error
                                   ];
-    //NSLog(@"%@",error);
     if(error){
         UIAlertView *errorView = [[UIAlertView alloc] initWithTitle:@"Error" message:@"There was an error getting your class. Please try again later" delegate:self cancelButtonTitle:@"Dismiss" otherButtonTitles:nil, nil];
         [errorView show];
@@ -149,10 +148,11 @@
                 //Put all the above strings in an array
                 NSArray *final_object = [[NSArray alloc] initWithObjects:section, day, time, location, instructor, nil];
                 [final addObject:final_object];
-                
             }
         }
     }
+    //NSLog(final);
+    //preparing string to return
     for (NSArray *current_class in final) {
         if([sectionNumber isEqualToString:[current_class objectAtIndex:0]]){
             to_return = [[NSMutableArray alloc] initWithObjects:className, [current_class objectAtIndex:1], [current_class objectAtIndex:2], [current_class objectAtIndex:3], nil];
@@ -167,40 +167,67 @@
     return to_return;
 }
 
-#pragma mark NSURLConnection Delegate Methods
+#pragma mark -
+#pragma mark Table view data source
 
-- (void)connection:(NSURLConnection *)connection didReceiveResponse:(NSURLResponse *)response {
-    // A response has been received, this is where we initialize the instance var you created
-    // so that we can append data to it in the didReceiveData method
-    // Furthermore, this method is called each time there is a redirect so reinitializing it
-    // also serves to clear it
-    responseData = [[NSMutableData alloc] init];
-    NSLog(@"I'M ACTUALLY RUNNING DOWN HERE");
+-(NSInteger)numberOfSectionsOfTableView:(UITableView *) tableView {
+    //return the number of sections
+    return 1;
 }
 
-- (void)connection:(NSURLConnection *)connection didReceiveData:(NSData *)data {
-    // Append the new data to the instance variable you declared
-    [responseData appendData:data];
+-(NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section {
+    //return the number of rows in the section
+    //NSLog(@"%d", [myExams count]);
+    return [myExams count];
 }
 
-- (NSCachedURLResponse *)connection:(NSURLConnection *)connection
-                  willCacheResponse:(NSCachedURLResponse*)cachedResponse {
-    // Return nil to indicate not necessary to store a cached response for this connection
-    return cachedResponse;
+-(UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
+    
+    static NSString *CellIdentifier = @"Cell";
+    
+    UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:CellIdentifier];
+    if (cell == nil) {
+        cell = [[UITableViewCell alloc] initWithStyle:UITableViewCellStyleSubtitle reuseIdentifier:CellIdentifier];
+    }
+    
+    NSMutableArray *exam = [myExams objectAtIndex:indexPath.row];
+    NSString *timeDay, *header;
+    
+    //added checks for a few exams that gave wrong exam info
+    if([[exam objectAtIndex:1] isEqualToString:@"See Instructor"] || [[exam objectAtIndex:3] length] == 0|| [[exam objectAtIndex:0] isEqualToString:@"CMSC132"] || [[exam objectAtIndex:0] isEqualToString:@"EDMS451"] || [[exam objectAtIndex:0] isEqualToString:@"PHYS260"]){
+        timeDay = [[NSString alloc] initWithFormat:@"See your Instructor for your final's information"];
+        header = [[NSString alloc] initWithFormat:@"%@", [[exam objectAtIndex:0] uppercaseString]];
+    }
+    else{
+        timeDay = [[NSString alloc] initWithFormat:@"%@ %@", [exam objectAtIndex:1], [exam objectAtIndex:2]];
+        header = [[NSString alloc] initWithFormat:@"%@ - %@", [[exam objectAtIndex:0] uppercaseString], [exam objectAtIndex:3]];
+    }
+    
+    cell.backgroundColor = [UIColor clearColor];
+    cell.textLabel.text = header;
+    cell.detailTextLabel.text = timeDay;
+    
+    return cell;
 }
 
-- (void)connectionDidFinishLoading:(NSURLConnection *)connection {
-    // The request is complete and data has been received
-    // You can parse the stuff in your instance variable now
-   // NSArray *file_to_array = [self parse: responseData];
-//    library_hours = [[NSMutableArray alloc] initWithArray:file_to_array];
-    finalData = responseData;
-    NSLog(@"I'M ACTUALLY RUNNING DOWN HERE");
+// Override to allow swipe to delete method
+- (void)tableView:(UITableView *)tableView commitEditingStyle:(UITableViewCellEditingStyle)editingStyle forRowAtIndexPath:(NSIndexPath *)indexPath {
+    
+    if (editingStyle == UITableViewCellEditingStyleDelete) {
+        [myExams removeObject:[myExams objectAtIndex:indexPath.row]];
+        NSUserDefaults *defaults = [NSUserDefaults standardUserDefaults];
+        NSArray *exams = [[NSArray alloc] initWithArray:myExams];
+        [defaults setObject:exams forKey:@"exams"];
+        [defaults synchronize];
+        [tableView reloadData];
+    }
 }
 
-- (void)connection:(NSURLConnection *)connection didFailWithError:(NSError *)error {
-    // The request has failed for some reason!
-    // Check the error var
+#pragma mark-
+#pragma mark Table view delegate
+
+- (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath {
+    [tableView deselectRowAtIndexPath:indexPath animated:YES];
 }
-           
+
 @end

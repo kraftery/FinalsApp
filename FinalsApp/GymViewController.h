@@ -8,6 +8,14 @@
 
 #import <UIKit/UIKit.h>
 
-@interface GymViewController : UIViewController
+@interface GymViewController : UIViewController<NSURLConnectionDelegate>{
+    NSMutableData *responseData;
+}
+
+@property (weak, nonatomic) IBOutlet UITextView *eppleyTextView;
+
+@property (weak, nonatomic) IBOutlet UITextView *sphTextView;
+
+@property (weak, nonatomic) IBOutlet UITextView *ritchieTextView;
 
 @end
