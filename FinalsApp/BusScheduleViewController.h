@@ -8,9 +8,12 @@
 
 #import <UIKit/UIKit.h>
 
-@interface BusScheduleViewController : UIViewController<UITableViewDelegate, UITableViewDataSource>{
+@interface BusScheduleViewController : UIViewController<UITableViewDelegate, UITableViewDataSource, NSURLConnectionDelegate>{
+    NSMutableData *responseData;
     IBOutlet UITableView *myTableView;
     NSArray *buses;
+    NSArray *urls;
 }
+@property (strong, nonatomic) IBOutlet UIActivityIndicatorView *indicator;
 
 @end
