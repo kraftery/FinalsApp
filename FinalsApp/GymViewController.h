@@ -11,8 +11,11 @@
 @interface GymViewController : UIViewController<NSURLConnectionDelegate>{
     NSMutableData *responseData;
 }
-@property (strong, nonatomic) IBOutlet UITextView *textView;
 
-@property (strong, nonatomic) IBOutlet UIActivityIndicatorView *indicator;
+@property (weak, nonatomic) IBOutlet UITextView *eppleyTextView;
+
+@property (weak, nonatomic) IBOutlet UITextView *sphTextView;
+
+@property (weak, nonatomic) IBOutlet UITextView *ritchieTextView;
 
 @end

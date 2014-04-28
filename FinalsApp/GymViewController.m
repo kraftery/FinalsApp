@@ -12,8 +12,12 @@
 
 @end
 
-@implementation GymViewController
-@synthesize textView, indicator;
+@implementation GymViewController {
+    
+    NSMutableArray *hours;
+}
+
+@synthesize eppleyTextView, sphTextView, ritchieTextView;
 
 - (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil
 {
@@ -29,10 +33,20 @@
 {
     [super viewDidLoad];
     // Do any additional setup after loading the view from its nib.
-    self.title = @"Gym Hours";
+    eppleyTextView.font = [UIFont fontWithName:@"Verdana" size:12.0f];
+    sphTextView.font = [UIFont fontWithName:@"Verdana" size:12.0f];
+    ritchieTextView.font = [UIFont fontWithName:@"Verdana" size:12.0f];
+    
     NSURLRequest *request = [NSURLRequest requestWithURL:[NSURL URLWithString:@"http://mobileappdevelopersclub.com/shellp/gym.txt"] cachePolicy:NSURLRequestUseProtocolCachePolicy timeoutInterval:60.0];
     NSURLConnection *conn = [[NSURLConnection alloc] initWithRequest:request delegate:self];
     [conn start];
+    
+}
+
+-(NSArray *) parse: (NSMutableData *) response{
+    NSString * strData1= [[NSString alloc] initWithData:response encoding:NSUTF8StringEncoding]; //This is going to convert the data we get from the server into a large string, preserving all the new line characters.
+    NSArray *to_return = [strData1 componentsSeparatedByString:@"---"]; //this is going to put each section between "---" in the text file downloaded into an index in this array. Each section is info of a particular library info
+    return to_return;
     
 }
 
@@ -43,7 +57,6 @@
     // so that we can append data to it in the didReceiveData method
     // Furthermore, this method is called each time there is a redirect so reinitializing it
     // also serves to clear it
-    [indicator startAnimating];
     responseData = [[NSMutableData alloc] init];
 }
 
@@ -61,10 +74,12 @@
 - (void)connectionDidFinishLoading:(NSURLConnection *)connection {
     // The request is complete and data has been received
     // You can parse the stuff in your instance variable now
-    textView.text = [[NSString alloc] initWithData:responseData encoding:NSUTF8StringEncoding];
-    textView.dataDetectorTypes = UIDataDetectorTypeLink; //if you click on the email, it will open your mail app to email
-    textView.font = [UIFont fontWithName:@"Verdana" size:16.0f];
-    [indicator stopAnimating];
+    NSArray *file_to_array = [self parse: responseData];
+    hours = [[NSMutableArray alloc] initWithArray:file_to_array];
+    
+    eppleyTextView.text = [hours objectAtIndex:0];
+    sphTextView.text = [hours objectAtIndex:1];
+    ritchieTextView.text = [hours objectAtIndex:2];
 }
 
 - (void)connection:(NSURLConnection *)connection didFailWithError:(NSError *)error {
