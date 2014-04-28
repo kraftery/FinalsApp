@@ -5,39 +5,36 @@
 	<key>IDESourceControlProjectFavoriteDictionaryKey</key>
 	<false/>
 	<key>IDESourceControlProjectIdentifier</key>
-	<string>2CCF1018-6A46-4CF0-8E5C-24D573077CA6</string>
+	<string>7DD5FAA7-9A3F-4496-8E7C-04CC320A6A3D</string>
 	<key>IDESourceControlProjectName</key>
 	<string>FinalsApp</string>
 	<key>IDESourceControlProjectOriginsDictionary</key>
 	<dict>
-		<key>444BB931-8ED4-4529-A274-E485685F25D5</key>
-		<string>https://github.com/kraftery/FinalsApp</string>
-		<key>E657550F-219C-4B1C-A50D-BF82925BA6AB</key>
-		<string>https://github.com/nicklockwood/iCarousel.git</string>
+		<key>79765F75-6B4D-407F-80EF-03AFB8063F25</key>
+		<string>https://github.com/kraftery/FinalsApp.git</string>
 	</dict>
 	<key>IDESourceControlProjectPath</key>
-	<string>FinalsApp.xcodeproj/project.xcworkspace</string>
+	<string>newFap/FinalsApp/FinalsApp.xcodeproj/project.xcworkspace</string>
 	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
 	<dict>
-		<key>444BB931-8ED4-4529-A274-E485685F25D5</key>
+		<key>79765F75-6B4D-407F-80EF-03AFB8063F25</key>
 		<string>../..</string>
-		<key>E657550F-219C-4B1C-A50D-BF82925BA6AB</key>
-		<string>../../../../iCarousel</string>
+		<key>AC081134-1E4C-4F69-9568-E629CF1734A1</key>
+		<string>../../../..</string>
 	</dict>
 	<key>IDESourceControlProjectURL</key>
-	<string>https://github.com/kraftery/FinalsApp</string>
+	<string>https://github.com/kraftery/FinalsApp.git</string>
 	<key>IDESourceControlProjectVersion</key>
 	<integer>110</integer>
 	<key>IDESourceControlProjectWCCIdentifier</key>
-	<string>444BB931-8ED4-4529-A274-E485685F25D5</string>
+	<string>AC081134-1E4C-4F69-9568-E629CF1734A1</string>
 	<key>IDESourceControlProjectWCConfigurations</key>
 	<array>
 		<dict>
 			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
 			<string>public.vcs.git</string>
 			<key>IDESourceControlWCCIdentifierKey</key>
-
-			<string>444BB931-8ED4-4529-A274-E485685F25D5</string>
+			<string>79765F75-6B4D-407F-80EF-03AFB8063F25</string>
 			<key>IDESourceControlWCCName</key>
 			<string>FinalsApp</string>
 		</dict>
@@ -45,9 +42,9 @@
 			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
 			<string>public.vcs.git</string>
 			<key>IDESourceControlWCCIdentifierKey</key>
-			<string>E657550F-219C-4B1C-A50D-BF82925BA6AB</string>
+			<string>AC081134-1E4C-4F69-9568-E629CF1734A1</string>
 			<key>IDESourceControlWCCName</key>
-			<string>iCarousel</string>
+			<string>NewFinalsApp</string>
 		</dict>
 	</array>
 </dict>
