@@ -49,9 +49,9 @@
     [self.scrollView flashScrollIndicators];
     self.title = @"UMD Finals App";
     
-    UIImage *img = [UIImage imageNamed:@"icon.png"];
-    UIImageView *imageView = [[UIImageView alloc] initWithImage:img];
-    [[self navigationItem] setTitleView:imageView];
+    //UIImage *img = [UIImage imageNamed:@"icon.png"];
+    //UIImageView *imageView = [[UIImageView alloc] initWithImage:img];
+    //[[self navigationItem] setTitleView:imageView];
 }
 - (void)didReceiveMemoryWarning
 {
