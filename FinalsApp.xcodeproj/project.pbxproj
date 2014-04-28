@@ -32,6 +32,8 @@
 		B3451AE018D7D59D00D032F8 /* FinalsAppTests.m in Sources */ = {isa = PBXBuildFile; fileRef = B3451ADF18D7D59D00D032F8 /* FinalsAppTests.m */; };
 		B3451AEC18D7D6F000D032F8 /* RootViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B3451AEA18D7D6F000D032F8 /* RootViewController.m */; };
 		B3451AED18D7D6F000D032F8 /* RootViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = B3451AEB18D7D6F000D032F8 /* RootViewController.xib */; };
+		B36009F5190F0B5F00E62ECB /* north_diner.jpg in Resources */ = {isa = PBXBuildFile; fileRef = B36009F4190F0B5F00E62ECB /* north_diner.jpg */; };
+		B36009F7190F0B8A00E62ECB /* south_diner.jpg in Resources */ = {isa = PBXBuildFile; fileRef = B36009F6190F0B8A00E62ECB /* south_diner.jpg */; };
 		B36A897018D8E35F00CF1BD9 /* MyScheduleViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B36A896E18D8E35F00CF1BD9 /* MyScheduleViewController.m */; };
 		B36A897118D8E35F00CF1BD9 /* MyScheduleViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = B36A896F18D8E35F00CF1BD9 /* MyScheduleViewController.xib */; };
 		B36A897518D8E39600CF1BD9 /* EventsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B36A897318D8E39600CF1BD9 /* EventsViewController.m */; };
@@ -72,6 +74,9 @@
 		B38DCAD918F9CA5200962849 /* pic7.png in Resources */ = {isa = PBXBuildFile; fileRef = B38DCAC918F9CA5200962849 /* pic7.png */; };
 		B38DCADA18F9CA5200962849 /* pic8.png in Resources */ = {isa = PBXBuildFile; fileRef = B38DCACA18F9CA5200962849 /* pic8.png */; };
 		B38DCADB18F9CA5200962849 /* pic9.png in Resources */ = {isa = PBXBuildFile; fileRef = B38DCACB18F9CA5200962849 /* pic9.png */; };
+		B38FDAC5190EACB000986EA1 /* eppley.jpg in Resources */ = {isa = PBXBuildFile; fileRef = B38FDAC2190EACB000986EA1 /* eppley.jpg */; };
+		B38FDAC6190EACB000986EA1 /* ritchie.jpg in Resources */ = {isa = PBXBuildFile; fileRef = B38FDAC3190EACB000986EA1 /* ritchie.jpg */; };
+		B38FDAC7190EACB000986EA1 /* sph.jpg in Resources */ = {isa = PBXBuildFile; fileRef = B38FDAC4190EACB000986EA1 /* sph.jpg */; };
 		B3D253CA18D8BA8E0049D016 /* Architecture.jpg in Resources */ = {isa = PBXBuildFile; fileRef = B3D253B418D8BA8E0049D016 /* Architecture.jpg */; };
 		B3D253CB18D8BA8E0049D016 /* Art.jpg in Resources */ = {isa = PBXBuildFile; fileRef = B3D253B518D8BA8E0049D016 /* Art.jpg */; };
 		B3D253CC18D8BA8E0049D016 /* Blank Coupon iphone 4.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = B3D253B618D8BA8E0049D016 /* Blank Coupon iphone 4.jpeg */; };
@@ -175,6 +180,8 @@
 		B3451AE918D7D6F000D032F8 /* RootViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RootViewController.h; sourceTree = "<group>"; };
 		B3451AEA18D7D6F000D032F8 /* RootViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RootViewController.m; sourceTree = "<group>"; };
 		B3451AEB18D7D6F000D032F8 /* RootViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = RootViewController.xib; sourceTree = "<group>"; };
+		B36009F4190F0B5F00E62ECB /* north_diner.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = north_diner.jpg; sourceTree = "<group>"; };
+		B36009F6190F0B8A00E62ECB /* south_diner.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = south_diner.jpg; sourceTree = "<group>"; };
 		B36A896D18D8E35F00CF1BD9 /* MyScheduleViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MyScheduleViewController.h; sourceTree = "<group>"; };
 		B36A896E18D8E35F00CF1BD9 /* MyScheduleViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MyScheduleViewController.m; sourceTree = "<group>"; };
 		B36A896F18D8E35F00CF1BD9 /* MyScheduleViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MyScheduleViewController.xib; sourceTree = "<group>"; };
@@ -227,6 +234,9 @@
 		B38DCAC918F9CA5200962849 /* pic7.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = pic7.png; sourceTree = "<group>"; };
 		B38DCACA18F9CA5200962849 /* pic8.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = pic8.png; sourceTree = "<group>"; };
 		B38DCACB18F9CA5200962849 /* pic9.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = pic9.png; sourceTree = "<group>"; };
+		B38FDAC2190EACB000986EA1 /* eppley.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = eppley.jpg; sourceTree = "<group>"; };
+		B38FDAC3190EACB000986EA1 /* ritchie.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = ritchie.jpg; sourceTree = "<group>"; };
+		B38FDAC4190EACB000986EA1 /* sph.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = sph.jpg; sourceTree = "<group>"; };
 		B3D253B418D8BA8E0049D016 /* Architecture.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = Architecture.jpg; sourceTree = "<group>"; };
 		B3D253B518D8BA8E0049D016 /* Art.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = Art.jpg; sourceTree = "<group>"; };
 		B3D253B618D8BA8E0049D016 /* Blank Coupon iphone 4.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "Blank Coupon iphone 4.jpeg"; sourceTree = "<group>"; };
@@ -421,12 +431,15 @@
 				BDCE35B9190E0603005C0B29 /* images */,
 				BD0C1B9818FD8E0900903676 /* photos */,
 				B38DCABB18F9CA5200962849 /* puppies and kittens */,
+				B38FDAC1190EACB000986EA1 /* recCenters */,
 				BDE60F3E18F7A6E50000C546 /* add.png */,
 				BDE60F3C18F7A5E70000C546 /* eventsSchedtext.png */,
 				BDC3E61A18F649E300A893D4 /* emptyHeader_01.png */,
 				BDC3E5CC18F649A100A893D4 /* campusEventsText.png */,
 				BDC3E5CA18F6481200A893D4 /* back2.png */,
 				BDC3E5C618F643AC00A893D4 /* specialButton_01.png */,
+				B36009F4190F0B5F00E62ECB /* north_diner.jpg */,
+				B36009F6190F0B8A00E62ECB /* south_diner.jpg */,
 				BD6EF92418F4FE48007ECB45 /* menu */,
 				B3451AC218D7D59D00D032F8 /* FinalsApp-Info.plist */,
 				B3451AC318D7D59D00D032F8 /* InfoPlist.strings */,
@@ -475,6 +488,16 @@
 				B38DCACB18F9CA5200962849 /* pic9.png */,
 			);
 			path = "puppies and kittens";
+			sourceTree = "<group>";
+		};
+		B38FDAC1190EACB000986EA1 /* recCenters */ = {
+			isa = PBXGroup;
+			children = (
+				B38FDAC2190EACB000986EA1 /* eppley.jpg */,
+				B38FDAC3190EACB000986EA1 /* ritchie.jpg */,
+				B38FDAC4190EACB000986EA1 /* sph.jpg */,
+			);
+			path = recCenters;
 			sourceTree = "<group>";
 		};
 		B3D253B318D8BA8E0049D016 /* icons */ = {
@@ -633,7 +656,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				B3D253CB18D8BA8E0049D016 /* Art.jpg in Resources */,
+				B36009F7190F0B8A00E62ECB /* south_diner.jpg in Resources */,
 				BDC3E5CB18F6481200A893D4 /* back2.png in Resources */,
+				B38FDAC5190EACB000986EA1 /* eppley.jpg in Resources */,
 				BDCE35D2190E0603005C0B29 /* menuBtns_02_05.png in Resources */,
 				B3D253D518D8BA8E0049D016 /* Hornbake.jpg in Resources */,
 				B3D253D618D8BA8E0049D016 /* icon-120.png in Resources */,
@@ -664,6 +689,7 @@
 				BD0C1B9E18FD8E0900903676 /* IMG_2735.JPG in Resources */,
 				BDE60F4318F8A8F10000C546 /* header.png in Resources */,
 				B38DCABA18F9BB3800962849 /* StressHelpViewController.xib in Resources */,
+				B38FDAC7190EACB000986EA1 /* sph.jpg in Resources */,
 				B3D253D418D8BA8E0049D016 /* gym.png in Resources */,
 				B38DCACD18F9CA5200962849 /* pic10.png in Resources */,
 				B36D0AAC18F2FDFA005D39BD /* PicturesOfPAndKViewController.xib in Resources */,
@@ -690,6 +716,7 @@
 				BDCE35DC190E8013005C0B29 /* emptyHeader_01_01.png in Resources */,
 				BDE60F3D18F7A5E70000C546 /* eventsSchedtext.png in Resources */,
 				B3D253D318D8BA8E0049D016 /* food.png in Resources */,
+				B36009F5190F0B5F00E62ECB /* north_diner.jpg in Resources */,
 				BD0C1BA018FD8E0900903676 /* IMG_2742.JPG in Resources */,
 				B38DCAD518F9CA5200962849 /* pic3.png in Resources */,
 				B36D0AA218F2FDAB005D39BD /* TimeManagementViewController.xib in Resources */,
@@ -698,6 +725,7 @@
 				B38DCAD018F9CA5200962849 /* pic13.png in Resources */,
 				BD0C1B9F18FD8E0900903676 /* IMG_2740.JPG in Resources */,
 				B38DCAD918F9CA5200962849 /* pic7.png in Resources */,
+				B38FDAC6190EACB000986EA1 /* ritchie.jpg in Resources */,
 				B38DCAD218F9CA5200962849 /* pic15.png in Resources */,
 				B38DCACF18F9CA5200962849 /* pic12.png in Resources */,
 				BDCE35CC190E0603005C0B29 /* menu_05.png in Resources */,

@@ -12,8 +12,11 @@
 
 @end
 
-@implementation DiningViewController
-@synthesize textView, indicator;
+@implementation DiningViewController {
+    
+    NSMutableArray *hours;
+}
+@synthesize northTextView, southTextView, indicator;
 
 - (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil
 {
@@ -29,6 +32,9 @@
 {
     [super viewDidLoad];
     // Do any additional setup after loading the view from its nib.
+    northTextView.font = [UIFont fontWithName:@"Verdana" size:12.0f];
+    southTextView.font = [UIFont fontWithName:@"Verdana" size:12.0f];
+    
     NSURLRequest *request = [NSURLRequest requestWithURL:[NSURL URLWithString:@"http://mobileappdevelopersclub.com/shellp/diner.txt"] cachePolicy:NSURLRequestUseProtocolCachePolicy timeoutInterval:60.0];
     NSURLConnection *conn = [[NSURLConnection alloc] initWithRequest:request delegate:self];
     [conn start];
@@ -39,6 +45,14 @@
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
 }
+
+-(NSArray *) parse: (NSMutableData *) response{
+    NSString * strData1= [[NSString alloc] initWithData:response encoding:NSUTF8StringEncoding]; //This is going to convert the data we get from the server into a large string, preserving all the new line characters.
+    NSArray *to_return = [strData1 componentsSeparatedByString:@"---"]; //this is going to put each section between "---" in the text file downloaded into an index in this array. Each section is info of a particular library info
+    return to_return;
+    
+}
+
 #pragma mark NSURLConnection Delegate Methods
 
 - (void)connection:(NSURLConnection *)connection didReceiveResponse:(NSURLResponse *)response {
@@ -64,10 +78,13 @@
 - (void)connectionDidFinishLoading:(NSURLConnection *)connection {
     // The request is complete and data has been received
     // You can parse the stuff in your instance variable now
-    textView.text = [[NSString alloc] initWithData:responseData encoding:NSUTF8StringEncoding];
-    textView.dataDetectorTypes = UIDataDetectorTypeLink; //if you click on the email, it will open your mail app to email
-    textView.font = [UIFont fontWithName:@"Verdana" size:16.0f];
+    NSArray *file_to_array = [self parse: responseData];
+    hours = [[NSMutableArray alloc] initWithArray:file_to_array];
+    
     [indicator stopAnimating];
+    
+    northTextView.text = [hours objectAtIndex:0];
+    southTextView.text = [hours objectAtIndex:1];
 }
 
 - (void)connection:(NSURLConnection *)connection didFailWithError:(NSError *)error {
