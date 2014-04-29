@@ -68,7 +68,7 @@ static int status;
                                           otherButtonTitles:@"Save", nil];
     alert.alertViewStyle = UIAlertViewStyleLoginAndPasswordInput;
     [[alert textFieldAtIndex:1] setSecureTextEntry:NO];
-    [[alert textFieldAtIndex:0] setPlaceholder:@"Class Name"];
+    [[alert textFieldAtIndex:0] setPlaceholder:@"Class Name (i.e. \"MATH141\")"];
     [[alert textFieldAtIndex:1] setPlaceholder:@"Section Number"];
     [alert show];
 }
@@ -78,6 +78,19 @@ static int status;
     if(buttonIndex != [alertView cancelButtonIndex]) {
         NSString *className = [([[alertView textFieldAtIndex:0] text]) stringByReplacingOccurrencesOfString:@" " withString:@""];
         NSString *sectionNumber = [([[alertView textFieldAtIndex:1] text]) stringByReplacingOccurrencesOfString:@" " withString:@""]; //this gets rid of spaces in between the string
+    
+        if(className == nil || [className length] == 0 || sectionNumber == nil ||
+           [sectionNumber length] == 0){
+            UIAlertView *errorView = [[UIAlertView alloc] initWithTitle:@"Error"
+                                                                message:@"You did not enter a class name or section number."
+                                                               delegate:self
+                                                      cancelButtonTitle:@"Dismiss"
+                                                      otherButtonTitles:nil, nil];
+            errorView.alertViewStyle = UIAlertViewStyleDefault;
+            [errorView show];
+            return;
+        }
+        
         NSString *expression = @"^[0-9]{4}$";
         NSError *error = nil;
         NSRegularExpression *regex = [NSRegularExpression regularExpressionWithPattern:expression                                                                               options:NSRegularExpressionCaseInsensitive                                                                                 error:&error];
@@ -102,10 +115,15 @@ static int status;
 }
 
 -(NSMutableArray *) parse: (NSString *) className second: (NSString *) sectionNumber{
+    
     NSMutableArray *final;
     NSMutableArray *to_return = nil;
-    if(className == nil || [className length] == 0 || sectionNumber == nil || [sectionNumber length] == 0){
-        UIAlertView *errorView = [[UIAlertView alloc] initWithTitle:@"Error"                                                            message:@"You did not enter a class name or section number."
+    NSString *urlString = [[NSString alloc] initWithFormat:@"http://mobileappdevelopersclub.com/shellp/ShelLp_Final/%@/", className];
+    NSData *jsonFile = [[NSData alloc] initWithContentsOfURL: [NSURL URLWithString:urlString]];
+    
+    //Prevents app from crashing if the user is not connected to the internet
+    if (jsonFile == nil) {
+        UIAlertView *errorView = [[UIAlertView alloc] initWithTitle:@"Error" message:@"Looks like your connection to the internet is too slow, Try again"
                                                            delegate:self
                                                   cancelButtonTitle:@"Dismiss"
                                                   otherButtonTitles:nil, nil];
@@ -113,8 +131,6 @@ static int status;
         [errorView show];
         return nil;
     }
-    NSString *urlString = [[NSString alloc] initWithFormat:@"http://mobileappdevelopersclub.com/shellp/ShelLp_Final/%@/", className];
-    NSData *jsonFile = [[NSData alloc] initWithContentsOfURL: [NSURL URLWithString:urlString]];
     
     NSString *section, *day, *time, *location, *instructor;
     NSError *error = nil;
@@ -194,7 +210,7 @@ static int status;
     NSString *timeDay, *header;
     
     //added checks for a few exams that gave wrong exam info
-    if([[exam objectAtIndex:1] isEqualToString:@"See Instructor"] || [[exam objectAtIndex:3] length] == 0|| [[exam objectAtIndex:0] isEqualToString:@"CMSC132"] || [[exam objectAtIndex:0] isEqualToString:@"EDMS451"] || [[exam objectAtIndex:0] isEqualToString:@"PHYS260"]){
+    if([[exam objectAtIndex:1] isEqualToString:@"See Instructor"] || [[exam objectAtIndex:3] length] == 0){
         timeDay = [[NSString alloc] initWithFormat:@"See your Instructor for your final's information"];
         header = [[NSString alloc] initWithFormat:@"%@", [[exam objectAtIndex:0] uppercaseString]];
     }
