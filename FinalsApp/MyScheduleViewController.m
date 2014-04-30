@@ -68,8 +68,8 @@ static int status;
                                           otherButtonTitles:@"Save", nil];
     alert.alertViewStyle = UIAlertViewStyleLoginAndPasswordInput;
     [[alert textFieldAtIndex:1] setSecureTextEntry:NO];
-    [[alert textFieldAtIndex:0] setPlaceholder:@"Class Name (i.e. \"MATH141\")"];
-    [[alert textFieldAtIndex:1] setPlaceholder:@"Section Number"];
+    [[alert textFieldAtIndex:0] setPlaceholder:@"Class Name (Ex. MATH141)"];
+    [[alert textFieldAtIndex:1] setPlaceholder:@"Section Number (Ex.  0101)"];
     [alert show];
 }
 

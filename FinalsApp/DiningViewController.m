@@ -32,10 +32,7 @@
 {
     [super viewDidLoad];
     // Do any additional setup after loading the view from its nib.
-    northTextView.font = [UIFont fontWithName:@"Verdana" size:12.0f];
-    southTextView.font = [UIFont fontWithName:@"Verdana" size:12.0f];
-    
-    NSURLRequest *request = [NSURLRequest requestWithURL:[NSURL URLWithString:@"http://mobileappdevelopersclub.com/shellp/diner.txt"] cachePolicy:NSURLRequestUseProtocolCachePolicy timeoutInterval:60.0];
+    NSURLRequest *request = [NSURLRequest requestWithURL:[NSURL URLWithString:@"http://mobileappdevelopersclub.com/shellp/diner.txt"] cachePolicy:NSURLRequestReloadIgnoringCacheData timeoutInterval:60.0];
     NSURLConnection *conn = [[NSURLConnection alloc] initWithRequest:request delegate:self];
     [conn start];
 }
@@ -60,6 +57,7 @@
     // so that we can append data to it in the didReceiveData method
     // Furthermore, this method is called each time there is a redirect so reinitializing it
     // also serves to clear it
+   
     [indicator startAnimating];
     responseData = [[NSMutableData alloc] init];
 }
@@ -80,11 +78,11 @@
     // You can parse the stuff in your instance variable now
     NSArray *file_to_array = [self parse: responseData];
     hours = [[NSMutableArray alloc] initWithArray:file_to_array];
-    
-    [indicator stopAnimating];
-    
     northTextView.text = [hours objectAtIndex:0];
     southTextView.text = [hours objectAtIndex:1];
+    northTextView.font = [UIFont fontWithName:@"Verdana" size:12.0f];
+    southTextView.font = [UIFont fontWithName:@"Verdana" size:12.0f];
+    [indicator stopAnimating];
 }
 
 - (void)connection:(NSURLConnection *)connection didFailWithError:(NSError *)error {

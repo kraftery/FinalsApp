@@ -73,6 +73,7 @@
     if([library_hours count] != 0 && library_hours != nil){
     switch (indexPath.row) {
         case 0:
+            NSLog(@"HEREEEEE");
             libraryScreen.title = @"Architecture";
             libraryScreen.imageName = @"Architecture.jpg";
             libraryScreen.textViewText = [[NSString alloc] initWithString:[library_hours objectAtIndex:0]];
@@ -145,7 +146,7 @@
 - (NSCachedURLResponse *)connection:(NSURLConnection *)connection
                   willCacheResponse:(NSCachedURLResponse*)cachedResponse {
     // Return nil to indicate not necessary to store a cached response for this connection
-    return cachedResponse;
+    return nil;
 }
 
 - (void)connectionDidFinishLoading:(NSURLConnection *)connection {
