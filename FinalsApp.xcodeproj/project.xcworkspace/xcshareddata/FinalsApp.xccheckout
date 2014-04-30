@@ -5,36 +5,57 @@
 	<key>IDESourceControlProjectFavoriteDictionaryKey</key>
 	<false/>
 	<key>IDESourceControlProjectIdentifier</key>
+<<<<<<< HEAD
+	<string>0C181791-C5AA-4E36-95EE-DF8129136BBD</string>
+=======
 	<string>7DD5FAA7-9A3F-4496-8E7C-04CC320A6A3D</string>
+>>>>>>> b7fd7e3441cab5d72bacd6f159ccf55bf2f0b4cb
 	<key>IDESourceControlProjectName</key>
 	<string>FinalsApp</string>
 	<key>IDESourceControlProjectOriginsDictionary</key>
 	<dict>
+<<<<<<< HEAD
+		<key>A90B9394-F259-4089-9F7C-E84CF7C14991</key>
+		<string>https://github.com/kraftery/FinalsApp</string>
+=======
 		<key>79765F75-6B4D-407F-80EF-03AFB8063F25</key>
 		<string>https://github.com/kraftery/FinalsApp.git</string>
+>>>>>>> b7fd7e3441cab5d72bacd6f159ccf55bf2f0b4cb
 	</dict>
 	<key>IDESourceControlProjectPath</key>
 	<string>newFap/FinalsApp/FinalsApp.xcodeproj/project.xcworkspace</string>
 	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
 	<dict>
+<<<<<<< HEAD
+		<key>A90B9394-F259-4089-9F7C-E84CF7C14991</key>
+=======
 		<key>79765F75-6B4D-407F-80EF-03AFB8063F25</key>
+>>>>>>> b7fd7e3441cab5d72bacd6f159ccf55bf2f0b4cb
 		<string>../..</string>
 		<key>AC081134-1E4C-4F69-9568-E629CF1734A1</key>
 		<string>../../../..</string>
 	</dict>
 	<key>IDESourceControlProjectURL</key>
-	<string>https://github.com/kraftery/FinalsApp.git</string>
+	<string>https://github.com/kraftery/FinalsApp</string>
 	<key>IDESourceControlProjectVersion</key>
 	<integer>110</integer>
 	<key>IDESourceControlProjectWCCIdentifier</key>
+<<<<<<< HEAD
+	<string>A90B9394-F259-4089-9F7C-E84CF7C14991</string>
+=======
 	<string>AC081134-1E4C-4F69-9568-E629CF1734A1</string>
+>>>>>>> b7fd7e3441cab5d72bacd6f159ccf55bf2f0b4cb
 	<key>IDESourceControlProjectWCConfigurations</key>
 	<array>
 		<dict>
 			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
 			<string>public.vcs.git</string>
 			<key>IDESourceControlWCCIdentifierKey</key>
+<<<<<<< HEAD
+			<string>A90B9394-F259-4089-9F7C-E84CF7C14991</string>
+=======
 			<string>79765F75-6B4D-407F-80EF-03AFB8063F25</string>
+>>>>>>> b7fd7e3441cab5d72bacd6f159ccf55bf2f0b4cb
 			<key>IDESourceControlWCCName</key>
 			<string>FinalsApp</string>
 		</dict>
