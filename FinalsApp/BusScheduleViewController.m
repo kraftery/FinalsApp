@@ -29,32 +29,34 @@
     [super viewDidLoad];
     // Do any additional setup after loading the view from its nib.
     self.title = @"Bus Schedule";
-    UIAlertView *errorView = [[UIAlertView alloc] initWithTitle:@"WARNING:" message:@"Times marked with 'X' are NOT running during finals week" delegate:self cancelButtonTitle:@"Dismiss" otherButtonTitles:nil, nil];
-    [errorView show];
     NSURLRequest *request = [NSURLRequest requestWithURL:[NSURL URLWithString:@"http://mobileappdevelopersclub.com/shellp/busurls.txt"] cachePolicy:NSURLRequestUseProtocolCachePolicy timeoutInterval:60.0];
     NSURLConnection *conn = [[NSURLConnection alloc] initWithRequest:request delegate:self];
     [conn start];
     buses = [[NSArray alloc] initWithObjects:
              @"104-College Park Metro",
-             @"105-Courtyards Express",
+             @"105-Courtyards Express", //1
              @"108-Adelphi",
              @"109-River Road",
-             @"110-Seven Springs Apartments",
-             @"111-Silver Spring",
+             @"110-Seven Springs Apartments", //4
+             @"111-Silver Spring",//5
              @"113-Hyattsville",
+             @"114-University View", //7
              @"115-Orange",
              @"116-Purple",
              @"117-Blue",
              @"118-Gold",
              @"122-Green",
+             @"124-Shady Grove", //13
              @"125-Circulator",
+             @"126-New Carrolton",
              @"127-Mazza Grandmarc",
              @"128-Enclave",
              @"129-Franklin Park",
-             @"130-Greenbelt",
+             @"130-Greenbelt",//19
              @"131-Enclave Mazza Grandmarc",
-             @"132-The Varsity",
+             @"132-The Varsity",//21
              @"133-Mall at PG",
+             @"134-Weekend Grocery Shuttle",
              nil
              ];
     myTableView.dataSource = self;
@@ -134,6 +136,7 @@
 -(void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath
 {
     BusViewController *controller = [[BusViewController alloc] initWithNibName:@"BusViewController" bundle:[NSBundle mainBundle]];
+    UIAlertView *errorView = [[UIAlertView alloc] initWithTitle:@"WARNING:" message:@"Times marked with 'X' are NOT running during finals week" delegate:self cancelButtonTitle:@"Dismiss" otherButtonTitles:nil, nil];
     
     switch (indexPath.row) {
         case 0:
@@ -141,6 +144,7 @@
             break;
         case 1:
             controller.fullURL = [urls objectAtIndex:1];
+            [errorView show];
             break;
         case 2:
             controller.fullURL = [urls objectAtIndex:2];
@@ -150,15 +154,18 @@
             break;
         case 4:
             controller.fullURL = [urls objectAtIndex:4];
+            [errorView show];
             break;
         case 5:
             controller.fullURL = [urls objectAtIndex:5];
+            [errorView show];
             break;
         case 6:
             controller.fullURL = [urls objectAtIndex:6];
             break;
         case 7:
             controller.fullURL = [urls objectAtIndex:7];
+            [errorView show];
             break;
         case 8:
             controller.fullURL = [urls objectAtIndex:8];
@@ -177,6 +184,7 @@
             break;
         case 13:
             controller.fullURL = [urls objectAtIndex:13];
+            [errorView show];
             break;
         case 14:
             controller.fullURL = [urls objectAtIndex:14];
@@ -195,6 +203,20 @@
             break;
         case 19:
             controller.fullURL = [urls objectAtIndex:19];
+            [errorView show];
+            break;
+        case 20:
+            controller.fullURL = [urls objectAtIndex:20];
+            break;
+        case 21:
+            controller.fullURL = [urls objectAtIndex:21];
+            [errorView show];
+            break;
+        case 22:
+            controller.fullURL = [urls objectAtIndex:22];
+            break;
+        case 23:
+            controller.fullURL = [urls objectAtIndex:23];
             break;
         default:
             break;
