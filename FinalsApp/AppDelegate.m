@@ -14,7 +14,6 @@
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
 {
     sleep(1);
-    //[NSThread sleepForTimeInterval:2.5];
     self.window = [[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]];
     // Override point for customization after application launch
     RootViewController *root = [[RootViewController alloc] init];
@@ -28,7 +27,6 @@
     [[UINavigationBar appearance]
      setBarTintColor:[UIColor colorWithHue:0 saturation:1 brightness:.6 alpha:1]];
     [[UINavigationBar appearance] setTintColor:[UIColor whiteColor]];
-    //[[UINavigationBar appearance] setBackIndicatorTransitionMaskImage:[UIImage imageNamed:@"back3.png"]];
     [[UIApplication sharedApplication] setStatusBarStyle:UIStatusBarStyleLightContent];
     
     
