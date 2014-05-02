@@ -19,7 +19,7 @@
 {
     self = [super initWithNibName:nibNameOrNil bundle:nibBundleOrNil];
     if (self) {
-        // Custom initialization
+        //Custom initialization
     }
     return self;
 }
@@ -37,7 +37,7 @@
     
     //quotes = [NSMutableArray arrayWithObjects:@"Don't fail!", @"Your whole life depends on this moment.", @"No turning back now.",nil];
     //quotes = [[NSMutableArray alloc] init];
-    NSURLRequest *request = [NSURLRequest requestWithURL:[NSURL URLWithString:@"http://mobileappdevelopersclub.com/shellp/quote.txt"] cachePolicy:NSURLRequestUseProtocolCachePolicy timeoutInterval:60.0];
+    NSURLRequest *request = [NSURLRequest requestWithURL:[NSURL URLWithString:@"http://mobileappdevelopersclub.com/shellp/quote.txt"] cachePolicy:NSURLRequestReloadIgnoringCacheData timeoutInterval:60.0];
     NSURLConnection *conn = [[NSURLConnection alloc] initWithRequest:request delegate:self];
     [conn start];
 }

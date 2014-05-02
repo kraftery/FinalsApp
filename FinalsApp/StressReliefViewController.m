@@ -22,6 +22,7 @@
     if (self) {
         UITabBarItem *tbi = [self tabBarItem];
         [tbi setTitle:@"Stress Relief Tips"];
+        [tbi setImage:[UIImage imageNamed:@"tee.png"]];
     }
     return self;
 }

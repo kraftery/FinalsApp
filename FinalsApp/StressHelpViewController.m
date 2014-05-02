@@ -23,6 +23,7 @@
         // Custom initialization
         UITabBarItem *tbi = [self tabBarItem];
         [tbi setTitle:@"Stress Help"];
+         [tbi setImage:[UIImage imageNamed:@"h.png"]];
     }
     return self;
 }
