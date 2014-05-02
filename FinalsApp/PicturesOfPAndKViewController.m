@@ -34,23 +34,39 @@ int imageIndex = 0;
     self.title = @"Puppies and Kittens";
     UIAlertView *help = [[UIAlertView alloc] initWithTitle:@"" message:@"Swipe LEFT or RIGHT to view pictures...Happy viewing :)" delegate:self cancelButtonTitle:@"Dismiss" otherButtonTitles:nil, nil];
     [help show];
-    imageView.image = [UIImage imageNamed:@"pic1.png"];
-    images = [[NSArray alloc] initWithObjects:@"pic1.png",
-              @"pic2.png",
+    imageView.image = [UIImage imageNamed:@"Kitten and Puppy.jpg"];
+    images = [[NSArray alloc] initWithObjects:@"Kitten and Puppy.jpg",
               @"pic3.png",
-              @"pic4.png",
-              @"pic5.png",
+              @"puppy.jpg",
+              @"Puppies-and-Kittens-Pictures9.jpg",
+              @"puppies20.jpg",
               @"pic6.png",
               @"pic7.png",
               @"pic8.png",
               @"pic9.png",
+              @"IBR-282274.jpg",
+              @"puppies17.jpg",
+              @"puppies18.jpg",
+              @"Kitten and Puppy5.jpg",
+              @"kittens_puppies2.jpg",
               @"pic10.png",
               @"pic11.png",
               @"pic12.png",
               @"pic13.png",
               @"pic14.png",
               @"pic15.png",
-              @"pic16.png", nil];
+              @"pic16.png",
+              @"puppy4.jpg",
+              @"Puppies_And_kittens_Picture253-1-.png",
+              @"siberian-husky-puppies-images.jpg",
+              @"kitty-and-puppy 6.jpg",
+              @"puppies kittens 7.jpg",
+              @"images8.jpeg",
+              @"puppies-kittens-10-1-jpg14.jpg",
+              @"puppies15.jpg",
+              @"puppies16.jpg",
+              @"puppies21.jpg",
+              @"cute-puppies-and-kittens-and-bunniescute-puppy-and-kitten-and-bunny-puppies-and-kittens-that-are-best-rclwyg8o.jpg",nil];
     //start = [[UIBarButtonItem alloc] initWithTitle:@"Start" style:UIBarButtonItemStyleBordered target:self action:@selector(button:)];
     //self.navigationItem.rightBarButtonItem = start;
 }

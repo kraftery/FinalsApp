@@ -18,6 +18,26 @@
 		847997CF18EDB361008903C4 /* CouponListViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 847997CD18EDB361008903C4 /* CouponListViewController.xib */; };
 		84A93C3C18DEB8E600E214A9 /* BusViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 84A93C3A18DEB8E600E214A9 /* BusViewController.m */; };
 		84A93C3D18DEB8E600E214A9 /* BusViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 84A93C3B18DEB8E600E214A9 /* BusViewController.xib */; };
+		84AA11F01912B79900EA6A10 /* Kitten and Puppy.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 84AA11EF1912B79900EA6A10 /* Kitten and Puppy.jpg */; };
+		84AA11F21912BE5400EA6A10 /* puppy.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 84AA11F11912BE5400EA6A10 /* puppy.jpg */; };
+		84AA11F41912BE8C00EA6A10 /* Puppies-and-Kittens-Pictures9.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 84AA11F31912BE8C00EA6A10 /* Puppies-and-Kittens-Pictures9.jpg */; };
+		84AA11F619131A3100EA6A10 /* puppies20.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 84AA11F519131A3100EA6A10 /* puppies20.jpg */; };
+		84AA11F819131A6100EA6A10 /* IBR-282274.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 84AA11F719131A6100EA6A10 /* IBR-282274.jpg */; };
+		84AA11FA19131AFC00EA6A10 /* puppies17.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 84AA11F919131AFC00EA6A10 /* puppies17.jpg */; };
+		84AA11FC19131B8800EA6A10 /* puppies18.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 84AA11FB19131B8800EA6A10 /* puppies18.jpg */; };
+		84AA11FE19131BD500EA6A10 /* Kitten and Puppy5.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 84AA11FD19131BD500EA6A10 /* Kitten and Puppy5.jpg */; };
+		84AA120019131C1400EA6A10 /* kittens_puppies2.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 84AA11FF19131C1400EA6A10 /* kittens_puppies2.jpg */; };
+		84AA120419131E1100EA6A10 /* puppy4.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 84AA120319131E1100EA6A10 /* puppy4.jpg */; };
+		84AA120619131E9D00EA6A10 /* Puppies_And_kittens_Picture253-1-.png in Resources */ = {isa = PBXBuildFile; fileRef = 84AA120519131E9D00EA6A10 /* Puppies_And_kittens_Picture253-1-.png */; };
+		84AA120819131EFC00EA6A10 /* siberian-husky-puppies-images.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 84AA120719131EFC00EA6A10 /* siberian-husky-puppies-images.jpg */; };
+		84AA120A19131F6300EA6A10 /* kitty-and-puppy 6.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 84AA120919131F6300EA6A10 /* kitty-and-puppy 6.jpg */; };
+		84AA120C19131F8D00EA6A10 /* puppies kittens 7.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 84AA120B19131F8D00EA6A10 /* puppies kittens 7.jpg */; };
+		84AA120E19131FDA00EA6A10 /* images8.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = 84AA120D19131FDA00EA6A10 /* images8.jpeg */; };
+		84AA121019131FF400EA6A10 /* puppies-kittens-10-1-jpg14.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 84AA120F19131FF400EA6A10 /* puppies-kittens-10-1-jpg14.jpg */; };
+		84AA12121913201E00EA6A10 /* puppies15.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 84AA12111913201E00EA6A10 /* puppies15.jpg */; };
+		84AA12141913205000EA6A10 /* puppies16.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 84AA12131913205000EA6A10 /* puppies16.jpg */; };
+		84AA12161913207200EA6A10 /* puppies21.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 84AA12151913207200EA6A10 /* puppies21.jpg */; };
+		84AA12181913215F00EA6A10 /* cute-puppies-and-kittens-and-bunniescute-puppy-and-kitten-and-bunny-puppies-and-kittens-that-are-best-rclwyg8o.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 84AA12171913215F00EA6A10 /* cute-puppies-and-kittens-and-bunniescute-puppy-and-kitten-and-bunny-puppies-and-kittens-that-are-best-rclwyg8o.jpg */; };
 		B3451ABB18D7D59D00D032F8 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B3451ABA18D7D59D00D032F8 /* Foundation.framework */; };
 		B3451ABD18D7D59D00D032F8 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B3451ABC18D7D59D00D032F8 /* CoreGraphics.framework */; };
 		B3451ABF18D7D59D00D032F8 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B3451ABE18D7D59D00D032F8 /* UIKit.framework */; };
@@ -58,7 +78,6 @@
 		B36D0ABB18F2FE3B005D39BD /* AboutViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = B36D0AB918F2FE3B005D39BD /* AboutViewController.xib */; };
 		B38DCAB918F9BB3800962849 /* StressHelpViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B38DCAB718F9BB3800962849 /* StressHelpViewController.m */; };
 		B38DCABA18F9BB3800962849 /* StressHelpViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = B38DCAB818F9BB3800962849 /* StressHelpViewController.xib */; };
-		B38DCACC18F9CA5200962849 /* pic1.png in Resources */ = {isa = PBXBuildFile; fileRef = B38DCABC18F9CA5200962849 /* pic1.png */; };
 		B38DCACD18F9CA5200962849 /* pic10.png in Resources */ = {isa = PBXBuildFile; fileRef = B38DCABD18F9CA5200962849 /* pic10.png */; };
 		B38DCACE18F9CA5200962849 /* pic11.png in Resources */ = {isa = PBXBuildFile; fileRef = B38DCABE18F9CA5200962849 /* pic11.png */; };
 		B38DCACF18F9CA5200962849 /* pic12.png in Resources */ = {isa = PBXBuildFile; fileRef = B38DCABF18F9CA5200962849 /* pic12.png */; };
@@ -66,7 +85,6 @@
 		B38DCAD118F9CA5200962849 /* pic14.png in Resources */ = {isa = PBXBuildFile; fileRef = B38DCAC118F9CA5200962849 /* pic14.png */; };
 		B38DCAD218F9CA5200962849 /* pic15.png in Resources */ = {isa = PBXBuildFile; fileRef = B38DCAC218F9CA5200962849 /* pic15.png */; };
 		B38DCAD318F9CA5200962849 /* pic16.png in Resources */ = {isa = PBXBuildFile; fileRef = B38DCAC318F9CA5200962849 /* pic16.png */; };
-		B38DCAD418F9CA5200962849 /* pic2.png in Resources */ = {isa = PBXBuildFile; fileRef = B38DCAC418F9CA5200962849 /* pic2.png */; };
 		B38DCAD518F9CA5200962849 /* pic3.png in Resources */ = {isa = PBXBuildFile; fileRef = B38DCAC518F9CA5200962849 /* pic3.png */; };
 		B38DCAD618F9CA5200962849 /* pic4.png in Resources */ = {isa = PBXBuildFile; fileRef = B38DCAC618F9CA5200962849 /* pic4.png */; };
 		B38DCAD718F9CA5200962849 /* pic5.png in Resources */ = {isa = PBXBuildFile; fileRef = B38DCAC718F9CA5200962849 /* pic5.png */; };
@@ -161,6 +179,26 @@
 		84A93C3918DEB8E600E214A9 /* BusViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BusViewController.h; sourceTree = "<group>"; };
 		84A93C3A18DEB8E600E214A9 /* BusViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BusViewController.m; sourceTree = "<group>"; };
 		84A93C3B18DEB8E600E214A9 /* BusViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = BusViewController.xib; sourceTree = "<group>"; };
+		84AA11EF1912B79900EA6A10 /* Kitten and Puppy.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "Kitten and Puppy.jpg"; sourceTree = "<group>"; };
+		84AA11F11912BE5400EA6A10 /* puppy.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = puppy.jpg; sourceTree = "<group>"; };
+		84AA11F31912BE8C00EA6A10 /* Puppies-and-Kittens-Pictures9.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "Puppies-and-Kittens-Pictures9.jpg"; sourceTree = "<group>"; };
+		84AA11F519131A3100EA6A10 /* puppies20.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = puppies20.jpg; sourceTree = "<group>"; };
+		84AA11F719131A6100EA6A10 /* IBR-282274.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "IBR-282274.jpg"; sourceTree = "<group>"; };
+		84AA11F919131AFC00EA6A10 /* puppies17.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = puppies17.jpg; sourceTree = "<group>"; };
+		84AA11FB19131B8800EA6A10 /* puppies18.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = puppies18.jpg; sourceTree = "<group>"; };
+		84AA11FD19131BD500EA6A10 /* Kitten and Puppy5.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "Kitten and Puppy5.jpg"; sourceTree = "<group>"; };
+		84AA11FF19131C1400EA6A10 /* kittens_puppies2.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = kittens_puppies2.jpg; sourceTree = "<group>"; };
+		84AA120319131E1100EA6A10 /* puppy4.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = puppy4.jpg; sourceTree = "<group>"; };
+		84AA120519131E9D00EA6A10 /* Puppies_And_kittens_Picture253-1-.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Puppies_And_kittens_Picture253-1-.png"; sourceTree = "<group>"; };
+		84AA120719131EFC00EA6A10 /* siberian-husky-puppies-images.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "siberian-husky-puppies-images.jpg"; sourceTree = "<group>"; };
+		84AA120919131F6300EA6A10 /* kitty-and-puppy 6.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "kitty-and-puppy 6.jpg"; sourceTree = "<group>"; };
+		84AA120B19131F8D00EA6A10 /* puppies kittens 7.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "puppies kittens 7.jpg"; sourceTree = "<group>"; };
+		84AA120D19131FDA00EA6A10 /* images8.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = images8.jpeg; sourceTree = "<group>"; };
+		84AA120F19131FF400EA6A10 /* puppies-kittens-10-1-jpg14.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "puppies-kittens-10-1-jpg14.jpg"; sourceTree = "<group>"; };
+		84AA12111913201E00EA6A10 /* puppies15.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = puppies15.jpg; sourceTree = "<group>"; };
+		84AA12131913205000EA6A10 /* puppies16.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = puppies16.jpg; sourceTree = "<group>"; };
+		84AA12151913207200EA6A10 /* puppies21.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = puppies21.jpg; sourceTree = "<group>"; };
+		84AA12171913215F00EA6A10 /* cute-puppies-and-kittens-and-bunniescute-puppy-and-kitten-and-bunny-puppies-and-kittens-that-are-best-rclwyg8o.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "cute-puppies-and-kittens-and-bunniescute-puppy-and-kitten-and-bunny-puppies-and-kittens-that-are-best-rclwyg8o.jpg"; sourceTree = "<group>"; };
 		B3451AB718D7D59D00D032F8 /* FinalsApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FinalsApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B3451ABA18D7D59D00D032F8 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		B3451ABC18D7D59D00D032F8 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -218,7 +256,6 @@
 		B38DCAB618F9BB3800962849 /* StressHelpViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = StressHelpViewController.h; sourceTree = "<group>"; };
 		B38DCAB718F9BB3800962849 /* StressHelpViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = StressHelpViewController.m; sourceTree = "<group>"; };
 		B38DCAB818F9BB3800962849 /* StressHelpViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = StressHelpViewController.xib; sourceTree = "<group>"; };
-		B38DCABC18F9CA5200962849 /* pic1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = pic1.png; sourceTree = "<group>"; };
 		B38DCABD18F9CA5200962849 /* pic10.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = pic10.png; sourceTree = "<group>"; };
 		B38DCABE18F9CA5200962849 /* pic11.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = pic11.png; sourceTree = "<group>"; };
 		B38DCABF18F9CA5200962849 /* pic12.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = pic12.png; sourceTree = "<group>"; };
@@ -226,7 +263,6 @@
 		B38DCAC118F9CA5200962849 /* pic14.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = pic14.png; sourceTree = "<group>"; };
 		B38DCAC218F9CA5200962849 /* pic15.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = pic15.png; sourceTree = "<group>"; };
 		B38DCAC318F9CA5200962849 /* pic16.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = pic16.png; sourceTree = "<group>"; };
-		B38DCAC418F9CA5200962849 /* pic2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = pic2.png; sourceTree = "<group>"; };
 		B38DCAC518F9CA5200962849 /* pic3.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = pic3.png; sourceTree = "<group>"; };
 		B38DCAC618F9CA5200962849 /* pic4.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = pic4.png; sourceTree = "<group>"; };
 		B38DCAC718F9CA5200962849 /* pic5.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = pic5.png; sourceTree = "<group>"; };
@@ -470,15 +506,33 @@
 		B38DCABB18F9CA5200962849 /* puppies and kittens */ = {
 			isa = PBXGroup;
 			children = (
-				B38DCABC18F9CA5200962849 /* pic1.png */,
 				B38DCABD18F9CA5200962849 /* pic10.png */,
+				84AA11F11912BE5400EA6A10 /* puppy.jpg */,
+				84AA11EF1912B79900EA6A10 /* Kitten and Puppy.jpg */,
+				84AA11F31912BE8C00EA6A10 /* Puppies-and-Kittens-Pictures9.jpg */,
+				84AA11FB19131B8800EA6A10 /* puppies18.jpg */,
 				B38DCABE18F9CA5200962849 /* pic11.png */,
 				B38DCABF18F9CA5200962849 /* pic12.png */,
+				84AA11F519131A3100EA6A10 /* puppies20.jpg */,
 				B38DCAC018F9CA5200962849 /* pic13.png */,
+				84AA11F719131A6100EA6A10 /* IBR-282274.jpg */,
 				B38DCAC118F9CA5200962849 /* pic14.png */,
 				B38DCAC218F9CA5200962849 /* pic15.png */,
+				84AA11F919131AFC00EA6A10 /* puppies17.jpg */,
+				84AA11FD19131BD500EA6A10 /* Kitten and Puppy5.jpg */,
+				84AA11FF19131C1400EA6A10 /* kittens_puppies2.jpg */,
+				84AA120319131E1100EA6A10 /* puppy4.jpg */,
+				84AA120519131E9D00EA6A10 /* Puppies_And_kittens_Picture253-1-.png */,
+				84AA120719131EFC00EA6A10 /* siberian-husky-puppies-images.jpg */,
+				84AA120919131F6300EA6A10 /* kitty-and-puppy 6.jpg */,
+				84AA120B19131F8D00EA6A10 /* puppies kittens 7.jpg */,
+				84AA120D19131FDA00EA6A10 /* images8.jpeg */,
+				84AA120F19131FF400EA6A10 /* puppies-kittens-10-1-jpg14.jpg */,
+				84AA12111913201E00EA6A10 /* puppies15.jpg */,
+				84AA12131913205000EA6A10 /* puppies16.jpg */,
+				84AA12151913207200EA6A10 /* puppies21.jpg */,
+				84AA12171913215F00EA6A10 /* cute-puppies-and-kittens-and-bunniescute-puppy-and-kitten-and-bunny-puppies-and-kittens-that-are-best-rclwyg8o.jpg */,
 				B38DCAC318F9CA5200962849 /* pic16.png */,
-				B38DCAC418F9CA5200962849 /* pic2.png */,
 				B38DCAC518F9CA5200962849 /* pic3.png */,
 				B38DCAC618F9CA5200962849 /* pic4.png */,
 				B38DCAC718F9CA5200962849 /* pic5.png */,
@@ -659,36 +713,48 @@
 			buildActionMask = 2147483647;
 			files = (
 				B3D253CB18D8BA8E0049D016 /* Art.jpg in Resources */,
+				84AA11FE19131BD500EA6A10 /* Kitten and Puppy5.jpg in Resources */,
 				B36009F7190F0B8A00E62ECB /* south_diner.jpg in Resources */,
 				BDC3E5CB18F6481200A893D4 /* back2.png in Resources */,
 				B38FDAC5190EACB000986EA1 /* eppley.jpg in Resources */,
+				84AA12121913201E00EA6A10 /* puppies15.jpg in Resources */,
 				BDCE35D2190E0603005C0B29 /* menuBtns_02_05.png in Resources */,
 				B3D253D518D8BA8E0049D016 /* Hornbake.jpg in Resources */,
+				84AA11FA19131AFC00EA6A10 /* puppies17.jpg in Resources */,
 				B3D253D618D8BA8E0049D016 /* icon-120.png in Resources */,
 				B36A898518D8E40F00CF1BD9 /* BusScheduleViewController.xib in Resources */,
 				B38DCAD118F9CA5200962849 /* pic14.png in Resources */,
 				B3D253CC18D8BA8E0049D016 /* Blank Coupon iphone 4.jpeg in Resources */,
-				B38DCACC18F9CA5200962849 /* pic1.png in Resources */,
 				B36A897618D8E39600CF1BD9 /* EventsViewController.xib in Resources */,
+				84AA12161913207200EA6A10 /* puppies21.jpg in Resources */,
 				BDE60F3F18F7A6E50000C546 /* add.png in Resources */,
 				B36D0AB618F2FE30005D39BD /* QuoteViewController.xib in Resources */,
+				84AA120C19131F8D00EA6A10 /* puppies kittens 7.jpg in Resources */,
 				B36A898A18D8E42200CF1BD9 /* CouponsViewController.xib in Resources */,
+				84AA121019131FF400EA6A10 /* puppies-kittens-10-1-jpg14.jpg in Resources */,
 				B38DCAD718F9CA5200962849 /* pic5.png in Resources */,
 				BDCE35D3190E0603005C0B29 /* menuBtns_02.png in Resources */,
 				BDC3E5E118F649A100A893D4 /* campusEventsText.png in Resources */,
+				84AA11F01912B79900EA6A10 /* Kitten and Puppy.jpg in Resources */,
 				B3D253CF18D8BA8E0049D016 /* Chemistry.jpg in Resources */,
 				B3D253DA18D8BA8E0049D016 /* party.png in Resources */,
 				B38DCADB18F9CA5200962849 /* pic9.png in Resources */,
 				B3D253D118D8BA8E0049D016 /* CSPAC.jpg in Resources */,
+				84AA12181913215F00EA6A10 /* cute-puppies-and-kittens-and-bunniescute-puppy-and-kitten-and-bunny-puppies-and-kittens-that-are-best-rclwyg8o.jpg in Resources */,
 				84A93C3D18DEB8E600E214A9 /* BusViewController.xib in Resources */,
 				B36D0ABB18F2FE3B005D39BD /* AboutViewController.xib in Resources */,
 				B3D253DE18D8BA8E0049D016 /* splash4-1.png in Resources */,
+				84AA120019131C1400EA6A10 /* kittens_puppies2.jpg in Resources */,
 				B3451AC518D7D59D00D032F8 /* InfoPlist.strings in Resources */,
 				B3D253D918D8BA8E0049D016 /* McKeldin.jpg in Resources */,
+				84AA12141913205000EA6A10 /* puppies16.jpg in Resources */,
 				B38DCAD318F9CA5200962849 /* pic16.png in Resources */,
 				BDCE35CE190E0603005C0B29 /* menu_07.png in Resources */,
 				B36D0AA718F2FDE3005D39BD /* StressReliefViewController.xib in Resources */,
+				84AA11F819131A6100EA6A10 /* IBR-282274.jpg in Resources */,
+				84AA11FC19131B8800EA6A10 /* puppies18.jpg in Resources */,
 				B38DCAD618F9CA5200962849 /* pic4.png in Resources */,
+				84AA120819131EFC00EA6A10 /* siberian-husky-puppies-images.jpg in Resources */,
 				BD0C1B9E18FD8E0900903676 /* IMG_2735.JPG in Resources */,
 				BDE60F4318F8A8F10000C546 /* header.png in Resources */,
 				B38DCABA18F9BB3800962849 /* StressHelpViewController.xib in Resources */,
@@ -724,21 +790,26 @@
 				B38DCAD518F9CA5200962849 /* pic3.png in Resources */,
 				B36D0AA218F2FDAB005D39BD /* TimeManagementViewController.xib in Resources */,
 				BDCE35CD190E0603005C0B29 /* menu_06.png in Resources */,
+				84AA120619131E9D00EA6A10 /* Puppies_And_kittens_Picture253-1-.png in Resources */,
 				BDC3E61D18F6503600A893D4 /* EventActualViewController.xib in Resources */,
 				B38DCAD018F9CA5200962849 /* pic13.png in Resources */,
+				84AA120419131E1100EA6A10 /* puppy4.jpg in Resources */,
+				84AA120E19131FDA00EA6A10 /* images8.jpeg in Resources */,
+				84AA11F619131A3100EA6A10 /* puppies20.jpg in Resources */,
 				BD0C1B9F18FD8E0900903676 /* IMG_2740.JPG in Resources */,
 				B38DCAD918F9CA5200962849 /* pic7.png in Resources */,
+				84AA11F41912BE8C00EA6A10 /* Puppies-and-Kittens-Pictures9.jpg in Resources */,
 				B38FDAC6190EACB000986EA1 /* ritchie.jpg in Resources */,
 				B38DCAD218F9CA5200962849 /* pic15.png in Resources */,
 				B38DCACF18F9CA5200962849 /* pic12.png in Resources */,
 				BDCE35CC190E0603005C0B29 /* menu_05.png in Resources */,
 				B3D253DD18D8BA8E0049D016 /* splash3.png in Resources */,
 				BDC3E61B18F649E300A893D4 /* emptyHeader_01.png in Resources */,
+				84AA11F21912BE5400EA6A10 /* puppy.jpg in Resources */,
 				BD6EF92618F5001F007ECB45 /* header_01.png in Resources */,
 				BDC3E5C718F643AC00A893D4 /* specialButton_01.png in Resources */,
 				B3D253DB18D8BA8E0049D016 /* splash.png in Resources */,
 				B3D253D218D8BA8E0049D016 /* Engineering.jpg in Resources */,
-				B38DCAD418F9CA5200962849 /* pic2.png in Resources */,
 				B3D253CE18D8BA8E0049D016 /* cal.png in Resources */,
 				B3FFB1FE18F2576C0043C3A2 /* DiningViewController.xib in Resources */,
 				BDCE35D1190E0603005C0B29 /* menuBtns_02_04.png in Resources */,
@@ -750,6 +821,7 @@
 				BDCE35D5190E0603005C0B29 /* menuBtns_04.png in Resources */,
 				B38DCADA18F9CA5200962849 /* pic8.png in Resources */,
 				B3451AED18D7D6F000D032F8 /* RootViewController.xib in Resources */,
+				84AA120A19131F6300EA6A10 /* kitty-and-puppy 6.jpg in Resources */,
 				B36A897118D8E35F00CF1BD9 /* MyScheduleViewController.xib in Resources */,
 				BDCE35D0190E0603005C0B29 /* menuBtns_02_03.png in Resources */,
 			);
