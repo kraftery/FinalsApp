@@ -22,6 +22,7 @@
         // Custom initialization
         UITabBarItem *tbi = [self tabBarItem];
         [tbi setTitle:@"Library Hours"];
+        [tbi setImage:[UIImage imageNamed:@"lib.png"]];
     }
     return self;
 }

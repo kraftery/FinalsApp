@@ -38,6 +38,18 @@
 		84AA12141913205000EA6A10 /* puppies16.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 84AA12131913205000EA6A10 /* puppies16.jpg */; };
 		84AA12161913207200EA6A10 /* puppies21.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 84AA12151913207200EA6A10 /* puppies21.jpg */; };
 		84AA12181913215F00EA6A10 /* cute-puppies-and-kittens-and-bunniescute-puppy-and-kitten-and-bunny-puppies-and-kittens-that-are-best-rclwyg8o.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 84AA12171913215F00EA6A10 /* cute-puppies-and-kittens-and-bunniescute-puppy-and-kitten-and-bunny-puppies-and-kittens-that-are-best-rclwyg8o.jpg */; };
+		84AA121B1913473E00EA6A10 /* lib.png in Resources */ = {isa = PBXBuildFile; fileRef = 84AA12191913473E00EA6A10 /* lib.png */; };
+		84AA121C1913473E00EA6A10 /* lib@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 84AA121A1913473E00EA6A10 /* lib@2x.png */; };
+		84AA12231913615000EA6A10 /* din@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 84AA12211913615000EA6A10 /* din@2x.png */; };
+		84AA12241913615000EA6A10 /* din.png in Resources */ = {isa = PBXBuildFile; fileRef = 84AA12221913615000EA6A10 /* din.png */; };
+		84AA12271913619A00EA6A10 /* rec@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 84AA12251913619A00EA6A10 /* rec@2x.png */; };
+		84AA12281913619A00EA6A10 /* rec.png in Resources */ = {isa = PBXBuildFile; fileRef = 84AA12261913619A00EA6A10 /* rec.png */; };
+		84AA122F1913639F00EA6A10 /* h.png in Resources */ = {isa = PBXBuildFile; fileRef = 84AA122D1913639F00EA6A10 /* h.png */; };
+		84AA12301913639F00EA6A10 /* h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 84AA122E1913639F00EA6A10 /* h@2x.png */; };
+		84AA12331913656F00EA6A10 /* tee@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 84AA12311913656F00EA6A10 /* tee@2x.png */; };
+		84AA12341913656F00EA6A10 /* tee.png in Resources */ = {isa = PBXBuildFile; fileRef = 84AA12321913656F00EA6A10 /* tee.png */; };
+		84AA12371913681900EA6A10 /* pk@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 84AA12351913681900EA6A10 /* pk@2x.png */; };
+		84AA12381913681900EA6A10 /* pk.png in Resources */ = {isa = PBXBuildFile; fileRef = 84AA12361913681900EA6A10 /* pk.png */; };
 		B3451ABB18D7D59D00D032F8 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B3451ABA18D7D59D00D032F8 /* Foundation.framework */; };
 		B3451ABD18D7D59D00D032F8 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B3451ABC18D7D59D00D032F8 /* CoreGraphics.framework */; };
 		B3451ABF18D7D59D00D032F8 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B3451ABE18D7D59D00D032F8 /* UIKit.framework */; };
@@ -199,6 +211,18 @@
 		84AA12131913205000EA6A10 /* puppies16.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = puppies16.jpg; sourceTree = "<group>"; };
 		84AA12151913207200EA6A10 /* puppies21.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = puppies21.jpg; sourceTree = "<group>"; };
 		84AA12171913215F00EA6A10 /* cute-puppies-and-kittens-and-bunniescute-puppy-and-kitten-and-bunny-puppies-and-kittens-that-are-best-rclwyg8o.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "cute-puppies-and-kittens-and-bunniescute-puppy-and-kitten-and-bunny-puppies-and-kittens-that-are-best-rclwyg8o.jpg"; sourceTree = "<group>"; };
+		84AA12191913473E00EA6A10 /* lib.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = lib.png; sourceTree = "<group>"; };
+		84AA121A1913473E00EA6A10 /* lib@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "lib@2x.png"; sourceTree = "<group>"; };
+		84AA12211913615000EA6A10 /* din@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "din@2x.png"; sourceTree = "<group>"; };
+		84AA12221913615000EA6A10 /* din.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = din.png; sourceTree = "<group>"; };
+		84AA12251913619A00EA6A10 /* rec@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "rec@2x.png"; sourceTree = "<group>"; };
+		84AA12261913619A00EA6A10 /* rec.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = rec.png; sourceTree = "<group>"; };
+		84AA122D1913639F00EA6A10 /* h.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = h.png; sourceTree = "<group>"; };
+		84AA122E1913639F00EA6A10 /* h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "h@2x.png"; sourceTree = "<group>"; };
+		84AA12311913656F00EA6A10 /* tee@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "tee@2x.png"; sourceTree = "<group>"; };
+		84AA12321913656F00EA6A10 /* tee.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = tee.png; sourceTree = "<group>"; };
+		84AA12351913681900EA6A10 /* pk@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "pk@2x.png"; sourceTree = "<group>"; };
+		84AA12361913681900EA6A10 /* pk.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = pk.png; sourceTree = "<group>"; };
 		B3451AB718D7D59D00D032F8 /* FinalsApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FinalsApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B3451ABA18D7D59D00D032F8 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		B3451ABC18D7D59D00D032F8 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -557,7 +581,19 @@
 		B3D253B318D8BA8E0049D016 /* icons */ = {
 			isa = PBXGroup;
 			children = (
+				84AA12311913656F00EA6A10 /* tee@2x.png */,
+				84AA12351913681900EA6A10 /* pk@2x.png */,
+				84AA12361913681900EA6A10 /* pk.png */,
+				84AA12321913656F00EA6A10 /* tee.png */,
+				84AA122D1913639F00EA6A10 /* h.png */,
+				84AA122E1913639F00EA6A10 /* h@2x.png */,
+				84AA12251913619A00EA6A10 /* rec@2x.png */,
+				84AA12261913619A00EA6A10 /* rec.png */,
+				84AA12211913615000EA6A10 /* din@2x.png */,
+				84AA12221913615000EA6A10 /* din.png */,
 				BDE60F4218F8A8F10000C546 /* header.png */,
+				84AA12191913473E00EA6A10 /* lib.png */,
+				84AA121A1913473E00EA6A10 /* lib@2x.png */,
 				B3D253B418D8BA8E0049D016 /* Architecture.jpg */,
 				B3D253B518D8BA8E0049D016 /* Art.jpg */,
 				B3D253B618D8BA8E0049D016 /* Blank Coupon iphone 4.jpeg */,
@@ -712,6 +748,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				84AA12341913656F00EA6A10 /* tee.png in Resources */,
 				B3D253CB18D8BA8E0049D016 /* Art.jpg in Resources */,
 				84AA11FE19131BD500EA6A10 /* Kitten and Puppy5.jpg in Resources */,
 				B36009F7190F0B8A00E62ECB /* south_diner.jpg in Resources */,
@@ -727,7 +764,9 @@
 				B3D253CC18D8BA8E0049D016 /* Blank Coupon iphone 4.jpeg in Resources */,
 				B36A897618D8E39600CF1BD9 /* EventsViewController.xib in Resources */,
 				84AA12161913207200EA6A10 /* puppies21.jpg in Resources */,
+				84AA12381913681900EA6A10 /* pk.png in Resources */,
 				BDE60F3F18F7A6E50000C546 /* add.png in Resources */,
+				84AA12371913681900EA6A10 /* pk@2x.png in Resources */,
 				B36D0AB618F2FE30005D39BD /* QuoteViewController.xib in Resources */,
 				84AA120C19131F8D00EA6A10 /* puppies kittens 7.jpg in Resources */,
 				B36A898A18D8E42200CF1BD9 /* CouponsViewController.xib in Resources */,
@@ -749,17 +788,20 @@
 				B3D253D918D8BA8E0049D016 /* McKeldin.jpg in Resources */,
 				84AA12141913205000EA6A10 /* puppies16.jpg in Resources */,
 				B38DCAD318F9CA5200962849 /* pic16.png in Resources */,
+				84AA12231913615000EA6A10 /* din@2x.png in Resources */,
 				BDCE35CE190E0603005C0B29 /* menu_07.png in Resources */,
 				B36D0AA718F2FDE3005D39BD /* StressReliefViewController.xib in Resources */,
 				84AA11F819131A6100EA6A10 /* IBR-282274.jpg in Resources */,
 				84AA11FC19131B8800EA6A10 /* puppies18.jpg in Resources */,
 				B38DCAD618F9CA5200962849 /* pic4.png in Resources */,
+				84AA122F1913639F00EA6A10 /* h.png in Resources */,
 				84AA120819131EFC00EA6A10 /* siberian-husky-puppies-images.jpg in Resources */,
 				BD0C1B9E18FD8E0900903676 /* IMG_2735.JPG in Resources */,
 				BDE60F4318F8A8F10000C546 /* header.png in Resources */,
 				B38DCABA18F9BB3800962849 /* StressHelpViewController.xib in Resources */,
 				B38FDAC7190EACB000986EA1 /* sph.jpg in Resources */,
 				B3D253D418D8BA8E0049D016 /* gym.png in Resources */,
+				84AA12301913639F00EA6A10 /* h@2x.png in Resources */,
 				B38DCACD18F9CA5200962849 /* pic10.png in Resources */,
 				B36D0AAC18F2FDFA005D39BD /* PicturesOfPAndKViewController.xib in Resources */,
 				B3451ACD18D7D59D00D032F8 /* Images.xcassets in Resources */,
@@ -767,6 +809,7 @@
 				BDCE35D4190E0603005C0B29 /* menuBtns_03.png in Resources */,
 				B3D253CD18D8BA8E0049D016 /* bus.png in Resources */,
 				BD0C1BA118FD8E0900903676 /* IMG_2749.JPG in Resources */,
+				84AA12331913656F00EA6A10 /* tee@2x.png in Resources */,
 				BD0C1BA218FD8E0900903676 /* IMG_2750.JPG in Resources */,
 				B38DCAD818F9CA5200962849 /* pic6.png in Resources */,
 				B3D253DF18D8BA8E0049D016 /* splash4.png in Resources */,
@@ -775,6 +818,7 @@
 				B3D253D018D8BA8E0049D016 /* coupon_header.png in Resources */,
 				B3D253CA18D8BA8E0049D016 /* Architecture.jpg in Resources */,
 				BDCE35D8190E0603005C0B29 /* menuBtns_07.png in Resources */,
+				84AA12241913615000EA6A10 /* din.png in Resources */,
 				8444C1CE18E7684600CDDE30 /* SelectedLibraryViewController.xib in Resources */,
 				2768329918E723D400D3EE08 /* GPAViewController.xib in Resources */,
 				847997CF18EDB361008903C4 /* CouponListViewController.xib in Resources */,
@@ -793,6 +837,7 @@
 				84AA120619131E9D00EA6A10 /* Puppies_And_kittens_Picture253-1-.png in Resources */,
 				BDC3E61D18F6503600A893D4 /* EventActualViewController.xib in Resources */,
 				B38DCAD018F9CA5200962849 /* pic13.png in Resources */,
+				84AA12281913619A00EA6A10 /* rec.png in Resources */,
 				84AA120419131E1100EA6A10 /* puppy4.jpg in Resources */,
 				84AA120E19131FDA00EA6A10 /* images8.jpeg in Resources */,
 				84AA11F619131A3100EA6A10 /* puppies20.jpg in Resources */,
@@ -814,12 +859,15 @@
 				B3FFB1FE18F2576C0043C3A2 /* DiningViewController.xib in Resources */,
 				BDCE35D1190E0603005C0B29 /* menuBtns_02_04.png in Resources */,
 				BDCE35D6190E0603005C0B29 /* menuBtns_05.png in Resources */,
+				84AA121C1913473E00EA6A10 /* lib@2x.png in Resources */,
 				BDCE35CA190E0603005C0B29 /* aboutbtn_07.png in Resources */,
 				BDCE35CF190E0603005C0B29 /* menuBtns_02_02.png in Resources */,
 				BDCE35D7190E0603005C0B29 /* menuBtns_06.png in Resources */,
 				BDCE35CB190E0603005C0B29 /* menu_04.png in Resources */,
+				84AA121B1913473E00EA6A10 /* lib.png in Resources */,
 				BDCE35D5190E0603005C0B29 /* menuBtns_04.png in Resources */,
 				B38DCADA18F9CA5200962849 /* pic8.png in Resources */,
+				84AA12271913619A00EA6A10 /* rec@2x.png in Resources */,
 				B3451AED18D7D6F000D032F8 /* RootViewController.xib in Resources */,
 				84AA120A19131F6300EA6A10 /* kitty-and-puppy 6.jpg in Resources */,
 				B36A897118D8E35F00CF1BD9 /* MyScheduleViewController.xib in Resources */,

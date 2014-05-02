@@ -24,6 +24,7 @@
     if (self) {
         UITabBarItem *tbi = [self tabBarItem];
         [tbi setTitle:@"Diner Hours"];
+         [tbi setImage:[UIImage imageNamed:@"din.png"]];
     }
     return self;
 }

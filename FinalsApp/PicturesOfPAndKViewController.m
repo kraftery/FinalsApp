@@ -23,6 +23,7 @@ int imageIndex = 0;
     if (self) {
         UITabBarItem *tbi = [self tabBarItem];
         [tbi setTitle:@"Puppies And Kittens"];
+        [tbi setImage:[UIImage imageNamed:@"pk.png"]];
     }
     return self;
 }

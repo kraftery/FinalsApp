@@ -25,6 +25,7 @@
     if (self) {
         UITabBarItem *tbi = [self tabBarItem];
         [tbi setTitle:@"Gym Hours"];
+         [tbi setImage:[UIImage imageNamed:@"rec.png"]];
     }
     return self;
 }
