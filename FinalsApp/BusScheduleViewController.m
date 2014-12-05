@@ -34,7 +34,7 @@
     [conn start];
     buses = [[NSArray alloc] initWithObjects:
              @"104-College Park Metro",
-             @"105-Courtyards Express", //1
+             @"105-The Courtyards", //1
              @"108-Adelphi",
              @"109-River Road",
              @"110-Seven Springs Apartments", //4
@@ -56,7 +56,6 @@
              @"131-Enclave Mazza Grandmarc",
              @"132-The Varsity",//21
              @"133-Mall at PG",
-             @"134-Weekend Grocery Shuttle",
              nil
              ];
     myTableView.dataSource = self;
@@ -214,9 +213,6 @@
             break;
         case 22:
             controller.fullURL = [urls objectAtIndex:22];
-            break;
-        case 23:
-            controller.fullURL = [urls objectAtIndex:23];
             break;
         default:
             break;

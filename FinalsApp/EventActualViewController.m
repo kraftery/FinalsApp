@@ -33,7 +33,7 @@
     NSURLRequest *request = [NSURLRequest requestWithURL:[NSURL URLWithString:@"http://mobileappdevelopersclub.com/shellp/events.txt"] cachePolicy:NSURLRequestUseProtocolCachePolicy timeoutInterval:60.0];
     NSURLConnection *conn = [[NSURLConnection alloc] initWithRequest:request delegate:self];
     [conn start];
-    days = [[NSArray alloc] initWithObjects:@"Friday, May 9",@"Saturday, May 10",@"Sunday, May 11",@"Monday, May 12", @"Tuesday, May 13", @"Wednesday, May 14", @"Thursday, May 15", @"Friday, May 16", @"Saturday, May 17", @"Sunday, May 18", @"Monday, May 19", @"Tuesday, May 20", @"Wednesday, May 21",nil];
+    days = [[NSArray alloc] initWithObjects:@"Monday, December 8",@"Tuesday, December 9",@"Wednesday, December 10",@"Thursday, December 11", @"Friday, December 12", @"Saturday, December 13", @"Sunday, December 14", @"Monday, December 15", @"Tuesday, December 16", @"Wednesday, December 17", @"Thursday, December 18", @"Friday, December 19", @"Saturday, December 20",nil];
     //returned_events = [[NSMutableArray alloc] init];
     myTableView.delegate = self;
     myTableView.dataSource = self;
@@ -80,55 +80,55 @@
     EventsViewController *eventView = [[EventsViewController alloc] initWithNibName:@"EventsViewController" bundle:[NSBundle mainBundle]];
     switch (indexPath.row) {
         case 0:
-            eventView.labelText = @"Friday May 9th";
+            eventView.labelText = @"Monday December 8th";
             eventView.textViewText = [[NSString alloc] initWithString:[returned_events  objectAtIndex:0]];
             break;
         case 1:
-            eventView.labelText = @"Saturday May 10th";
+            eventView.labelText = @"Tuesday December 9th";
             eventView.textViewText = [[NSString alloc] initWithString:[returned_events  objectAtIndex:1]];
             break;
         case 2:
-            eventView.labelText = @"Sunday May 11th";
+            eventView.labelText = @"Wednesday December 10th";
             eventView.textViewText = [[NSString alloc] initWithString:[returned_events  objectAtIndex:2]];
             break;
         case 3:
-            eventView.labelText = @"Monday May 12th";
+            eventView.labelText = @"Thursday December 11th";
             eventView.textViewText = [[NSString alloc] initWithString:[returned_events  objectAtIndex:3]];
             break;
         case 4:
-            eventView.labelText = @"Tuesday May 13th";
+            eventView.labelText = @"Friday December 12th";
             eventView.textViewText = [[NSString alloc] initWithString:[returned_events  objectAtIndex:4]];
             break;
         case 5:
-            eventView.labelText = @"Wednesday May 14th";
+            eventView.labelText = @"Saturday December 13th";
             eventView.textViewText = [[NSString alloc] initWithString:[returned_events  objectAtIndex:5]];
             break;
         case 6:
-            eventView.labelText = @"Thursday May 15th";
+            eventView.labelText = @"Sunday December 14th";
             eventView.textViewText = [[NSString alloc] initWithString:[returned_events  objectAtIndex:6]];
             break;
         case 7:
-            eventView.labelText = @"Friday May 16th";
+            eventView.labelText = @"Monday December 15th";
             eventView.textViewText = [[NSString alloc] initWithString:[returned_events  objectAtIndex:7]];
             break;
         case 8:
-            eventView.labelText = @"Saturday May 17th";
+            eventView.labelText = @"Tuesday December 16th";
             eventView.textViewText = [[NSString alloc] initWithString:[returned_events  objectAtIndex:8]];
             break;
         case 9:
-            eventView.labelText = @"Sunday May 18th";
+            eventView.labelText = @"Wednesday December 17th";
             eventView.textViewText = [[NSString alloc] initWithString:[returned_events  objectAtIndex:9]];
             break;
         case 10:
-            eventView.labelText = @"Monday May 19th";
+            eventView.labelText = @"Thursday December 18th";
             eventView.textViewText = [[NSString alloc] initWithString:[returned_events  objectAtIndex:10]];
             break;
         case 11:
-            eventView.labelText = @"Tuesday May 20th";
+            eventView.labelText = @"Friday December 19th";
             eventView.textViewText = [[NSString alloc] initWithString:[returned_events  objectAtIndex:11]];
             break;
         case 12:
-            eventView.labelText = @"Wednesday May 21th";
+            eventView.labelText = @"Saturday December 20th";
             eventView.textViewText = [[NSString alloc] initWithString:[returned_events  objectAtIndex:12]];
             break;
         default:
