@@ -415,68 +415,68 @@
 		B3451AC018D7D59D00D032F8 /* FinalsApp */ = {
 			isa = PBXGroup;
 			children = (
-				B3451AC918D7D59D00D032F8 /* AppDelegate.h */,
 				B3451ACA18D7D59D00D032F8 /* AppDelegate.m */,
-				B3451AE918D7D6F000D032F8 /* RootViewController.h */,
 				B3451AEA18D7D6F000D032F8 /* RootViewController.m */,
 				B3451AEB18D7D6F000D032F8 /* RootViewController.xib */,
-				B36A896D18D8E35F00CF1BD9 /* MyScheduleViewController.h */,
 				B36A896E18D8E35F00CF1BD9 /* MyScheduleViewController.m */,
 				B36A896F18D8E35F00CF1BD9 /* MyScheduleViewController.xib */,
-				B36A897218D8E39600CF1BD9 /* EventsViewController.h */,
 				B36A897318D8E39600CF1BD9 /* EventsViewController.m */,
 				B36A897418D8E39600CF1BD9 /* EventsViewController.xib */,
-				847997C618EBC7B8008903C4 /* EventActualViewController.h */,
 				847997C718EBC7B8008903C4 /* EventActualViewController.m */,
 				BDC3E61C18F6503600A893D4 /* EventActualViewController.xib */,
-				2768329418E723D400D3EE08 /* GPAViewController.h */,
 				2768329518E723D400D3EE08 /* GPAViewController.m */,
 				2768329618E723D400D3EE08 /* GPAViewController.xib */,
-				B3FFB1F518F2540F0043C3A2 /* GymViewController.h */,
 				B3FFB1F618F2540F0043C3A2 /* GymViewController.m */,
 				B3FFB1F718F2540F0043C3A2 /* GymViewController.xib */,
-				B3FFB1FA18F2576C0043C3A2 /* DiningViewController.h */,
 				B3FFB1FB18F2576C0043C3A2 /* DiningViewController.m */,
 				B3FFB1FC18F2576C0043C3A2 /* DiningViewController.xib */,
-				B36A897C18D8E40100CF1BD9 /* LibraryHoursViewController.h */,
 				B36A897D18D8E40100CF1BD9 /* LibraryHoursViewController.m */,
 				B36A897E18D8E40100CF1BD9 /* LibraryHoursViewController.xib */,
-				8444C1CA18E7684600CDDE30 /* SelectedLibraryViewController.h */,
 				8444C1CB18E7684600CDDE30 /* SelectedLibraryViewController.m */,
 				8444C1CC18E7684600CDDE30 /* SelectedLibraryViewController.xib */,
-				B36A898118D8E40F00CF1BD9 /* BusScheduleViewController.h */,
 				B36A898218D8E40F00CF1BD9 /* BusScheduleViewController.m */,
 				B36A898318D8E40F00CF1BD9 /* BusScheduleViewController.xib */,
-				84A93C3918DEB8E600E214A9 /* BusViewController.h */,
 				84A93C3A18DEB8E600E214A9 /* BusViewController.m */,
 				84A93C3B18DEB8E600E214A9 /* BusViewController.xib */,
-				B36A898618D8E42200CF1BD9 /* CouponsViewController.h */,
 				B36A898718D8E42200CF1BD9 /* CouponsViewController.m */,
 				B36A898818D8E42200CF1BD9 /* CouponsViewController.xib */,
-				847997CB18EDB361008903C4 /* CouponListViewController.h */,
 				847997CC18EDB361008903C4 /* CouponListViewController.m */,
 				847997CD18EDB361008903C4 /* CouponListViewController.xib */,
-				B36D0A9E18F2FDAB005D39BD /* TimeManagementViewController.h */,
 				B36D0A9F18F2FDAB005D39BD /* TimeManagementViewController.m */,
 				B36D0AA018F2FDAB005D39BD /* TimeManagementViewController.xib */,
-				B36D0AA318F2FDE3005D39BD /* StressReliefViewController.h */,
 				B36D0AA418F2FDE3005D39BD /* StressReliefViewController.m */,
 				B36D0AA518F2FDE3005D39BD /* StressReliefViewController.xib */,
-				B38DCAB618F9BB3800962849 /* StressHelpViewController.h */,
 				B38DCAB718F9BB3800962849 /* StressHelpViewController.m */,
 				B38DCAB818F9BB3800962849 /* StressHelpViewController.xib */,
-				B36D0AA818F2FDFA005D39BD /* PicturesOfPAndKViewController.h */,
 				B36D0AA918F2FDFA005D39BD /* PicturesOfPAndKViewController.m */,
 				B36D0AAA18F2FDFA005D39BD /* PicturesOfPAndKViewController.xib */,
-				B36D0AAD18F2FE1A005D39BD /* TestudoOfferingViewController.h */,
 				B36D0AAE18F2FE1A005D39BD /* TestudoOfferingViewController.m */,
 				B36D0AAF18F2FE1A005D39BD /* TestudoOfferingViewController.xib */,
-				B36D0AB218F2FE30005D39BD /* QuoteViewController.h */,
 				B36D0AB318F2FE30005D39BD /* QuoteViewController.m */,
 				B36D0AB418F2FE30005D39BD /* QuoteViewController.xib */,
-				B36D0AB718F2FE3B005D39BD /* AboutViewController.h */,
 				B36D0AB818F2FE3B005D39BD /* AboutViewController.m */,
 				B36D0AB918F2FE3B005D39BD /* AboutViewController.xib */,
+				B3451AC918D7D59D00D032F8 /* AppDelegate.h */,
+				B3451AE918D7D6F000D032F8 /* RootViewController.h */,
+				B36A896D18D8E35F00CF1BD9 /* MyScheduleViewController.h */,
+				B36A897218D8E39600CF1BD9 /* EventsViewController.h */,
+				847997C618EBC7B8008903C4 /* EventActualViewController.h */,
+				2768329418E723D400D3EE08 /* GPAViewController.h */,
+				B3FFB1F518F2540F0043C3A2 /* GymViewController.h */,
+				B3FFB1FA18F2576C0043C3A2 /* DiningViewController.h */,
+				B36A897C18D8E40100CF1BD9 /* LibraryHoursViewController.h */,
+				8444C1CA18E7684600CDDE30 /* SelectedLibraryViewController.h */,
+				B36A898118D8E40F00CF1BD9 /* BusScheduleViewController.h */,
+				84A93C3918DEB8E600E214A9 /* BusViewController.h */,
+				B36A898618D8E42200CF1BD9 /* CouponsViewController.h */,
+				847997CB18EDB361008903C4 /* CouponListViewController.h */,
+				B36D0A9E18F2FDAB005D39BD /* TimeManagementViewController.h */,
+				B36D0AA318F2FDE3005D39BD /* StressReliefViewController.h */,
+				B38DCAB618F9BB3800962849 /* StressHelpViewController.h */,
+				B36D0AA818F2FDFA005D39BD /* PicturesOfPAndKViewController.h */,
+				B36D0AAD18F2FE1A005D39BD /* TestudoOfferingViewController.h */,
+				B36D0AB218F2FE30005D39BD /* QuoteViewController.h */,
+				B36D0AB718F2FE3B005D39BD /* AboutViewController.h */,
 				B3D253B318D8BA8E0049D016 /* icons */,
 				B3451ACC18D7D59D00D032F8 /* Images.xcassets */,
 				B3451AC118D7D59D00D032F8 /* Supporting Files */,
@@ -714,7 +714,7 @@
 		B3451AAF18D7D59D00D032F8 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
-				LastUpgradeCheck = 0500;
+				LastUpgradeCheck = 0620;
 				ORGANIZATIONNAME = "Kieran Raftery";
 				TargetAttributes = {
 					B3451AB618D7D59D00D032F8 = {
@@ -959,7 +959,6 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
-				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
 				CLANG_CXX_LIBRARY = "libc++";
 				CLANG_ENABLE_MODULES = YES;
@@ -998,7 +997,6 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
-				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
 				CLANG_CXX_LIBRARY = "libc++";
 				CLANG_ENABLE_MODULES = YES;
@@ -1062,7 +1060,6 @@
 		B3451AE718D7D59D00D032F8 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
 				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/FinalsApp.app/FinalsApp";
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(SDKROOT)/Developer/Library/Frameworks",
@@ -1085,7 +1082,6 @@
 		B3451AE818D7D59D00D032F8 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
 				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/FinalsApp.app/FinalsApp";
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(SDKROOT)/Developer/Library/Frameworks",
